@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.imageofmonkey {
+  height: 25rem !important;
+  border-radius: 1rem;
+  margin-left: 3rem;
+}
+
+.imagecontainerofdiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.margintopofgrid {
+  margin-top: 3rem;
+}
+
+.verticleline {
+  height: 30rem;
+  width: 1px;
+  background-color: #e3e1e3;
+  margin-top: -2rem;
+}
+
+.displayflex {
+  display: flex;
+}
+
+.headingtext {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: #2d2e36;
+}
+
+.hearts {
+  border-radius: 1rem;
+  border: solid #888888 0.5px;
+  width: 3.5rem;
+  align-items: center;
+  height: 2rem;
+  justify-content: center;
+  display: flex;
+  margin-left: 1rem;
+}
+
+.iconsheart {
+  height: 1rem;
+}
+
+.textunderheading {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    color: #2d2e36;
+}
+
+.createrdiv {
+  margin-top: 2rem;
+}
+
+.avatardiv {
+  margin-top: 0.5rem;
+  align-items: center;
+}
+
+.titleofcreator {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    color: #2d2e36;
+    font-weight: 800;
+    margin-left: 0.5rem;
+}
+
+.tabsfont {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    color: #2d2e36;
+    font-weight: 800;
+}
+
+.divsizetoless {
+  width: 60%;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.fontfam {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 0.8rem;
+  color: #4f4f4f;
+}
+
+.marginTopofdivforbutton {
+  margin-top: 2rem;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttonblue {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    background: linear-gradient(101.12deg, #50c9c3 99.99%, #c81cc5 100%);
+    border-radius: 5px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+}
+
+.buttonblue12 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 5px;
+  color: #50c9c3;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 0.8rem;
+  border: solid #50c9c3 0.5px;
+}
+
+.modalheading {
+  text-align: center;
+  font-family: "Poppins" !important;
+  font-size: 1.4rem;
+  font-weight: 800;
+  border-radius: 5px;
+  color: #50c9c3;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 0.8rem;
+  border: solid #50c9c3 0.5px;
+}
+
+.modalheading {
+  text-align: center;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.hrline {
+  color: #e3e1e3;
+}
+
+.hrline12 {
+  color: #e3e1e3;
+  margin-top: 1rem;
+}
+
+.margintopdivofmodal {
+  margin-top: 2rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.margintopdivofmodaltext {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.margintopdivofmodaltext12 {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+}
+
+.imageofmonkeyformodal {
+  height: 6rem;
+}
+
+.marginLeftofdiv {
+  margin-left: 1rem;
+}
+
+.marginTopofdivforbutton1122 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 425px) {
+  .divsizetoless {
+    width: 100% !important;
+    text-align: left;
+    margin-top: 1rem;
+  }
+  .marginTopofdivforbutton {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .imageofmonkey {
+    height: 25rem !important;
+    border-radius: 1rem;
+    margin-left: 0rem;
+  }
+}

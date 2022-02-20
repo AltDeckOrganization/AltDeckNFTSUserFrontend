@@ -1,0 +1,31 @@
+.collCard {
+  background-image: url("../../public/images/coin.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  margin-bottom: 200px;
+  position: relative;
+}
+.positionCard {
+  position: absolute;
+  left: 40vw;
+  top: 42vh;
+  margin: 0 auto;
+}
+.imageCard {
+  margin: 0 auto;
+  width: 200px;
+  background: #fff;
+}
+@media (min-width: 1440px) {
+  .positionCard {
+    left: 45vw;
+  }
+}
+@media (max-width: 425px) {
+  .positionCard {
+    left: 25vw;
+    top: 43vh;
+  }
+}

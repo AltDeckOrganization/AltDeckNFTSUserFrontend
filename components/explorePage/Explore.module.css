@@ -1,0 +1,26 @@
+.customPad {
+    padding: 0% 6%;
+}
+
+.filterButtons ul{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.filterButtons ul li button {
+    padding: 5px;
+    font-size: 13px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.activeBtn {
+    background: #50C9C3;
+}
+.customPad h1{
+    font-size: 36px;
+    margin: 20px 0 40px;
+}

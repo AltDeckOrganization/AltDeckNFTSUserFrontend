@@ -1,0 +1,91 @@
+.nav {
+  padding: 0% 6%;
+}
+.searchbox {
+  position: relative;
+  width: 465px;
+}
+.searchIcon {
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  color: #888888;
+}
+.input {
+  padding-left: 25px;
+  color: #888888;
+  border: 1px solid #888888;
+  font-size: 12px;
+}nav
+.links {
+  color: #888888;
+  font-size: 14px;
+  font-weight: 500;
+}
+.createbtn {
+  background: linear-gradient(101.12deg, #50c9c3 99.99%, #c81cc5 100%);
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+.connectbtn {
+  color: #50c9c3;
+  border: 1px solid #50c9c3;
+  font-size: 14px;
+  font-weight: 500;
+}
+.menu {
+  display: none;
+}
+
+.nav___logo {
+  top: 8px !important;
+}
+
+@media (min-width: 1204px) {
+  .searchbox {
+    width: 406px;
+  }
+}
+
+@media (max-width: 1203px) {
+  .searchbox {
+    width: 205px;
+  }
+}
+@media (max-width: 1024px) {
+  .searchbox {
+    width: 205px;
+  }
+}
+@media (max-width: 960px) {
+  .connectbtn {
+    padding: 0.3rem 1.1rem;
+    font-size: 12px;
+    margin-left: 6px;
+  }
+  .createbtn {
+    padding: 0.3rem 1.1rem;
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .links {
+    padding: 2px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .searchbox {
+    width: 154px;
+    display: block;
+  }
+}
+@media (max-width: 640px) {
+  .searchbox {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .searchbox {
+    display: none;
+  }
+}

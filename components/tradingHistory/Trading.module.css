@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.maindivoftrading {
+  margin-top: 3rem;
+}
+
+.iconpluslisting {
+  display: flex;
+  width: 2px;
+}
+
+.listing {
+  margin-left: 1rem;
+}
+
+.iconpluslisting1122 {
+  display: flex;
+  margin-right: -5rem;
+}
+
+.textalignoftex {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .iconpluslisting1122 {
+    display: flex;
+    margin-right: -4rem;
+  }
+  .textalignoftex {
+    text-align: left;
+    margin-left: 0.3rem;
+  }
+}
+
+.maindivheading {
+  font-family: "Poppins", sans-serif !important;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}

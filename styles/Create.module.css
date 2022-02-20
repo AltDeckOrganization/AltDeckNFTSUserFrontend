@@ -1,0 +1,96 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0px;
+}
+
+.mainContainer .title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.mainContainer h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.uploadFile h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
+}
+
+.uploadFile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border: 2px dashed rgb(63, 63, 63);
+    border-radius: 14px;
+}
+
+.uploadIcon {
+    margin: 50px;
+    transform: scale(5);
+}
+
+.mainContainer a {
+    text-decoration: none;
+    color: gray;
+    text-align: center;
+}
+
+.mainContainer .input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    border-radius: 8px;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+}
+
+.mainContainer .attributeinput {
+    height: 40px;
+    border: 1px inset rgba(0, 0, 0, 0.438);
+    border-radius: 8px;
+    padding: 4px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.mainContainer .priceInput input {
+    width: 91.8%;
+    height: 40px;
+}
+
+.create {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 20px;
+}
+
+.create button {
+    width: 132px;
+    height: 32px;
+    background-color: #50c9c3;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid #50c9c3;
+    border-radius: 5px;
+    cursor: pointer;
+}
