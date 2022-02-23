@@ -85,7 +85,7 @@ export default function Example() {
           <li className="mx-3">
             <Dropdown
               title="Apply"
-              link1="Apply for listing"
+              link1="Apply for collection listing"
               apply="form-listing"
               link2="Apply for launchpad"
               apply2="form-launchpad"
@@ -152,7 +152,7 @@ export default function Example() {
               <li>
                 <DropdownSmall
                   title="Apply"
-                  link1="Apply for listing"
+                  link1="Apply for collection listing"
                   link2="Apply for launchpad"
                   apply="form-listing"
                   apply2="form-launchpad"
