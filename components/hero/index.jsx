@@ -48,7 +48,7 @@ const Hero = () => {
             >
               <img
                 className="m-2 rounded-xl h-[100px] w-[100px] md:rounded-3xl md:h-[100px] md:w-[100px]"
-                src={imgSrc}
+                src="/images/sampleImageHome.jpg"
                 alt={altText}
               />
             </div>
@@ -63,23 +63,21 @@ const Hero = () => {
         </div>
         <div className="relative flex flex-col lg:items-start">
           <h2 className="px-4 text-xl font-semibold lg:text-2xl lg:px-0">
-            Abstract Smoke Red Blue
+            3D Hungry Crows
           </h2>
           <p className="mt-2 lg:mt-1 text-[16px]">
             From{" "}
             <span className="mr-2 font-semibold text-black">
               {filteredData.price} SOL
             </span>
-            <span className="font-semibold text-black">
-              ·
-            </span>
+            <span className="font-semibold text-black">·</span>
             <span className="ml-2 text-gray-500">
               {" "}
               {filteredData.availableCards} of {filteredData.totalCards}{" "}
               available
             </span>
           </p>
-          <div> 
+          <div>
             <p className="mt-5 text-gray-500">
               Creator:{" "}
               <span className="font-semibold text-black">

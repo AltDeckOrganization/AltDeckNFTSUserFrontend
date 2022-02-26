@@ -11,8 +11,8 @@ export const homeLaunchpadData = [
   },
   {
     stepNumber: 3,
-    heading: "Mint with Magic Eden",
-    para: "Mint and host the launch on Magic Eden, using our custom tools",
+    heading: "Mint with Altdeck",
+    para: "Mint and host the launch on Altdeck, using our custom tools",
   },
   {
     stepNumber: 4,
