@@ -1,49 +1,48 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 // import { Menu, MenuItem } from "@mui/material";
-import MenuIcon from '../../public/menu.svg'
-import CloseIcon from '../../public/close.svg'
-import Logo from '../../public/logo.svg'
+import MenuIcon from "../../public/menu.svg";
+import CloseIcon from "../../public/close.svg";
+import Logo from "../../public/logo.svg";
 
-import { Fragment } from 'react'
-import { Menu, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/solid'
+import { Fragment } from "react";
+import { Menu, Transition } from "@headlessui/react";
+import { ChevronDownIcon } from "@heroicons/react/solid";
 
 // styles
-import navStyles from './Navbar.module.css'
+import navStyles from "./Navbar.module.css";
 
 //icons
-import searchIcon from '../../assets/icons/search.svg'
+import searchIcon from "../../assets/icons/search.svg";
 
 // Connect Wallet Button
-import { ConnectWallet } from '../connectWallet'
-import React from 'react'
-import Dropdown from '../dropdown'
-import DropdownSmall from '../dropdown/DropdownSmall'
-import { useState } from "react"
+import { ConnectWallet } from "../connectWallet";
+import React from "react";
+import Dropdown from "../dropdown";
+import DropdownSmall from "../dropdown/DropdownSmall";
+import { useState } from "react";
 
 const navigation = [
-  { name: 'Apply', margin: 'px-4' },
-  { name: 'Browse', margin: 'px-4' },
-  { name: 'Profile', href: '/profile', margin: 'px-4' },
-]
+  { name: "Apply", margin: "px-4" },
+  { name: "Browse", margin: "px-4" },
+  { name: "Profile", href: "/profile", margin: "px-4" },
+];
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Example() {
-  const router = useRouter()
-  const [browseAnchorEl, setBrowseAnchorEl] = React.useState(null)
+  const router = useRouter();
+  const [browseAnchorEl, setBrowseAnchorEl] = React.useState(null);
   const [openMenu, setOpenMenu] = React.useState(false);
-  const [applyAnchorEl, setApplyAnchorEl] = React.useState(null)
-  const openBrowse = Boolean(browseAnchorEl)
-  const openApply = Boolean(applyAnchorEl)
+  const [applyAnchorEl, setApplyAnchorEl] = React.useState(null);
+  const openBrowse = Boolean(browseAnchorEl);
+  const openApply = Boolean(applyAnchorEl);
 
-
-  const handleMenuClick=(e)=>{
-    setOpenMenu(prevState => !prevState);
-  }
+  const handleMenuClick = (e) => {
+    setOpenMenu((prevState) => !prevState);
+  };
   // const handleClick = (event, item) => {
   //   if (item.name === 'Browse') setBrowseAnchorEl(event.target)
   //   else if (item.name === 'Apply') setApplyAnchorEl(event.target)
@@ -65,7 +64,8 @@ export default function Example() {
           <div className="logo">
             <Link href="/">
               <a>
-            <h1 className="text-xl  font-bold">Altldeck</h1></a>
+                <h1 className="text-xl  font-bold">Altldeck</h1>
+              </a>
             </Link>
           </div>
           <div
@@ -104,7 +104,7 @@ export default function Example() {
             />
           </li>
           <li className="mx-3">
-            <Link href="/profile">
+            <Link href="/contact">
               <a className="inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
                 Profile
               </a>
@@ -125,14 +125,22 @@ export default function Example() {
 
         {/* MENU ICON*/}
         <div className="lg:hidden">
-          <Image src={MenuIcon} alt="Menu Icon"  onClick={handleMenuClick}/>
+          <Image src={MenuIcon} alt="Menu Icon" onClick={handleMenuClick} />
         </div>
 
         {/* Overlay */}
-        <div className={`${openMenu ? "fixed" : "hidden"} bg-gray-700 opacity-5 h-screen left-0 top-0 w-screen z-40`}></div>
+        <div
+          className={`${
+            openMenu ? "fixed" : "hidden"
+          } bg-gray-700 opacity-5 h-screen left-0 top-0 w-screen z-40`}
+        ></div>
 
         {/* SIDEBAR MENU */}
-        <div className={`${openMenu ? "fixed" : "hidden" } bg-white w-3/4 md:w-2/3  h-screen right-0 top-0 z-50 lg:hidden`}>
+        <div
+          className={`${
+            openMenu ? "fixed" : "hidden"
+          } bg-white w-3/4 md:w-2/3  h-screen right-0 top-0 z-50 lg:hidden`}
+        >
           <div className="flex flex-col py-5 px-5 md:px-10">
             <div className="side flex justify-between">
               <div className="logo ">
@@ -277,5 +285,5 @@ export default function Example() {
       </div>
       <div className="w-full h-[1px] bg-[#E3E1E3]"></div> */}
     </>
-  )
+  );
 }
