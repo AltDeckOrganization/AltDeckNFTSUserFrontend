@@ -33,7 +33,7 @@ function ItemDetails() {
     setValue(newValue);
   };
   return (
-    <div style={{ margin: "10px 0px" }}>
+    <div style={{ margin: "10px 0px" }} className="scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100">
       {" "}
       <Box sx={{ flexGrow: 1 }}>
         <Grid className={`${astyles.margintopofgrid}`} container spacing={2}>
@@ -55,7 +55,7 @@ function ItemDetails() {
 
               <Container>
                 <div className={`${astyles.displayflex}`}>
-                  <h1 className={`${astyles.headingtext}`}>
+                  <h1 className={`${astyles.headingtext} text-[#50C9C3]`}>
                     Abstact Smoke Red Blue
                   </h1>
                   <div className={`${astyles.hearts}`}>
@@ -102,16 +102,14 @@ function ItemDetails() {
                   </Box>
                 </div>
 
-                <div className={`${astyles.marginTopofdivforbutton}`}>
+                <div className={`mt-5 flex gap-5`}>
                   <button
                     onClick={handleOpen}
-                    className={`${astyles.buttonblue}`}
+                    className={`bg-[#50C9C3] text-white border border-[#50c9c3] border-md py-2 px-5 text-sm rounded hover:bg-[#4AB2AD] transition duration-100`}
                   >
-                    {" "}
                     Buy for 4.5 ETH
                   </button>
-                  <button className={`${astyles.buttonblue12}`}>
-                    {" "}
+                  <button className="px-7 text-[#50C9C3] border border-[#50c9c3] text-sm rounded hover:bg-[#4AB2AD] hover:text-white animate-bounce">
                     Make Offer
                   </button>
                 </div>
