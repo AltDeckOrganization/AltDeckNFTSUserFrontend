@@ -36,7 +36,7 @@ const ExplorePage = () => {
   return (
     <>
       <div className={exploreStyles.customPad}>
-        <h1 className={`text-black font-bold`}>Explore</h1>
+        <h1 className={`text-[#50C9C3] font-bold`}>Explore</h1>
         <div className={exploreStyles.filterButtons}>
           <ul className="overflow-x-auto h-15 pb-2 rounded scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100">
             {filterTypes.map((type, index) => (
