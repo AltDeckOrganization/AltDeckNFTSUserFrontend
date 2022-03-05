@@ -22,6 +22,7 @@ function mint() {
 							width={500}
 							height={400}
 							layout='responsive'
+							priority="true"
 						/>
 						<div className='mt-5'>
 							<Mintprogress />
