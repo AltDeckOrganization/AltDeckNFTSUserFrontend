@@ -4,13 +4,13 @@ import Crows from '../public/crows.jpg';
 import Internet from '../public/internet.svg';
 import Discord from '../public/discord.svg';
 import Twitter from '../public/twitter.svg';
-import MintCard from '../components/Mint/MintCard';
+import MintCard from '../components/mint/MintCard';
 import Link from 'next/link';
 import Mintprogress from '../components/progress/mintprogress';
 import Tab from '../components/tab/mintTab';
 import Girl from '../public/girl.jpg';
 
-function mint() {
+const Mint=()=> {
 	return (
 		<div className='mint px-2 py-5 md:px-10'>
 			<div className='px-1 md:px-10'>
@@ -101,4 +101,4 @@ function mint() {
 	);
 }
 
-export default mint;
+export default Mint;
