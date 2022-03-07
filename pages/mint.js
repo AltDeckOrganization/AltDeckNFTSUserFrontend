@@ -8,9 +8,26 @@ import MintCard from '../components/mint/MintCard';
 import Link from 'next/link';
 import Mintprogress from '../components/progress/mintprogress';
 import Tab from '../components/tab/mintTab';
-import Girl from '../public/girl.jpg';
+import Countdown from 'react-countdown';
 
-const Mint=()=> {
+const Completionist = () => <div className="text-3xl text-[#50C9C3] font-bold">MINTING COMPLETED</div>;
+
+// Renderer callback with condition
+const renderer = ({ hours, minutes, seconds, completed }) => {
+	if (completed) {
+		// Render a completed state
+		return <Completionist />;
+	} else {
+		// Render a countdown
+		return (
+			<div className="text-[#50C9C3] text-5xl">
+				{hours}:{minutes}:{seconds}
+			</div>
+		);
+	}
+};
+
+const Mint = () => {
 	return (
 		<div className='mint px-2 py-5 md:px-10'>
 			<div className='px-1 md:px-10'>
@@ -22,7 +39,7 @@ const Mint=()=> {
 							width={500}
 							height={400}
 							layout='responsive'
-							priority="true"
+							priority='true'
 						/>
 						<div className='mt-5'>
 							<Mintprogress />
@@ -68,6 +85,13 @@ const Mint=()=> {
 					</div>
 				</div>
 				<div className='h-[1px] w-full bg-black my-20 bg-opacity-10'></div>
+
+				{/* Contdown */}
+				<div className='mt text-center'>
+					<Countdown date={Date.now() + 10000} renderer={renderer} />
+				</div>
+
+				<div className='h-[1px] w-full bg-black my-20 bg-opacity-10'></div>
 				<div className='mt-20'>
 					<div className='px-5'>
 						<div className='text-2xl font-bold text-[#50C9C3]'>Description</div>
@@ -93,12 +117,11 @@ const Mint=()=> {
 
 				{/* Tab */}
 				<div className='mt-10'>
-					
 					<Tab />
 				</div>
 			</div>
 		</div>
 	);
-}
+};
 
 export default Mint;

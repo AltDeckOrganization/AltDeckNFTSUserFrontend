@@ -31,10 +31,10 @@ const Hero = () => {
   return (
     <div className="hidden my-12 lg:block">
       <div className="text-center">
-        <h5 className="my-2 text-gray-500 text-md md:text-lg">
+        <h5 className="my-2 text-[#808080] text-sm md:text-lg">
           Buy, Sell and Discover Rare Digital Items
         </h5>
-        <h1 className="text-3xl font-semibold md:text-3xl">
+        <h1 className="text-3xl text-black font-semibold mb-5 md:text-3xl">
           The Innovative Solana NFT Marketplace
         </h1>
       </div>
@@ -62,7 +62,7 @@ const Hero = () => {
           />
         </div>
         <div className="relative flex flex-col lg:items-start">
-          <h2 className="px-4 text-xl font-semibold lg:text-2xl lg:px-0">
+          <h2 className="px-4 text-base font-semibold lg:text-2xl lg:px-0">
             3D Hungry Crows
           </h2>
           <p className="mt-2 lg:mt-1 text-[16px]">

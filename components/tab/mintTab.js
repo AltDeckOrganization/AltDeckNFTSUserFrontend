@@ -55,18 +55,41 @@ const MintTab = () => {
 				</div>
 			) : (
 				<div className='text-sm text-[#808080] my-5 tracking-wide leading-loose leading-6'>
-					<h3 className='text-black font-semibold'>Phase1</h3>
-					<p className='mt-3'>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl turpis
-						morbi penatibus commodo. Cursus tellus curabitur congue morbi. Nisi
-						a elementum pharetra, blandit amet dolor. Sagittis nibh eu cursus
-						massa lorem at. Donec nisl eget nam scelerisque. At netus libero
-						rhoncus a. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Nisl turpis morbi penatibus commodo. Cursus tellus curabitur congue
-						morbi. Nisi a elementum pharetra, blandit amet dolor. Sagittis nibh
-						eu cursus massa lorem at. Donec nisl eget nam scelerisque. At netus
-						libero rhoncus a.
-					</p>
+					<div className=''>
+						<h3 className='text-black font-semibold'>Phase1</h3>
+						<p className='mt-3'>
+							<span className='h-[20px] w-[20px] bg-[#808080]'></span>-
+							HungryCrowsDAO is a decentralized autonomous organization made up
+							of crow holders owning more than 3 crows, while every holder gets
+							the chance to be benefited regardless of if they own more than 1.
+						</p>
+						<p className='mt-3'>
+							<span className='h-[20px] w-[20px] bg-[#808080]'></span>- A
+							council will be made for this DAO 1 week after the release of the
+							DAO voted for 5 members
+						</p>
+						<p className='mt-3'>
+							<span className='h-[20px] w-[20px] bg-[#808080]'></span>- DAO
+							Members (not normal holders) will have voting rights for our phase
+							1, phase 2, etc
+						</p>
+						<p className='mt-3'>
+							- DAO Members (not normal holders) will have voting rights for our
+							phase 1, phase 2, etc
+						</p>
+						<p className='mt-3'>- 1-3 crows = holders role</p>
+						<p className='mt-3'>- 3+ crows = holders + DAO role</p>
+					</div>
+					<div className='mt-5'>
+						<h3 className='text-black font-semibold'>Phase 2</h3>
+						<p className='mt-3'>
+							<span className='font-bold'>Notes:</span> By creating this DAO,
+							this gives more authoritative control to the community making us
+							more decentralized. This also allows me as the founder for more
+							time to build AltDeck and fund our future roadmap for crows! This
+							is just the start!
+						</p>
+					</div>
 				</div>
 			)}
 		</div>

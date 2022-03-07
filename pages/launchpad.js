@@ -87,26 +87,6 @@ const LaunchPad = () => {
 				<div className='border md:border-[#50C9C3] pb-6 rounded mt-10 px-4 scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100'>
 					<LaunchpadTable rows={launchpadData} />
 				</div>
-				<div className='flex flex-row justify-end mt-40'>
-					<span className='lg:w-[500px] lg:h-[400px] w-[400px] h-[300px]  launchpad-card flex flex-col items-center justify-end'>
-						<img
-							src='/images/monkey2.png'
-							alt=''
-							className='object-contain w-[60%]'
-						/>
-					</span>
-				</div>
-				<div className='grid grid-cols-1 gap-2 mt-40 lg:grid-cols-4 sm:grid-cols-2'>
-					{homeLaunchpadData.map(({ stepNumber, heading, para }) => (
-						<HomeLaunchpadSteps
-							key={stepNumber}
-							id={stepNumber}
-							heading={heading}
-							para={para}
-							background={true}
-						/>
-					))}
-				</div>
 			</div>
 		</div>
 	);
