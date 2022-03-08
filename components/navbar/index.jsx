@@ -64,7 +64,7 @@ export default function Example() {
           <div className="logo">
             <Link href="/">
               <a>
-                <h1 className="text-xl  font-bold">Altldeck</h1>
+                <h1 className="text-xl  font-bold">AltDeck</h1>
               </a>
             </Link>
           </div>
@@ -85,14 +85,12 @@ export default function Example() {
           <li className="mx-3">
             <Dropdown
               title="Apply"
-              link1="Apply for collection listing"
-              apply="form-listing"
-              link2="Apply for launchpad"
-              apply2="form-launchpad"
+              link1="Apply for launchpad"
+              apply="form-launchpad"
             />
           </li>
 
-          <li className="mx-3">
+          {/* <li className="mx-3">
             <Dropdown
               title="Browse"
               link1="Launchpad"
@@ -107,7 +105,7 @@ export default function Example() {
                 Profile
               </a>
             </Link>
-          </li>
+          </li> */}
 
           <li className="mx-3 ">
             <Dropdown
@@ -178,32 +176,29 @@ export default function Example() {
                   link2="stats"
                   apply="launchpad"
                   apply2="stats"
-                  
+                  apply3="launchpad"
                   onClick={handleMenuClick}
                 />
               </li>
-              
-          <li className="" 
-                  onClick={handleMenuClick}>
-            <Link href="/profile">
-              <a className="inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-base  w-full  border rounded rounded-md  mt-5  font-medium text-gray-700 hover:bg-gray-50">
-                Profile
-              </a>
-            </Link>
-          </li>
 
-          <li className="" 
-                  onClick={handleMenuClick}>
-            <Link href="/contact">
-              <a className="inline-flex justify-center w-full bg-[#50C9C3] text-white  w-full  border rounded rounded-md  mt-5  shadow-sm px-4 py-2 text-base font-medium rounded ">
-                Contact
-              </a>
-            </Link>
-          </li>
-          <li className="" 
-                  onClick={handleMenuClick}>
-            <ConnectWallet className="inline-flex justify-center w-full border border-[#50C9C3] text-[#50c9c3] shadow-sm px-4 py-2 text-base  w-full  border rounded rounded-md  mt-5  font-medium rounded " />
-          </li>
+              <li className="" onClick={handleMenuClick}>
+                <Link href="/profile">
+                  <a className="inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-base  w-full  border rounded rounded-md  mt-5  font-medium text-gray-700 hover:bg-gray-50">
+                    Profile
+                  </a>
+                </Link>
+              </li>
+
+              <li className="" onClick={handleMenuClick}>
+                <Link href="/contact">
+                  <a className="inline-flex justify-center w-full bg-[#50C9C3] text-white  w-full  border rounded rounded-md  mt-5  shadow-sm px-4 py-2 text-base font-medium rounded ">
+                    Contact
+                  </a>
+                </Link>
+              </li>
+              <li className="" onClick={handleMenuClick}>
+                <ConnectWallet className="inline-flex justify-center w-full border border-[#50C9C3] text-[#50c9c3] shadow-sm px-4 py-2 text-base  w-full  border rounded rounded-md  mt-5  font-medium rounded " />
+              </li>
             </ul>
           </div>
         </div>

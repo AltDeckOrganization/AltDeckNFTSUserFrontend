@@ -8,7 +8,7 @@ export const imagesData = [
     size: "3000 x 3000",
     dateCreated: "February 26, 2022",
     totalCards: "1000",
-    availableCards: "1000",
+    availableCards: "0",
     price: "0",
     details:
       "HungryCrows is a evolutionary 1000 series being minted away for free! We plan to add value to these crows and scarcity through technology we build such as our Solana nft marketplace! All of our socials are located in our twitter @HungryCrowsNFT",
