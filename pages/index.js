@@ -20,7 +20,7 @@ export default function Home() {
 			<Hero />
 			<SlideShow />
 
-			<div className='my-6 md:my-12 mx-[20px]'>
+			{/* <div className='my-6 md:my-12 mx-[20px]'>
 				<div className='flex items-center justify-between'>
 					<h1 className='text-xl font-semibold md:text-[28px]'>
 						Featured Collections
@@ -31,7 +31,7 @@ export default function Home() {
 						</h3>
 					</Link>
 				</div>
-			</div>
+			</div> */}
 			<div className='my-6 md:my-12 mx-[20px]'>
 				<div className='flex items-center justify-between'>
 					<h1 className='text-xl font-semibold md:text-[28px]'>
@@ -47,7 +47,7 @@ export default function Home() {
           data={cardData}
           renderItem={(item, index) => <UpcomingCollectionCard data={item} key={index}/>}
         /> */}
-			</div>
+			{/* </div>
 			<div className='my-6 md:my-12 mx-[20px]'>
 				<div className='flex items-center justify-between'>
 					<h1 className='text-xl font-semibold md:text-[28px]'>
@@ -90,7 +90,7 @@ export default function Home() {
         <SingleRow 
           data={cardData}
           renderItem={(item, index) => <CollectionCard data={item} key={index}/>}
-        />
+        /> */}
       </div> 
 		</div>
   );
