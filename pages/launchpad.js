@@ -37,7 +37,7 @@ import { ConnectWallet } from '../components/connectWallet';
 
 const LaunchPad = () => {
 	return (
-		<div className='xl:w-[1156px] mx-auto lg:w-[900px] w-full'>
+		<div className='xl:w-[1156px] mt-20 mx-auto lg:w-[900px] w-full'>
 			<SEO />
 			<div className='min-h-[100vh] py-[20px] mx-[20px]'>
 				{/* launchpad card */}

@@ -95,8 +95,8 @@ export default function Example() {
           <li className="mx-3">
             <Dropdown
               title="Browse"
-              link1="launchpad"
-              link2="stats"
+              link1="Launchpad"
+              link2="Stats"
               apply="launchpad"
               apply2="stats"
             />

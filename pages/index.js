@@ -17,13 +17,13 @@ export default function Home() {
 			<Hero />
 			<SlideShow />
 
-			<div className='mt-24 mx-[20px]'>
+			<div className='my-6 md:my-12 mx-[20px]'>
 				<div className='flex items-center justify-between'>
 					<h1 className='text-xl font-semibold md:text-[28px]'>
 						Featured Collections
 					</h1>
 					<Link href='/' passHref={true}>
-						<h3 className='text-[20px] cursor-pointer w-fit whitespace-nowrap'>
+						<h3 className='text-sm font-semibold text-[#50C9C3] md:text-base cursor-pointer w-fit whitespace-nowrap'>
 							See All
 						</h3>
 					</Link>
@@ -49,13 +49,13 @@ export default function Home() {
           renderItem={(item, index) => <CollectionCard data={item} key={index}/>}
         /> */}
 			</div>
-			<div className='mt-24 mx-[20px]'>
+			<div className='my-6 md:my-12 mx-[20px]'>
 				<div className='flex items-center justify-between'>
 					<h1 className='text-xl font-semibold md:text-[28px]'>
 						Upcoming Launches
 					</h1>
 					<Link href='/explore' passHref={true}>
-						<h3 className='text-[20px] cursor-pointer w-fit whitespace-nowrap'>
+						<h3 className='text-sm font-semibold text-[#50C9C3] md:text-base cursor-pointer w-fit whitespace-nowrap'>
 							See All
 						</h3>
 					</Link>
@@ -65,13 +65,13 @@ export default function Home() {
           renderItem={(item, index) => <UpcomingCollectionCard data={item} key={index}/>}
         /> */}
 			</div>
-			<div className='mt-24 mx-[20px]'>
+			<div className='my-6 md:my-12 mx-[20px]'>
 				<div className='flex items-center justify-between'>
 					<h1 className='text-xl font-semibold md:text-[28px]'>
 						Live launchpad collections
 					</h1>
 					<Link href='/' passHref={true}>
-						<h3 className='text-[20px] cursor-pointer w-fit whitespace-nowrap'>
+						<h3 className='text-sm font-semibold text-[#50C9C3] md:text-base cursor-pointer w-fit whitespace-nowrap'>
 							See All
 						</h3>
 					</Link>

@@ -62,10 +62,10 @@ const Hero = () => {
           />
         </div>
         <div className="relative flex flex-col lg:items-start">
-          <h2 className="px-4 text-base font-semibold lg:text-2xl lg:px-0">
+          <h2 className="px-4 text-base font-semibold lg:text-xl lg:px-0">
             3D Hungry Crows
           </h2>
-          <p className="mt-2 lg:mt-1 text-[16px]">
+          <p className="mt-2 lg:mt-1 text-[#808080] text-sm">
             From{" "}
             <span className="mr-2 font-semibold text-black">
               {filteredData.price} SOL
@@ -78,14 +78,14 @@ const Hero = () => {
             </span>
           </p>
           <div>
-            <p className="mt-5 text-gray-500">
+            <p className="mt-5 text-[#808080] text-sm">
               Creator:{" "}
               <span className="font-semibold text-black">
                 {" "}
                 {filteredData.artiste}
               </span>
             </p>
-            <p className="mt-1 text-gray-500">
+            <p className="mt-1 text-[#808080] text-sm">
               Minted:{" "}
               <span className="font-semibold text-black">
                 {" "}
