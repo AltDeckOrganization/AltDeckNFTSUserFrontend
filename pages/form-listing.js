@@ -15,8 +15,8 @@ function classNames(...classes) {
 
 const LaunchpadForm = () => {
 	return (
-		<div className='launchPad py-5 px-1 md:px-10 lg:px-20'>
-			<div className='text-black text-lg  font-semibold  py-3 lg:text-3xl md:text-xl text-center'>
+		<div className='launchPad py-5 px-1 mt-20 md:px-10 lg:px-20'>
+			<div className='text-[#50C9C3] text-lg  font-semibold  py-3 lg:text-3xl md:text-xl text-center'>
 				Collection Listing Application
 			</div>
 			<p className='text-base text-gray-500 px-10 pt-5'>

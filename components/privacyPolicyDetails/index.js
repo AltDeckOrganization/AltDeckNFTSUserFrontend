@@ -1,131 +1,244 @@
 import React from 'react';
 import styles from './privacyPolicyDetails.module.css';
+import Link from 'next/link';
+import TosPara from '../tos/TosPara';
 
 const PrivacyPolicyDetails = () => {
 	return (
 		<div className={`mt-5 ${styles.privacy_policy_details}`}>
 			<div className='text-sm text-[#808080]'>
 				<p className='leading-loose leading-6 mb-5'>
-					Effective Date: October 27, 2021 Altdeck (&quot;we&quot;,
-					&quot;us&quot;, or &quot;our&quot;) values your privacy. We have
-					prepared this Privacy Policy to describe how we collect, use, and
-					disclose information that we obtain about visitors to our website at
-					https://altdeck.com/ (the &quot;Site&quot;), about the registered Site
-					users, the services available through our Site, including any mobile
-					applications and browser extensions (collectively, the
-					&quot;Services&quot;), and how we use and disclose that information.
+					At Website Name, accessible at{' '}
+					<Link href='https://altdeck.io/'>
+						<a className='text-[#50C9C3]'>Altdeck.io</a>
+					</Link>
+					, one of our main priorities is the privacy of our visitors. This
+					Privacy Policy document contains types of information that is
+					collected and recorded by Website Name and how we use it.
 				</p>
 				<p className='leading-loose leading-6 mb-5'>
-					By visiting the Site, or using any of our Services, you agree that
-					your personal information will be handled as described in this Policy.
-					Your use of our Site or Services, and any dispute over privacy, is
-					subject to this Policy (including any applicable changes) and an
-					applicable Terms of Use, including its applicable limitations on
-					damages and provisions for the resolution of disputes.
+					If you have additional questions or require more information about our
+					Privacy Policy, do not hesitate to contact us through email at{' '}
+					<Link href='contact@altdeck.io '>
+						<a className='text-[#50C9C3]'>contact@altdeck.io </a>
+					</Link>
+					contact@altdeck.io This privacy policy applies only to our online
+					activities and is valid for visitors to our website with regards to
+					the information that they shared and/or collect in Website Name. This
+					policy is not applicable to any information collected offline or via
+					channels other than this website.
+				</p>
+				<TosPara
+					title='Consent'
+					desc='
+By using our website, you hereby consent to our Privacy Policy and agree to its terms.'
+				/>
+				<TosPara
+					title='Information we collect'
+					desc='
+The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.'
+				/>{' '}
+				<p className='leading-loose leading-6 mb-5'>
+					If you contact us directly, we may receive additional information
+					about you such as your name, email address, phone number, the contents
+					of the message and/or attachments you may send us, and any other
+					information you may choose to provide.
 				</p>
 				<p className='leading-loose leading-6 mb-5'>
-					<span className='font-bold'>1. Types of Data We Collect.</span>
-					<br />
-					We collect information about you directly from you and from third
-					parties, as well as automatically through your use of our Site or
-					Services.
+					When you register for an Account, we may ask for your contact
+					information, including items such as name, company name, address,
+					email address, and telephone number.
+				</p>
+				<div>
+					<TosPara
+						title='How we use your information'
+						desc='We use the information we collect in various ways, including to:'
+					/>
+					<ul className='ml-5 mt-2'>
+						<li className='list-disc'>
+							Provide, operate, and maintain our website
+						</li>
+						<li className='list-disc'>
+							Improve, personalize, and expand our website
+						</li>
+						<li className='list-disc'>
+							Understand and analyze how you use our website
+						</li>
+						<li className='list-disc'>
+							For creators on collections & launchpad, we publicly display given
+							information about the team on the creator’s collection or and
+							launchpad page
+						</li>
+						<li className='list-disc'>
+							Develop new products, services, features, and functionality
+						</li>
+						<li className='list-disc'>
+							Communicate with you, either directly or through one of our
+							partners, including for customer service, to provide you with
+							updates and other information relating to the website, and for
+							marketing and promotional purposes
+						</li>
+						<li className='list-disc'> Send you emails</li>
+						<li className='list-disc'>Find and prevent fraud</li>
+					</ul>
+				</div>
+				<TosPara
+					title='Log Files'
+					desc="Website Name follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information."
+				/>
+				<TosPara
+					title='Cookies and Web Beacons'
+					desc="Like any other website, Website Name uses ‘cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information."
+				/>
+				<div>
+					<p className='text-black text-sm font-bold'>
+						DoubleClick DART Cookie
+					</p>
+					<p className='leading-loose leading-6 mb-5'>
+						Google is one of a third-party vendor on our site. It also uses
+						cookies, known as DART cookies, to serve ads to our site visitors
+						based upon their visit to{' '}
+						<Link href='www.website.com'>
+							<a className='text-[#50C9C3]'>www.website.com</a>
+						</Link>{' '}
+						and other sites on the internet. However, visitors may choose to
+						decline the use of DART cookies by visiting the Google ad and
+						content network Privacy Policy at the following URL –{' '}
+						<Link href='https://policies.google.com/technologies/ads'>
+							<a className='text-[#50C9C3]'>
+								https://policies.google.com/technologies/ads
+							</a>
+						</Link>{' '}
+						.
+					</p>
+					<p className='leading-loose leading-6 mb-5'>
+						Some of advertisers on our site may use cookies and web beacons. Our
+						advertising partners are listed below. Each of our advertising
+						partners has their own Privacy Policy for their policies on user
+						data. For easier access, we hyperlinked to their Privacy Policies
+						below.
+					</p>
+				</div>
+				<p className='leading-loose leading-6 mb-5'>
+					• Google{' '}
+					<Link href='https://policies.google.com/technologies/ads'>
+						<a className='text-[#50C9C3]'>
+							https://policies.google.com/technologies/ads
+						</a>
+					</Link>
+				</p>
+				<TosPara
+					title='Advertising Partners Privacy Policies'
+					desc='You may consult this list to find the Privacy Policy for each of the advertising partners of Website Name.'
+				/>
+				<p className='leading-loose leading-6 mb-5'>
+					Third-party ad servers or ad networks uses technologies like cookies,
+					JavaScript, or Web Beacons that are used in their respective
+					advertisements and links that appear on Website Name, which are sent
+					directly to users&apos; browser. They automatically receive your IP
+					address when this occurs. These technologies are used to measure the
+					effectiveness of their advertising campaigns and/or to personalize the
+					advertising content that you see on websites that you visit. Note that
+					Website Name has no access to or control over these cookies that are
+					used by third-party advertisers.
 				</p>
 				<p className='leading-loose leading-6 mb-5'>
-					a. Information We Collect <br />
-					Directly From You. You may browse certain areas of the Site without
-					registering with us or providing us personal information.
+					<span className='font-bold'>Note </span> that Website Name has no
+					access to or control over these cookies that are used by third-party
+					advertisers.
 				</p>
+				<TosPara
+					title='Third-Party Privacy Policies'
+					desc="Website Name's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. You may find a complete list of these Privacy Policies and their links here: Privacy Policy Links.
+You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites. What Are Cookies?"
+				/>{' '}
+				<div>
+					<TosPara
+						title='
+						CCPA Privacy Policy (Do Not Sell My Personal Information)'
+						desc='
+						Under the CCPA, among other rights, California consumers have the
+						right to:'
+					/>
+					<ul className='ml-5 mt-2'>
+						<li className='list-disc'>
+							Request that a business that collects a consumer&apos; personal
+							data disclose the categories and specific pieces of personal data
+							that a business has collected about consumers.
+						</li>
+						<li className='list-disc'>
+							Request that a business delete any personal data about the
+							consumer that a business has collected.
+						</li>
+						<li className='list-disc'>
+							Request that a business that sells a consumer&apos; personal data,
+							not sell the consumer&apos; personal data.
+						</li>
+						<li className='list-disc'>
+							If you make a request, we have one month to respond to you. If you
+							would like to exercise any of these rights, please contact us.
+						</li>
+					</ul>
+				</div>
+				<div>
+					<TosPara
+						title='GDPR Privacy Policy (Data Protection Rights)
+						'
+						desc='We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:'
+					/>
+					<ul className='ml-5 mt-2'>
+						<li className='list-disc'>
+							The right to access – You have the right to request copies of your
+							personal data. We may charge you a small fee for this service.
+						</li>
+						<li className='list-disc'>
+							The right to rectification – You have the right to request that we
+							correct any information you believe is inaccurate. You also have
+							the right to request that we complete the information you believe
+							is incomplete.
+						</li>
+						<li className='list-disc'>
+							The right to erasure – You have the right to request that we erase
+							your personal data, under certain conditions.
+						</li>
+						<li className='list-disc'>
+							The right to restrict processing – You have the right to request
+							that we restrict the processing of your personal data, under
+							certain conditions.
+						</li>
+						<li className='list-disc'>
+							The right to object to processing – You have the right to object
+							to our processing of your personal data, under certain conditions.
+						</li>
+						<li className='list-disc'>
+							The right to data portability – You have the right to request that
+							we transfer the data that we have collected to another
+							organization, or directly to you, under certain conditions.
+						</li>
+					</ul>
+				</div>
 				<p className='leading-loose leading-6 mb-5'>
-					We collect email only to notify you of the trade offers. Your email
-					address won&apos;t be shared with any third party.
+					If you make a request, we have one month to respond to you. If you
+					would like to exercise any of these rights, please contact us.
 				</p>
-				<p className='leading-loose leading-6 mb-5'>
-					If you provide us feedback or contact us via e-mail, we will collect
-					user name and e-mail address, as well as any other content included in
-					the e-mail, in order to send you a reply.
-				</p>
-				<p className='leading-loose leading-6 mb-5'>
-					In addition, if you are providing personal information for third
-					parties in connection with using our Services, you are responsible for
-					ensuring that you have all required permissions and consents to
-					provide such personal information to us for use in connection with the
-					Services and that our use of such personal information to provide the
-					Services does not violate any applicable law, rule, regulation or
-					order.
-				</p>
-				<p className='leading-loose leading-6 mb-5'>
-					b. Information We Collect <br />
-					Automatically. We may automatically collect the following information
-					about your use of our Site or Services through cookies and other
-					technologies: your domain name; your browser type and operating
-					system; web pages you view; links you click; your IP address; the
-					length of time you visit our Site or use our Services; and the
-					referring URL, or the webpage that led you to our Site. We may combine
-					this information with other information that we have collected about
-					you, including, where applicable, your username, email address, Solana
-					addres, wallet type, and/or a date/time stamp for your visit.
-				</p>
-				<p className='leading-loose leading-6 mb-5'>
-					c. Information Collected from Third Party Companies. <br />
-					We may receive Personal and/or Anonymous Data about you from companies
-					that provide our Services by way of a co-branded or private-labeled
-					website or companies that offer their products and/or services on our
-					Service. In particular, Phantom and other wallets provide us with your
-					Solana address and certain other information you choose to share with
-					Phantom and other wallets. These third party companies may supply us
-					with Personal Data. We may add this to the information we have already
-					collected from you via our Service in order to improve it. We do not
-					collect Personal Data automatically, but we may tie the information
-					that we collect automatically to Personal Data about you that we
-					collect from other sources or that you provide to us.
-				</p>
-				<p className='leading-loose leading-6 mb-5'>
-          <span className="font-bold">
-					2. Use of Your Personal Data </span><br /> a) General Use. In general,
-					Personal Data you submit to us is used either to respond to requests
-					that you make, or to aid us in serving you better. We use your
-					Personal Data in the following ways:
-				</p>
-				<p className='leading-loose leading-6 mb-5'>
-					I. facilitate the creation of and secure your Account on our network;
-					<br />
-					II. identify you as a user in our system;
-					<br />
-					III. provide improved administration of our Service;
-					<br />
-					IV. provide the Services you request, including but not limited to
-					facilitating your cryptocurrency transactions through Phantom
-					(https://phantom.app/) or other wallets;
-					<br />
-					V. improve the quality of experience when you interact with our
-					Service;
-					<br />
-					VI. send you a welcome e-mail to verify ownership of the e-mail
-					address provided when your Account was created;
-					<br />
-					VII protect you and other users from any conduct that violates the
-					Terms of Use or to prevent abuse or harassment of any user;
-					<br />
-					VIII. display your username next to the digital assets you wish to
-					sell on the Website;
-					<br />
-					IX. send you administrative e-mail notifications, such as security or
-					support and maintenance advisories;
-					<br />
-					X. send you e-mail notifications related to actions on Service,
-					including notifications of offers on your digital assets;
-					<br />
-					XI. respond to your inquiries related to employment opportunities or
-					other requests;
-					<br />
-					XII. send newsletters, surveys, offers, and other promotional
-					materials related to our Services and for other marketing purposes of
-					AltDeck.
-				</p>
-				<p className='leading-loose leading-6 mb-5'>
-					We may use your email address to contact you about our own and third
-					parties&apos; goods and services that may be of interest to you.
-				</p>
+				<div>
+					<TosPara
+						title="Children's Information"
+						desc='
+Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.'
+					/>
+
+					<p className='leading-loose leading-6 mb-5'>
+						Website Name does not knowingly collect any Personal Identifiable
+						Information from children under the age of 13.
+					</p>
+					<p className='leading-loose leading-6 mb-5'>
+						If you think that your child provided this kind of information on
+						our website, we strongly encourage you to contact us immediately and
+						we will do our best efforts to promptly remove such information from
+						our records.
+					</p>
+				</div>
 			</div>
 		</div>
 	);

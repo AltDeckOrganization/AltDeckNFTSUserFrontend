@@ -59,7 +59,7 @@ export default function Example() {
 
   return (
     <>
-      <div className="navbar flex items-center justify-between py-5 px-2 md:px-5 lg:px-20">
+      <div className="navbar flex items-center justify-between bg-white px-2 md:px-5 py-5 z-50 lg:px-20 fixed left-0 top-0 w-full">
         <div className="flex items-center">
           <div className="logo">
             <Link href="/">
@@ -93,28 +93,32 @@ export default function Example() {
           {/* <li className="mx-3">
             <Dropdown
               title="Browse"
-              link1="collections"
-              link2="stats"
-              apply="explore"
+              link1="Launchpad"
+              link2="Stats"
+              apply="launchpad"
               apply2="stats"
-              apply3="launchpad"
-              link3="launchpad"
             />
           </li>
           <li className="mx-3">
-            <Link href="/contact">
+            <Link href="/profile">
               <a className="inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
                 Profile
               </a>
             </Link>
           </li> */}
 
-          <li className="mx-3">
-            <Link href="/contact">
-              <a className="inline-flex justify-center w-full bg-[#50C9C3] text-white shadow-sm px-4 py-2 text-sm font-medium rounded ">
-                Contact
-              </a>
-            </Link>
+          <li className="mx-3 ">
+            <Dropdown
+              title="Contact"
+              link1="Twitter"
+              link2="Medium"
+              link3="Discord"
+              link4="Email"
+              apply="twitter"
+              apply2="stats"
+              apply3="discord"
+              apply4='email'
+            />
           </li>
           <li className="mx-3">
             <ConnectWallet className="inline-flex justify-center w-full border border-[#50C9C3] text-[#50c9c3] shadow-sm px-4 py-2 text-sm font-medium rounded " />
@@ -168,10 +172,9 @@ export default function Example() {
               <li>
                 <DropdownSmall
                   title="Browse"
-                  link1="collections"
+                  link1="launchpad"
                   link2="stats"
-                  link3="launchpad"
-                  apply="explore"
+                  apply="launchpad"
                   apply2="stats"
                   apply3="launchpad"
                   onClick={handleMenuClick}
