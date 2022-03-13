@@ -13,7 +13,7 @@ function Footer() {
       </div>
       <></>
       <div>
-        <ul className={`flex space-x-8  text-sm font-bold ${footerStyles.footerUl}`}>
+        <ul className={`flex space-x-8 text-[#808080] text-sm font-bold ${footerStyles.footerUl}`}>
           <li>
             <Link href="/tos">TOS</Link>
           </li>

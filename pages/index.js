@@ -37,7 +37,7 @@ export default function Home() {
 					<h1 className='text-xl font-semibold md:text-[28px]'>
 						Upcoming Launches
 					</h1>
-					<Link href='/explore' passHref={true}>
+					<Link href='/launchpad' passHref={true}>
 						<h3 className='text-sm font-semibold text-[#50C9C3] md:text-base cursor-pointer w-fit whitespace-nowrap'>
 							See All
 						</h3>

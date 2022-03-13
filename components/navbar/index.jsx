@@ -76,7 +76,7 @@ export default function Example() {
               type="text"
               name="search"
               id="search"
-              className={`w-full border-0 text-gray-700 leading-tight focus:ring-0 focus:outline-none ml-2 text-[14px]`}
+              className={`w-full border-0 text-gray-700 leading-tight focus:ring-0 focus:outline-none ml-2 text-xs`}
               placeholder="Search item here"
             />
           </div>
@@ -114,9 +114,9 @@ export default function Example() {
               link2="Medium"
               link3="Discord"
               link4="Email"
-              apply="twitter"
+              apply="https://www.twitter.com/@AltDeck_io"
               apply2="stats"
-              apply3="discord"
+              apply3="https://discord.gg/ec9cZCCSHK"
               apply4='email'
             />
           </li>
@@ -126,7 +126,7 @@ export default function Example() {
         </ul>
 
         {/* MENU ICON*/}
-        <div className="lg:hidden">
+        <div className="lg:hidden ">
           <Image src={MenuIcon} alt="Menu Icon" onClick={handleMenuClick} />
         </div>
 
@@ -141,19 +141,19 @@ export default function Example() {
         <div
           className={`${
             openMenu ? "fixed" : "hidden"
-          } bg-white w-3/4 md:w-2/3  h-screen right-0 top-0 z-50 lg:hidden`}
+          } bg-white w-2/4 md:w-1/3  h-screen right-0 top-0 z-50 lg:hidden`}
         >
           <div className="flex flex-col py-5 px-5 md:px-10">
-            <div className="side flex justify-between">
+            <div className="side flex justify-between items-center">
               <div className="logo ">
-                <div className="text-2xl font-bold uppercase">Altdeck</div>
+                <div className="text-xl font-bold ">AltDeck</div>
               </div>
-              <div className="close">
+              <div className="close w-[20px]">
                 <Image
                   src={CloseIcon}
                   alt="close Icon"
-                  height={30}
-                  width={30}
+                  height={25}
+                  width={25}
                   onClick={handleMenuClick}
                 />
               </div>
@@ -162,14 +162,14 @@ export default function Example() {
               <li>
                 <DropdownSmall
                   title="Apply"
-                  link1="Apply for collection listing"
+                  // link1="Apply for collection listing"
                   link2="Apply for launchpad"
-                  apply="form-listing"
+                  // apply="form-listing"
                   apply2="form-launchpad"
                   onClick={handleMenuClick}
                 />
               </li>
-              <li>
+              {/* <li>
                 <DropdownSmall
                   title="Browse"
                   link1="launchpad"
@@ -179,22 +179,28 @@ export default function Example() {
                   apply3="launchpad"
                   onClick={handleMenuClick}
                 />
-              </li>
-
+              </li> */}
+{/* 
               <li className="" onClick={handleMenuClick}>
                 <Link href="/profile">
                   <a className="inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-base  w-full  border rounded rounded-md  mt-5  font-medium text-gray-700 hover:bg-gray-50">
                     Profile
                   </a>
                 </Link>
-              </li>
+              </li> */}
 
               <li className="" onClick={handleMenuClick}>
-                <Link href="/contact">
-                  <a className="inline-flex justify-center w-full bg-[#50C9C3] text-white  w-full  border rounded rounded-md  mt-5  shadow-sm px-4 py-2 text-base font-medium rounded ">
-                    Contact
-                  </a>
-                </Link>
+            <DropdownSmall
+              title="Contact"
+              link1="Twitter"
+              link2="Medium"
+              link3="Discord"
+              link4="Email"
+              apply="https://www.twitter.com/@AltDeck_io"
+              apply2="stats"
+              apply3="https://discord.gg/ec9cZCCSHK"
+              apply4='email'
+            />
               </li>
               <li className="" onClick={handleMenuClick}>
                 <ConnectWallet className="inline-flex justify-center w-full border border-[#50C9C3] text-[#50c9c3] shadow-sm px-4 py-2 text-base  w-full  border rounded rounded-md  mt-5  font-medium rounded " />

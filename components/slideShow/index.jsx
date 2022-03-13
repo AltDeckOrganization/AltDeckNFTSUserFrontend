@@ -32,21 +32,21 @@ const SlideShow = () => {
     <div className="lg:hidden">
       <Slider {...sliderSettings}>
         {slides.map((item, index) => (
-          <div key={index} className="relative h-[590px]">
+          <div key={index} className="relative h-[300px]">
             <img src={item.src} alt="" className="w-full h-full"/>
-            <div className="top-[30%] absolute left-6">
-              <h1 className="text-[50px] font-bold text-white m-0">{item.name}</h1>
-              <p className="text-[16px] text-white w-[80%]">{item.desc}</p>
+            <div className="top-[20%] absolute left-6">
+              <h1 className="text-5xl font-bold text-white m-0">{item.name}</h1>
+              <p className="text-base text-white w-[80%]">{item.desc}</p>
               <button 
-                className="flex flex-row items-center px-8 py-3 mt-4 font-semibold text-white border-2 border-white rounded-3xl"
+                className="flex flex-row items-center px-5 py-3 mt-4 text-sm font-semibold text-white border-2 border-white rounded-md"
               >
-                <IoIosRocket className="mr-2" size={25}/>
+                <IoIosRocket className="mr-2" size={20}/>
                 Explore Collection
               </button>
             </div>
           </div>
         ))}
-      </Slider>
+      </Slider> 
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import Form from '../components/forms';
 import {
 	CountryDropdown,
@@ -14,6 +14,7 @@ function classNames(...classes) {
 }
 
 const LaunchpadForm = () => {
+	const [country, setCountry] = useState('');
 	return (
 		<div className='launchPad py-5 px-1 mt-20 md:px-10 lg:px-20'>
 			<div className='text-[#50C9C3] text-lg  font-semibold  py-3 lg:text-3xl md:text-xl text-center'>
