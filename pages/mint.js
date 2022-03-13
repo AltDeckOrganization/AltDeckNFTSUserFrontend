@@ -29,7 +29,7 @@ const renderer = ({ hours, minutes, seconds, completed }) => {
 
 const Mint = () => {
 	return (
-		<div className='mint px-2 py-5 md:px-10'>
+		<div className='mint px-2 py-5 md:px-10 mt-20'>
 			<div className='px-1 md:px-10'>
 				<div className='grid grid-cols-1 lg:grid-cols-2  gap4'>
 					<div className='px-5'>

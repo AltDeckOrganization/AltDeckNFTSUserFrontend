@@ -686,8 +686,8 @@ const LaunchpadForm = () => {
 									id='checkbox1'
 									onChange={(e) => setAcceptTOS(e.target.value)}
 								/>
-								<label htmlFor='checkbox1' className='input-label'>
-									Accept out TOS.
+								<label htmlFor='checkbox1' className='input-label text-sm'>
+									Accept our TOS.
 								</label>
 							</label>
 
@@ -698,7 +698,7 @@ const LaunchpadForm = () => {
 									id='checkbox1'
 									onChange={(e) => setAcceptDetailsWillBeShowed(e.target.value)}
 								/>
-								<label htmlFor='checkbox1' className='input-label'>
+								<label htmlFor='checkbox1' className='input-label text-sm'>
 									Accept details provided on your team will be revealed on your
 									collection / launchpad page.
 								</label>

@@ -39,7 +39,7 @@ const Hero = () => {
         </h1>
       </div>
       <div className="grid grid-cols-1 mt-6 lg:grid-cols-3">
-        <div className="grid grid-cols-3 gap-1 border-r-4">
+        <div className="grid grid-cols-3 gap-1 border-r-3">
           {imagesData.map(({ imgSrc, altText, id }) => (
             <div
               className="flex items-center justify-center mx-1 cursor-pointer "
@@ -47,7 +47,7 @@ const Hero = () => {
               onClick={() => handleOpenAllDetails(id)}
             >
               <img
-                className="m-2 rounded-xl h-[100px] w-[100px] md:rounded-3xl md:h-[100px] md:w-[100px]"
+                className="m-2 rounded-md h-[100px] w-[100px] md:rounded-lg md:h-[100px] md:w-[100px]"
                 src="/images/sampleImageHome.jpg"
                 alt={altText}
               />
@@ -56,7 +56,7 @@ const Hero = () => {
         </div>
         <div className="flex items-center justify-center mt-5 lg:mt-0">
           <img
-            className="rounded-3xl w-64 h-64 lg:w-10/12 lg:h-[100%] sm:w-96 sm:h-96 object-cover"
+            className="rounded-md border w-64 h-64 lg:w-10/12 lg:h-[100%] sm:w-96 sm:h-96 object-cover"
             src={filteredData.imgSrc}
             alt={filteredData.altText}
           />
@@ -93,7 +93,7 @@ const Hero = () => {
               </span>
             </p>
           </div>
-          <p className="w-full mt-6 lg:mt-12 xl:line-clamp-6 lg:line-clamp-4 text-[16px] text-[#4F4F4F] absolute bottom-20">
+          <p className="w-full mt-6 lg:mt-12 xl:line-clamp-6 leading-loose leading-6 mb-5 lg:line-clamp-4 text-sm text-[#4F4F4F] absolute bottom-20">
             {filteredData.details}
           </p>
           <div className="absolute bottom-0 flex flex-col justify-center w-11/12 lg:w-full lg:justify-start sm:flex-row">

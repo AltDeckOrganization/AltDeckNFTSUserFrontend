@@ -38,7 +38,7 @@ const Dropdown=({title, link1,apply, apply2, apply3, link2, link3, apply4, link4
                     <Menu.Item>
                         {({ active }) => (
                             <a
-                                href={`/${apply}`}
+                                href={`${apply}`}
                                 className={classNames(
                                     active
                                         ? 'bg-gray-100 text-gray-900'
@@ -69,7 +69,7 @@ const Dropdown=({title, link1,apply, apply2, apply3, link2, link3, apply4, link4
                     <Menu.Item>
                         {({ active }) => (
                             <a
-                                href={`/${apply3}`}
+                                href={`${apply3}`}
                                 className={classNames(
                                     active
                                         ? 'bg-gray-100 text-gray-900'

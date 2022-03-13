@@ -9,11 +9,11 @@ function classNames(...classes) {
 
 
 
-function DropdownSmall({title, link1,apply, apply2, apply3, link2, link3}) {
+function DropdownSmall({title, link1,apply,link4, apply2, apply3,apply4, link2, link3}) {
   return (
     <Menu as='div' className='relative inline-block text-left w-full'>
         <div>
-            <Menu.Button className='inline-flex justify-center w-full  border rounded rounded-md  mt-5 shadow-sm px-4 py-2 bg-white text-xl font-medium text-gray-700 hover:bg-gray-50 '>
+            <Menu.Button className='inline-flex justify-center w-full  border rounded rounded-md  mt-5 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 '>
                 {title}
             </Menu.Button>
         </div>
@@ -73,6 +73,23 @@ function DropdownSmall({title, link1,apply, apply2, apply3, link2, link3}) {
                                 )}
                             >
                                {link3}
+                            </a>
+                        )}
+                    </Menu.Item> : null}
+                    
+                    {link4 ? 
+                    <Menu.Item>
+                        {({ active }) => (
+                            <a
+                                href={`/${apply4}`}
+                                className={classNames(
+                                    active
+                                        ? 'bg-gray-100 text-gray-900'
+                                        : 'text-gray-700',
+                                    'block px-4 py-2 text-sm'
+                                )}
+                            >
+                               {link4}
                             </a>
                         )}
                     </Menu.Item> : null}
