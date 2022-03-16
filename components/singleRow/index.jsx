@@ -1,13 +1,36 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Link from "next/link";
+import SlickSlider from "../slickSlider";
 
-
-const SingleRow = ({ data, renderItem }) => {
+const SingleRow = ({
+  data,
+  renderItem,
+  heading,
+  seeALL = false,
+  seeAllLink,
+}) => {
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 md:gap-7 sm:grid-cols-2">
-      {data.map((item, i) => (
-        renderItem(item, i)
-      ))}
+    <div className="mt-24 mx-[20px]">
+      <div className="flex items-center justify-between">
+        <h1 className="text-xl font-semibold md:text-[28px]">{heading}</h1>
+        {seeALL && seeAllLink && (
+          <Link href={seeAllLink} passHref={true}>
+            <h3 className="text-[20px] cursor-pointer w-fit whitespace-nowrap">
+              See All
+            </h3>
+          </Link>
+        )}
+      </div>
+      <div className="">
+        <SlickSlider>
+          {data.map((item, i) => (
+            <div key={i} className="px-4">
+              {renderItem(item, i)}
+            </div>
+          ))}
+        </SlickSlider>
+      </div>
     </div>
   );
 };

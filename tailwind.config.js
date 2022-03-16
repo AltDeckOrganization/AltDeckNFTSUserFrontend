@@ -21,6 +21,7 @@ module.exports = {
       red: colors.red,
       primary: "#50C9C3",
       green: colors.green,
+      blackImportant: "#000 !important",
     },
   },
   plugins: [require("@tailwindcss/line-clamp"), require("tailwind-scrollbar")],
