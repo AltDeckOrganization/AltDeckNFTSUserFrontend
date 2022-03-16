@@ -24,6 +24,8 @@ const SlickSlider = ({ children }) => {
     dots: false,
     infinite: true,
     speed: 500,
+    autoplay: true,
+    autoplaySpeed: 2000,
     slidesToShow: 5,
     slidesToScroll: 3,
     arrows: true,
