@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 //mint imports
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState, useCallback } from 'react';
+import Image from 'next/image';
+import Crows from '../assets/crows.png';
 // import { Connection, PublicKey } from "@solana/web3.js";
 // import { Program, Provider, web3 } from "@project-serum/anchor";
 // import { MintLayout, TOKEN_PROGRAM_ID, Token } from "@solana/spl-token";
@@ -10,16 +12,16 @@ import React, { useEffect, useState, useCallback } from "react";
 // import { useAnchorWallet } from "@solana/wallet-adapter-react";
 
 import {
-  candyMachineProgram,
-  TOKEN_METADATA_PROGRAM_ID,
-  SPL_ASSOCIATED_TOKEN_ACCOUNT_PROGRAM_ID,
-  getAtaForMint,
-  getNetworkExpire,
-  getNetworkToken,
-  CIVIC,
-} from "../services/helpers";
+	candyMachineProgram,
+	TOKEN_METADATA_PROGRAM_ID,
+	SPL_ASSOCIATED_TOKEN_ACCOUNT_PROGRAM_ID,
+	getAtaForMint,
+	getNetworkExpire,
+	getNetworkToken,
+	CIVIC,
+} from '../services/helpers';
 
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from '@solana/wallet-adapter-react';
 
 //SEO
 import SEO from '../components/seo/SEO';
@@ -37,12 +39,64 @@ import { ConnectWallet } from '../components/connectWallet';
 
 const LaunchPad = () => {
 	return (
-		<div className='xl:w-[1156px] mt-20 mx-auto lg:w-[900px] w-full'>
+		<div className='my-20 mx-5 lg:mx-10 '>
 			<SEO />
-			<div className='min-h-[100vh] py-[20px] mx-[20px]'>
+			<div className='min-h-[100vh] py-[20px] mx-[5px] lg:mx-[20px]'>
+				<div className='grid grid-cols-1 gap-4 md:grid-cols-2 bg-gradient-to-r from-[#50C9C3] to-[#197F7A] rounded-md'>
+					<div className='py-10 px-5'>
+						<button className='rounded py-2 px-2 text-sm md:px-5 border-white text-white border-2'>
+							Featured Launch
+						</button>
+						<div className='text-4xl md:text-3xl lg:text-5xl font-medium md:font-semibold py-5 text-white'>
+							Folktales of Lunaria:
+							<br />
+							Blood Moonstones:
+						</div>
+						<button className='bg-[#207A76] text-white text-base rounded flex flex-col py-1 px-3 md:px-2'>
+							<span className='uppercase text-xs'>Items</span>
+							<span className='font-bold'>2000</span>
+						</button>
+						<div className='text-white text-base mt-5 lg:text-xl'>
+							Blood Moonstones have the power to corrupt Lunarians on October
+							31st.
+						</div>
+						<ConnectWallet className='bg-white text-[#50C9C3] text-[14px] px-14 py-2 rounded font-semibold transition hover:bg-[#50c9c3] hover:text-white border-2 hover:border-white  shadow-md lg:mt-4 mt-2' />
+					</div>
+					<div className=' flex justify-center items-center mb-8'>
+						<div className='w-2/3'>
+							<Image
+								src={Crows}
+								width={500}
+								height={500}
+								alt='Crows'
+								layout='responsive'
+							/>
+						</div>
+					</div>
+				</div>
 				{/* launchpad card */}
-				<div className='lg:h-[616px] h-[400px] rounded-md w-full launchpad-bg flex flex-row items-end lg:py-20 py-10 lg:px-20 justify-between px-10'>
-					{/* collection info */}
+				{/*  */}
+
+				<h2 className='text-[#50C9C3] font-bold text-[36px] text-center mt-20'>
+					Explore all our launches
+				</h2>
+				<p className='text-sm leading-loose leading-6 text-[#808080] md:text-center'>
+					AltDeck Launchpad will be supporting the following projects to launch
+					their collections. We hope to create the right environment for
+					success.
+				</p>
+				<div className='border md:border-[#50C9C3] pb-6 rounded mt-10 px-4 scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100'>
+					<LaunchpadTable rows={launchpadData} />
+				</div>
+			</div>
+		</div>
+	);
+};
+
+export default LaunchPad;
+
+{
+	/* <div className='lg:h-[616px] h-[400px] rounded-md w-full launchpad-bg flex flex-row items-end lg:py-20 py-10 lg:px-20 justify-between px-10'>
 					<div className='w-[55%]'>
 						<div className='px-8 py-2 border-[1px] border-white rounded w-[fit-content] text-white text-sm lg:mb-10 mb-5'>
 							Featured Launch
@@ -73,23 +127,6 @@ const LaunchPad = () => {
 
 						<ConnectWallet className='bg-white text-[#50C9C3] text-[14px] px-14 py-3 rounded font-semibold transition hover:bg-[#50c9c3] hover:text-white border-2 hover:border-white  shadow-md lg:mt-8 mt-4' />
 					</div>
-					{/* collection image */}
 					<div className='lg:w-[350px] lg:h-[350px] w-[250px] h-[250px] bg-[#50C9C3] rounded-full mb-8'></div>
-				</div>
-				<h2 className='text-[#50C9C3] font-bold text-[36px] text-center mt-20'>
-					Explore all our launches
-				</h2>
-				<p className='text-sm leading-loose leading-6 text-[#808080] md:text-center'>
-					AltDeck Launchpad will be supporting the following projects to launch
-					their collections. We hope to create the right environment for
-					success.
-				</p>
-				<div className='border md:border-[#50C9C3] pb-6 rounded mt-10 px-4 scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100'>
-					<LaunchpadTable rows={launchpadData} />
-				</div>
-			</div>
-		</div>
-	);
-};
-
-export default LaunchPad;
+				</div> */
+}
