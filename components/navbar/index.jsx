@@ -83,6 +83,9 @@ export default function Example() {
         </div>
         <ul className=" items-align hidden lg:flex">
           <li className="mx-3">
+            <Dropdown title="Browse" link1="Launchpad" apply="launchpad" />
+          </li>
+          <li className="mx-3">
             <Dropdown
               title="Apply"
               link1="Apply for launchpad"
@@ -99,6 +102,7 @@ export default function Example() {
               apply2="stats"
             />
           </li>
+
           {/* <li className="mx-3">
             <Link href="/profile">
               <a className="inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
