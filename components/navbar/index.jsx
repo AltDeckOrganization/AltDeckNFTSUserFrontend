@@ -93,6 +93,16 @@ export default function Example() {
             />
           </li>
 
+          <li className="mx-3">
+            <Dropdown
+              title="Browse"
+              link1="Launchpad"
+              link2="Stats"
+              apply="launchpad"
+              apply2="stats"
+            />
+          </li>
+
           {/* <li className="mx-3">
             <Link href="/profile">
               <a className="inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">

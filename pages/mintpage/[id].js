@@ -18,6 +18,7 @@ import { sendTransactions } from "../../services/connections";
 import { GatewayProvider } from "@civic/solana-gateway-react";
 import { GatewayStatus, useGateway } from "@civic/solana-gateway-react";
 import { useAnchorWallet, useWallet } from "@solana/wallet-adapter-react";
+import Countdown from "react-countdown";
 
 import {
   candyMachineProgram,
@@ -29,6 +30,7 @@ import {
   CIVIC,
 } from "../../services/helpers";
 import { MintButton } from "../../components/MintButton/MintButton";
+import { data } from "autoprefixer";
 
 const { SystemProgram } = web3;
 const opts = {
@@ -36,11 +38,13 @@ const opts = {
 };
 
 const Mint = () => {
-  const [launchData, setLaunchData] = useState({});
+  const [launchData, setLaunchData] = useState({ whitelists: [] });
   const router = useRouter();
   const { id } = router.query;
   const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
-  const [candyMachine, setCandyMachine] = useState(null);
+  const CANDY_ID = process.env.NEXT_PUBLIC_CANDY_MACHINE_ID;
+  const [candyMachine, setCandyMachine] = useState();
+  const [candyMachineId, setCandyMachineId] = useState();
   const [loading, setLoading] = useState(false);
   const { publicKey } = useWallet();
   const wallet = useAnchorWallet();
@@ -49,9 +53,10 @@ const Mint = () => {
   const fetchLaunchData = () => {
     axios.get(`${BACKEND_URL}/api/v1/launches/${id}`).then((res) => {
       const { data } = res;
-      let form_data = JSON.parse(data.form_data);
-      data.parsed_form_data = form_data;
+      let page_data = JSON.parse(data.page_data);
+      data.parsed_page_data = page_data;
       setLaunchData(data);
+      setCandyMachineId(data.candymachine_id);
       console.log(data);
     });
   };
@@ -375,7 +380,7 @@ const Mint = () => {
 
     // Fetch the metadata from your candy machine
     const candyMachine = await program.account.candyMachine.fetch(
-      launchData.candymachine_id
+      candyMachineId
     );
 
     // Parse out all our metadata and log it out
@@ -393,9 +398,6 @@ const Mint = () => {
     const goLiveDateTimeString = `${new Date(
       goLiveData * 1000
     ).toLocaleString()}`;
-    let newGoLiveTime = new Date(goLiveData * 1000);
-    newGoLiveTime.setHours(newGoLiveTime.getHours() + 2);
-    const newGoLiveTimeString = `${newGoLiveTime.toLocaleString()}`;
 
     setCandyMachine({
       id: launchData.candymachine_id,
@@ -405,9 +407,7 @@ const Mint = () => {
         itemsRedeemed,
         itemsRemaining,
         goLiveData,
-        newGoLiveTime,
         goLiveDateTimeString,
-        newGoLiveTimeString,
         isSoldOut: itemsRemaining === 0,
         isActive:
           (presale ||
@@ -430,24 +430,63 @@ const Mint = () => {
         price: candyMachine.data.price,
       },
     });
+    console.log(candyMachine.data.gatekeeper);
     // console.log({
     //   itemsAvailable,
     //   itemsRedeemed,
     //   itemsRemaining,
     //   newGoLiveTimeString,
     // });
-  }, []);
+  }, [candyMachineId]);
+
+  const Completionist = () => (
+    <div className="text-3xl text-[#50C9C3] font-bold">MINTING STARTED</div>
+  );
+
+  // Renderer callback with condition
+  const renderer = ({ hours, minutes, seconds, completed }) => {
+    if (completed) {
+      // Render a completed state
+      return (
+        <GatewayProvider
+          wallet={{
+            publicKey: wallet?.publicKey || new PublicKey(candyMachineProgram),
+            //@ts-ignore
+            signTransaction: wallet?.signTransaction,
+          }}
+          // // Replace with following when added
+          // gatekeeperNetwork={candyMachine.state.gatekeeper_network}
+          gatekeeperNetwork={candyMachine?.state?.gatekeeper?.gatekeeperNetwork} // This is the ignite (captcha) network
+          /// Don't need this for mainnet
+          // clusterUrl={
+          //   process.env.NEXT_PUBLIC_SOLANA_NETWORK === "mainnet-beta"
+          //     ? ""
+          //     : rpcUrl
+          // }
+          options={{ autoShowModal: true }}
+        >
+          <MintButton mintToken={mintToken} candyMachine={candyMachine} />
+        </GatewayProvider>
+      );
+    } else {
+      // Render a countdown
+      return (
+        <div className="text-[#50C9C3] text-5xl">
+          {hours}:{minutes}:{seconds}
+        </div>
+      );
+    }
+  };
 
   useEffect(() => {
-    if (launchData.candyMachine != null) {
+    if (candyMachineId) {
       getCandyMachineState();
     }
-    // console.log(candyMachine);
-  }, [getCandyMachineState]);
+  }, [candyMachineId]);
 
   useEffect(() => {
     fetchLaunchData();
-  }, [setLaunchData]);
+  }, []);
 
   return (
     <div className="mint px-2 py-5 md:px-10">
@@ -469,34 +508,36 @@ const Mint = () => {
             <div className="mt-5">
               <Mintprogress
                 total_items={
-                  launchData.parsed_form_data
-                    ? launchData.parsed_form_data.total_items
+                  launchData.parsed_page_data
+                    ? launchData.parsed_page_data.total_items
                     : "N/A"
                 }
                 items_minted={0}
               />
             </div>
           </div>
-          <div className="px-5 mt-10 lg:mt-0">
+          <div className="px-5 mt-10 lg:mt-20">
             <div className="flex mb-2 justify-between items-center">
               <h3 className="text-2xl text-[#50C9C3] font-bold">
-                {launchData.name}
+                {launchData.parsed_page_data
+                  ? launchData.parsed_page_data.launch_name
+                  : "N/A"}
               </h3>
               <div className="text-base text-[#808080]">
                 Total items:{" "}
                 <span className="font-semibold text-black">
-                  {launchData.parsed_form_data
-                    ? launchData.parsed_form_data.total_items
+                  {launchData.parsed_page_data
+                    ? launchData.parsed_page_data.total_items
                     : "N/A"}
                 </span>
               </div>
             </div>
             <div className="flex gap-2">
               <div className="text-[#808080] text-sm">
-                Price:{" "}
+                Price:
                 <span className="text-black font-bold">
-                  {launchData.parsed_form_data
-                    ? launchData.parsed_form_data.price
+                  {launchData.parsed_page_data
+                    ? launchData.parsed_page_data.price
                     : "N/A"}
                 </span>
               </div>
@@ -505,47 +546,58 @@ const Mint = () => {
               <Image src={Twitter} alt="Internet" width={20} height={20} />
             </div>
             <div className="text-sm text-[#808080] my-5 tracking-wide leading-loose leading-6">
-              {launchData.parsed_form_data
-                ? launchData.parsed_form_data.description
+              {launchData.parsed_page_data
+                ? launchData.parsed_page_data.description
                 : "N/A"}
             </div>
             <div className="my-5 md:mx-5 bg-[#50C9C3] bg-opacity-10 px-5 py-2 rounded">
-              <MintCard />
-              <MintCard />
+              {launchData.parsed_page_data
+                ? launchData.parsed_page_data.whitelists.map((data, i) => (
+                    <MintCard data={data} key={i} />
+                  ))
+                : ""}
             </div>
             <div className="w-full my-5">
-              <Link href="/collection">
-                <a>
-                  <GatewayProvider
-                    wallet={{
-                      publicKey:
-                        wallet?.publicKey || new PublicKey(candyMachineProgram),
-                      //@ts-ignore
-                      signTransaction: wallet?.signTransaction,
-                    }}
-                    // // Replace with following when added
-                    // gatekeeperNetwork={candyMachine.state.gatekeeper_network}
-                    gatekeeperNetwork={
-                      candyMachine?.state?.gatekeeper?.gatekeeperNetwork
-                    } // This is the ignite (captcha) network
-                    /// Don't need this for mainnet
-                    clusterUrl={
-                      process.env.NEXT_PUBLIC_SOLANA_NETWORK === "mainnet-beta"
-                        ? ""
-                        : rpcUrl
-                    }
-                    options={{ autoShowModal: true }}
-                  >
-                    <MintButton
-                      mintToken={mintToken}
-                      candyMachine={candyMachine}
-                    />
-                  </GatewayProvider>
-                  {/* <button className="w-full font-semibold bg-[#50c9c3] rounded py-3 text-white">
+              {candyMachine && publicKey && (
+                <GatewayProvider
+                  wallet={{
+                    publicKey:
+                      wallet?.publicKey || new PublicKey(candyMachineProgram),
+                    //@ts-ignore
+                    signTransaction: wallet?.signTransaction,
+                  }}
+                  // // Replace with following when added
+                  // gatekeeperNetwork={candyMachine.state.gatekeeper_network}
+                  gatekeeperNetwork={
+                    candyMachine?.state?.gatekeeper?.gatekeeperNetwork
+                  } // This is the ignite (captcha) network
+                  /// Don't need this for mainnet
+                  // clusterUrl={
+                  //   process.env.NEXT_PUBLIC_SOLANA_NETWORK === "mainnet-beta"
+                  //     ? ""
+                  //     : rpcUrl
+                  // }
+                  options={{ autoShowModal: true }}
+                >
+                  <MintButton
+                    mintToken={mintToken}
+                    candyMachine={candyMachine}
+                  />
+                </GatewayProvider>
+              )}
+
+              {/* <div className="mt text-center">
+                {candyMachine && (
+                  <Countdown
+                    date={candyMachine.state.goLiveData * 1000}
+                    renderer={renderer}
+                  />
+                )}
+              </div> */}
+
+              {/* <button className="w-full font-semibold bg-[#50c9c3] rounded py-3 text-white">
                     Visit Collection
                   </button> */}
-                </a>
-              </Link>
             </div>
           </div>
         </div>
@@ -554,8 +606,8 @@ const Mint = () => {
           <div className="px-5">
             <div className="text-2xl font-bold text-[#50C9C3]">Description</div>
             <p className="text-sm text-[#808080] my-5 tracking-wide leading-loose leading-6">
-              {launchData.parsed_form_data
-                ? launchData.parsed_form_data.description
+              {launchData.parsed_page_data
+                ? launchData.parsed_page_data.description
                 : "N/A"}
             </p>
           </div>
@@ -563,7 +615,10 @@ const Mint = () => {
 
         {/* Tab */}
         <div className="mt-10">
-          <Tab />
+          <Tab
+            roadmap={launchData.parsed_page_data?.roadmap}
+            team={launchData.parsed_page_data?.team}
+          />
         </div>
       </div>
     </div>
