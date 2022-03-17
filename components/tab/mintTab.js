@@ -57,7 +57,7 @@ const MintTab = ({ roadmap, team }) => {
               <div key={i}>
                 <h3 className="text-black font-semibold">{item.phase_name}</h3>
                 {item.lists.map((row, i) => (
-                  <p className="mt-3">
+                  <p className="mt-3" key={i}>
                     <span className="h-[20px] w-[20px] bg-[#808080]"></span>-
                     {row}
                   </p>
