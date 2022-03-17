@@ -27,14 +27,14 @@ export default function Home() {
       <SingleRow
         data={cardData}
         seeALL
-        seeAllLink={`/launchpad`}
+        seeAllLink={`mintpage/37`}
         heading={"Upcoming Launches"}
         renderItem={(item, index) => <CollectionCard data={item} key={index} />}
       />
       <SingleRow
         data={cardData}
         seeALL
-        seeAllLink={`/launchpad`}
+        seeAllLink={`mintpage/37`}
         heading={"Launchpad Collections Live"}
         renderItem={(item, index) => <CollectionCard data={item} key={index} />}
       />

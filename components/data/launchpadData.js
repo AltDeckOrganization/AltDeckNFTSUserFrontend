@@ -7,6 +7,6 @@ export const launchpadData = [
     date: "Today",
     filled: "17:00 UTC",
     status: "WL Sale @ 16:00 UTC",
-    link: "https://animeimmortals.com/",
+    link: "mintpage/37",
   },
 ];
