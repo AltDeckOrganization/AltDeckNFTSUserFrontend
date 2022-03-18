@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 //mint imports
-import React, { useEffect, useState, useCallback } from "react";
-
 //SEO
+import React, {useState, useEffect} from "react";
 import SEO from "../components/seo/SEO";
 
 //components

@@ -59,7 +59,7 @@ export default function Example() {
 
   return (
     <>
-      <div className="navbar flex items-center justify-between bg-white px-2 md:px-5 py-5 z-50 lg:px-20 fixed left-0 top-0 w-full">
+      <div className="navbar flex items-center justify-between bg-white px-2 md:px-5 py-5 z-50 lg:px-10 fixed left-0 top-0 w-full">
         <div className="flex items-center">
           <div className="logo">
             <Link href="/">
@@ -93,7 +93,7 @@ export default function Example() {
             />
           </li>
 
-          <li className="mx-3">
+          {/* <li className="mx-3">
             <Dropdown
               title="Browse"
               link1="Launchpad"
@@ -101,7 +101,7 @@ export default function Example() {
               apply="launchpad"
               apply2="stats"
             />
-          </li>
+          </li> */}
 
           {/* <li className="mx-3">
             <Link href="/profile">
