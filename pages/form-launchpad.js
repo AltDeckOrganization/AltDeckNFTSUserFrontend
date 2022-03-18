@@ -44,7 +44,6 @@ const LaunchpadForm = () => {
     useState("");
   const [submissionSuccessful, setSubmissionSuccesful] = useState("");
   const [pictureName, setPictureName] = useState("");
-  const [buttonDisbaled, setButtonDisbaled] = useState(true);
   const server_url = process.env.NEXT_PUBLIC_BACKEND_URL;
 
   const handleFiles = (e) => {
@@ -62,68 +61,6 @@ const LaunchpadForm = () => {
       console.log("Error: ", error);
     };
   };
-
-  useEffect(() => {
-    if (
-      !name ||
-      !country ||
-      !picture ||
-      !videoUrl ||
-      !collectionName ||
-      !derivative ||
-      !email ||
-      !discordId ||
-      !projectUniqueDescription ||
-      !projectLongTermGoals ||
-      !teamDescription ||
-      !partnershipProof ||
-      !partners ||
-      !roadmapLink ||
-      !artworkInfo ||
-      !twitterLink ||
-      !instagramLink ||
-      !discordLink ||
-      !websiteLink ||
-      !mintDate ||
-      !mintTime ||
-      !supplyCount ||
-      !mintPrice ||
-      !feedback ||
-      !acceptTOS ||
-      !acceptDetailsWillBeShowed
-    ) {
-      setButtonDisbaled(true);
-    } else {
-      setButtonDisbaled(false);
-    }
-  }, [
-    acceptDetailsWillBeShowed,
-    acceptTOS,
-    artworkInfo,
-    collectionName,
-    country,
-    derivative,
-    discordId,
-    discordLink,
-    email,
-    feedback,
-    instagramLink,
-    mintDate,
-    mintPrice,
-    mintTime,
-    name,
-    partners,
-    partnershipProof,
-    picture,
-    projectLongTermGoals,
-    projectUniqueDescription,
-    roadmapLink,
-    supplyCount,
-    teamDescription,
-    twitterLink,
-    videoUrl,
-    websiteLink,
-  ]);
 
   const submitForm = (e) => {
     e.preventDefault();
@@ -251,6 +188,7 @@ const LaunchpadForm = () => {
                   Name
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="name"
                   type="text"
@@ -276,6 +214,7 @@ const LaunchpadForm = () => {
                   value={country}
                 />
                 {/* <input
+                  required
               className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="grid-last-name"
               type="text"
@@ -320,6 +259,7 @@ const LaunchpadForm = () => {
                           </div>
                         </div>{" "}
                         <input
+                          required
                           id="profile_image"
                           type="file"
                           className="h-full w-full opacity-0"
@@ -342,6 +282,7 @@ const LaunchpadForm = () => {
                     Video(mp3)
                   </label>
                   <input
+                    required
                     className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                     id="name"
                     type="text"
@@ -373,6 +314,7 @@ const LaunchpadForm = () => {
                   Collection Name
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="name"
                   type="text"
@@ -397,6 +339,7 @@ const LaunchpadForm = () => {
                   onChange={(e) => setDerivative(e.target.value)}
                 />
                 {/* <input
+                  required
               className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="grid-last-name"
               type="text"
@@ -414,6 +357,7 @@ const LaunchpadForm = () => {
                   Email
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="email"
                   type="email"
@@ -429,6 +373,7 @@ const LaunchpadForm = () => {
                   Discord ID
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="discord__id"
                   type="text"
@@ -447,6 +392,7 @@ const LaunchpadForm = () => {
                   Describe what makes your project unique
                 </label>
                 <textarea
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="project_unique"
                   type="text"
@@ -462,6 +408,7 @@ const LaunchpadForm = () => {
                   Describe long term goals of your project
                 </label>
                 <textarea
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="project_unique"
                   type="text"
@@ -483,6 +430,7 @@ const LaunchpadForm = () => {
                   team meet, LinkedIn of all team members
                 </label>
                 <textarea
+                  required
                   className="appearance-none block w-full h-50 bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="project_unique"
                   type="text"
@@ -502,6 +450,7 @@ const LaunchpadForm = () => {
                   up
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="supportlinks"
                   type="text"
@@ -517,6 +466,7 @@ const LaunchpadForm = () => {
                   Partnerships, who is your project currently partnered with?
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="discord__id"
                   type="text"
@@ -536,6 +486,7 @@ const LaunchpadForm = () => {
                   links, google drive, etc)
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="support"
                   type="text"
@@ -553,6 +504,7 @@ const LaunchpadForm = () => {
                   project doesn’t sell out.
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="discord__id"
                   type="text"
@@ -572,6 +524,7 @@ const LaunchpadForm = () => {
                   you meet the artist?
                 </label>
                 <textarea
+                  required
                   className="appearance-none block w-full h-50 bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="project_unique"
                   type="text"
@@ -593,6 +546,7 @@ const LaunchpadForm = () => {
                   Twitter
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="twitter"
                   type="text"
@@ -608,6 +562,7 @@ const LaunchpadForm = () => {
                   Discord server
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="discord__id"
                   type="text"
@@ -626,6 +581,7 @@ const LaunchpadForm = () => {
                   Instagram
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="instagram"
                   type="text"
@@ -641,6 +597,7 @@ const LaunchpadForm = () => {
                   Website
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="website"
                   type="text"
@@ -659,6 +616,7 @@ const LaunchpadForm = () => {
                   Mint date
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="mint_date"
                   type="text"
@@ -674,6 +632,7 @@ const LaunchpadForm = () => {
                   Mint Time
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="mint_time"
                   type="text"
@@ -692,6 +651,7 @@ const LaunchpadForm = () => {
                   Supply count
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="supply_count"
                   type="text"
@@ -707,6 +667,7 @@ const LaunchpadForm = () => {
                   Mint price in sol
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="mint_time"
                   type="text"
@@ -744,6 +705,7 @@ const LaunchpadForm = () => {
             <div className="flex flex-wrap -mx-3 mb-6">
               <label className="inline-flex items-center mt-3 px-3 gap-2">
                 <input
+                  required
                   type="checkbox"
                   className="input-checkbox"
                   id="checkbox1"
@@ -756,6 +718,7 @@ const LaunchpadForm = () => {
 
               <label className="inline-flex items-center mt-3 px-3 gap-2">
                 <input
+                  required
                   type="checkbox"
                   className="input-checkbox bg-red-500"
                   id="checkbox1"
@@ -772,8 +735,8 @@ const LaunchpadForm = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0"></div>
               <div className="w-full md:w-1/2 px-3">
                 <button
-                  disabled={buttonDisbaled ? true : false}
                   className="bg-[#50C9C3]  rounded rounded-md py-3 px-10 text-white float-right"
+                  type="submit"
                 >
                   Submit
                 </button>
