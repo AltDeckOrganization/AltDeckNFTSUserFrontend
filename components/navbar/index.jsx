@@ -83,6 +83,9 @@ export default function Example() {
         </div>
         <ul className=" items-align hidden lg:flex">
           <li className="mx-3">
+            <Dropdown title="Browse" link1="Launchpad" apply="launchpad" />
+          </li>
+          <li className="mx-3">
             <Dropdown
               title="Apply"
               link1="Apply for launchpad"
@@ -98,8 +101,9 @@ export default function Example() {
               apply="launchpad"
               apply2="stats"
             />
-          </li>
-          <li className="mx-3">
+          </li> */}
+
+          {/* <li className="mx-3">
             <Link href="/profile">
               <a className="inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
                 Profile
@@ -117,7 +121,7 @@ export default function Example() {
               apply="https://www.twitter.com/@AltDeck_io"
               apply2="stats"
               apply3="https://discord.gg/ec9cZCCSHK"
-              apply4='email'
+              apply4="email"
             />
           </li>
           <li className="mx-3">
@@ -180,7 +184,7 @@ export default function Example() {
                   onClick={handleMenuClick}
                 />
               </li> */}
-{/* 
+              {/* 
               <li className="" onClick={handleMenuClick}>
                 <Link href="/profile">
                   <a className="inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-base  w-full  border rounded rounded-md  mt-5  font-medium text-gray-700 hover:bg-gray-50">
@@ -190,17 +194,17 @@ export default function Example() {
               </li> */}
 
               <li className="" onClick={handleMenuClick}>
-            <DropdownSmall
-              title="Contact"
-              link1="Twitter"
-              link2="Medium"
-              link3="Discord"
-              link4="Email"
-              apply="https://www.twitter.com/@AltDeck_io"
-              apply2="stats"
-              apply3="https://discord.gg/ec9cZCCSHK"
-              apply4='email'
-            />
+                <DropdownSmall
+                  title="Contact"
+                  link1="Twitter"
+                  link2="Medium"
+                  link3="Discord"
+                  link4="Email"
+                  apply="https://www.twitter.com/@AltDeck_io"
+                  apply2="stats"
+                  apply3="https://discord.gg/ec9cZCCSHK"
+                  apply4="email"
+                />
               </li>
               <li className="" onClick={handleMenuClick}>
                 <ConnectWallet className="inline-flex justify-center w-full border border-[#50C9C3] text-[#50c9c3] shadow-sm px-4 py-2 text-base  w-full  border rounded rounded-md  mt-5  font-medium rounded " />

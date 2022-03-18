@@ -50,6 +50,7 @@ const Dropdown=({title, link1,apply, apply2, apply3, link2, link3, apply4, link4
                             </a>
                         )}
                     </Menu.Item>
+                    {link2?
                     <Menu.Item>
                         {({ active }) => (
                             <a
@@ -64,7 +65,7 @@ const Dropdown=({title, link1,apply, apply2, apply3, link2, link3, apply4, link4
                                {link2}
                             </a>
                         )}
-                    </Menu.Item>
+                    </Menu.Item> : null}
                     {link3 ? 
                     <Menu.Item>
                         {({ active }) => (

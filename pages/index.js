@@ -1,107 +1,43 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 //Components
-import Hero from '../components/hero';
-import SlideShow from '../components/slideShow';
+import Hero from "../components/hero";
+import SlideShow from "../components/slideShow";
 
 //SEO
-import SEO from '../components/seo/SEO';
+import SEO from "../components/seo/SEO";
 
 //Data
 
-import { cardData } from '../components/data/cardData';
-import SingleRow from '../components/singleRow';
-import CollectionCard from '../components/collectionCard';
+import { cardData } from "../components/data/cardData";
+import SingleRow from "../components/singleRow";
+import CollectionCard from "../components/collectionCard";
 
 export default function Home() {
-	return (
-		<div className='xl:w-[1156px] mx-auto lg:w-[900px] w-full mt-28'>
-			<SEO />
-			<Hero />
-			<SlideShow />
-
-			{/* <div className='my-6 md:my-12 mx-[20px]'>
-				<div className='flex items-center justify-between'>
-					<h1 className='text-xl font-semibold md:text-[28px]'>
-						Featured Collections
-					</h1>
-					<Link href='/' passHref={true}>
-						<h3 className='text-sm font-semibold text-[#50C9C3] md:text-base cursor-pointer w-fit whitespace-nowrap'>
-							See All
-						</h3>
-					</Link>
-				</div>
-			</div> */}
-			<div className='my-6 md:my-12 mx-[20px]'>
-				<div className='flex items-center justify-between'>
-					<h1 className='text-xl font-semibold md:text-[28px]'>
-						Upcoming Launches
-					</h1>
-					<Link href='/launchpad' passHref={true}>
-						<h3 className='text-sm font-semibold text-[#50C9C3] md:text-base cursor-pointer w-fit whitespace-nowrap'>
-							See All
-						</h3>
-					</Link>
-				</div>
-				{/* <SingleRow 
-          data={cardData}
-          renderItem={(item, index) => <UpcomingCollectionCard data={item} key={index}/>}
-        /> */}
-			</div>
-			{/* <div className='my-6 md:my-12 mx-[20px]'>
-				<div className='flex items-center justify-between'>
-					<h1 className='text-xl font-semibold md:text-[28px]'>
-						Live launchpad collections
-					</h1>
-					<Link href='/' passHref={true}>
-						<h3 className='text-sm font-semibold text-[#50C9C3] md:text-base cursor-pointer w-fit whitespace-nowrap'>
-							See All
-						</h3>
-					</Link>
-				</div>
-			</div> */}
-			{/* <div className='mt-24 mx-[20px]'>
-				<div className='flex items-center justify-between'>
-					<h1 className='text-xl font-semibold md:text-[28px]'>
-						Featured Collections
-					</h1>
-					<Link href='/launchpad' passHref={true}>
-						<h3 className='text-sm font-semibold text-[#50C9C3] md:text-base cursor-pointer w-fit whitespace-nowrap'>
-							See All
-						</h3>
-					</Link>
-				</div>
-				<SingleRow
-					data={cardData}
-					renderItem={(item, index) => (
-						<CollectionCard data={item} key={index} />
-					)}
-				/>
-				<SingleRow
-					data={cardData}
-					renderItem={(item, index) => (
-						<CollectionCard data={item} key={index} />
-					)}
-				/>
-				<SingleRow
-					data={cardData}
-					renderItem={(item, index) => (
-						<CollectionCard data={item} key={index} />
-					)}
-				/>
-				<SingleRow
-					data={cardData}
-					renderItem={(item, index) => (
-						<CollectionCard data={item} key={index} />
-					)}
-				/>
-				<SingleRow
-					data={cardData}
-					renderItem={(item, index) => (
-						<CollectionCard data={item} key={index} />
-					)}
-				/>
-			</div> */}
-		</div>
-	);
+  return (
+    <div className="xl:w-[1156px] mx-auto lg:w-[900px] w-full mt-28">
+      <SEO />
+      <Hero />
+      <SlideShow />
+      <SingleRow
+        data={cardData}
+        heading={"Featured Collection"}
+        renderItem={(item, index) => <CollectionCard data={item} key={index} />}
+      />
+      <SingleRow
+        data={cardData}
+        seeALL
+        seeAllLink={`mintpage/37`}
+        heading={"Upcoming Launches"}
+        renderItem={(item, index) => <CollectionCard data={item} key={index} />}
+      />
+      <SingleRow
+        data={cardData}
+        seeALL
+        seeAllLink={`mintpage/37`}
+        heading={"Launchpad Collections Live"}
+        renderItem={(item, index) => <CollectionCard data={item} key={index} />}
+      />
+    </div>
+  );
 }
