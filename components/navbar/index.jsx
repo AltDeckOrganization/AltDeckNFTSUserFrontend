@@ -165,6 +165,16 @@ export default function Example() {
             <ul>
               <li>
                 <DropdownSmall
+                  title="Browse"
+                  // link1="Apply for collection listing"
+                  link2="Launchpad"
+                  // apply="form-listing"
+                  apply2="launchpad"
+                  onClick={handleMenuClick}
+                />
+              </li>
+              <li>
+                <DropdownSmall
                   title="Apply"
                   // link1="Apply for collection listing"
                   link2="Apply for launchpad"

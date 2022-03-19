@@ -29,6 +29,7 @@ function DropdownSmall({title, link1,apply,link4, apply2, apply3,apply4, link2, 
         >
             <Menu.Items className='origin-top-right absolute z-50 right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none'>
                 <div className='py-1'>
+                    {link1 ? 
                     <Menu.Item>
                         {({ active }) => (
                             <a
@@ -43,7 +44,7 @@ function DropdownSmall({title, link1,apply,link4, apply2, apply3,apply4, link2, 
                                 {link1}
                             </a>
                         )}
-                    </Menu.Item>
+                    </Menu.Item>:null}
                     <Menu.Item>
                         {({ active }) => (
                             <a
