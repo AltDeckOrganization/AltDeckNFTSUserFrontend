@@ -154,7 +154,7 @@ export default function Example() {
           <div className="flex flex-col py-5 px-5 md:px-10">
             <div className="side flex justify-between items-center">
               <div className="logo ">
-                <div className="text-xl font-bold ">AltDeck</div>
+                <div className="text-xl font-bold "></div>
               </div>
               <div className="close w-[20px]">
                 <Image
@@ -214,10 +214,14 @@ export default function Example() {
                   link2="Medium"
                   link3="Discord"
                   link4="Email"
+                  link5="TOS"
+                  link6="FAQs"
                   apply="https://www.twitter.com/@AltDeck_io"
-                  apply2="stats"
+                  apply2="https://medium.com/@AltDeck"
                   apply3="https://discord.gg/ec9cZCCSHK"
-                  apply4="email"
+                  apply4="contact@altdeck.io"
+                  apply5="tos"
+                  apply6="faqs"
                 />
               </li>
               <li className="" onClick={handleMenuClick}>
