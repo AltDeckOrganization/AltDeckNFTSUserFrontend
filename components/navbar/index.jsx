@@ -108,10 +108,14 @@ export default function Example() {
               link2="Medium"
               link3="Discord"
               link4="Email"
+              link5="TOS"
+              link6="FAQs"
               apply="https://www.twitter.com/@AltDeck_io"
-              apply2="stats"
+              apply2="https://medium.com/@AltDeck"
               apply3="https://discord.gg/ec9cZCCSHK"
-              apply4="email"
+              apply4="contact@altdeck.io"
+              apply5="tos"
+              apply6="faqs"
             />
           </li>
           <li className="mx-3">

@@ -16,6 +16,10 @@ const Dropdown = ({
   link3,
   apply4,
   link4,
+  apply5,
+  link5,
+  apply6,
+  link6,
 }) => {
   return (
     <Menu as="div" className="relative inline-block text-left">
@@ -96,6 +100,36 @@ const Dropdown = ({
                     )}
                   >
                     {link4}
+                  </a>
+                )}
+              </Menu.Item>
+            ) : null}
+            {link5 ? (
+              <Menu.Item>
+                {({ active }) => (
+                  <a
+                    href={`/${apply5}`}
+                    className={classNames(
+                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                      "block px-4 py-2 text-sm "
+                    )}
+                  >
+                    {link5}
+                  </a>
+                )}
+              </Menu.Item>
+            ) : null}
+            {link6 ? (
+              <Menu.Item>
+                {({ active }) => (
+                  <a
+                    href={`/${apply6}`}
+                    className={classNames(
+                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                      "block px-4 py-2 text-sm "
+                    )}
+                  >
+                    {link6}
                   </a>
                 )}
               </Menu.Item>

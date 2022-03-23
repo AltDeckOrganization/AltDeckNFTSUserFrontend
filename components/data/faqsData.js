@@ -1,57 +1,56 @@
 export const FaqsData = [
   {
     id: "1",
-    avatar: "/images/collectionSample.png",
-    quest: "What is AltDeck?",
-    ans: "AltDeck is the revolutionary NFT marketplace currently allowing users to buy/sell Solana based NFTs without any listing fees.",
+    avatar: "/images/crows.gif",
+    quest: "What is altdeck launchpad? ",
+    ans: "As said in the name, we are currently a Solana launchpad where projects can launch their mints directly from!",
   },
   {
     id: "2",
-    avatar: "/images/avatar2.png",
-    quest: "How can I start buying/selling?",
-    ans: "Simply connect with your wallet from the top right corner and click on your wallet name. You will be able to see all of your NFTs in the wallet which can be listed instantly on alpha art.",
+    avatar: "/images/crows.gif",
+    quest: "How is altdeck different from other launchpads? ",
+    ans: "We only list publicly doxed projects, we also provide the teams roadmap on their mint page!",
   },
   {
     id: "3",
-    avatar: "/images/collectionSample.png",
-    quest: "What is the offer system on AltDeck?",
-    ans: "We are the first and only marketplace on Solana network where you can send an offer to any NFT on our marketplace whether if it’s listed or not.",
-    ansPara2:
-      "You can simply browse any NFT and give an offer via “Make Offer” button which will be valid until your chosen date. Please note that when you make an offer, respective amount of SOL will be deducted from your account to be used if the seller accepts it.",
+    avatar: "/images/crows.gif",
+    quest: "What wallets are accepted? ",
+    ans: "Most notably, phantom, solflare, sollet & many more.",
   },
   {
     id: "4",
-    avatar: "/images/avatar2.png",
-    quest: "What is AltDeck?",
-    ans: "You can reach us for support on our discord server or via email support@altdeck.com",
-    questList: "Please provide:",
-    ansList: [
-      {
-        listData: "Your email address",
-      },
-      {
-        listData: "Your wallet address (if applicable)",
-      },
-      {
-        listData:
-          "The NFT id/token address you are having an issue with (if applicable)",
-      },
-      {
-        listData: "Detailed information about the issue",
-      },
-    ],
+    avatar: "/images/crows.gif",
+    quest: "Where can I apply my collection?",
+    ans: " https://www.altdeck.io/form-launchpad",
   },
   {
     id: "5",
-    avatar: "/images/avatar2.png",
-    quest:
-      "I'm collection creator, why my collection is unlisted from AltDeck?",
-    ans: "NFT collections with royalty sharing utilities in their roadmaps have been unlisted from Altdeck. Moving forward we will not be able to list any NFT collection with such mechanics.",
+    avatar: "/images/crows.gif",
+    quest: "How long does it take to get a response back?",
+    ans: "Within 24-48 hrs",
   },
   {
     id: "6",
-    avatar: "/images/avatar2.png",
-    quest: "What are the fees?",
-    ans: "AltDeck doesn’t charge any listing/unlisting/offer fees. We have 2% flat seller fee which is taken at the time of the sale.",
+    avatar: "images/crows.gif",
+    quest: "How much does altdeck take?",
+    ans: "We have a standard 2.5% marketplace fee for users buying.",
+  },
+  {
+    id: "7",
+    avatar: "/images/crows.gif",
+    quest: "What does altdeck offer?",
+    ans: " We will most likely reach back to you via DM from the official twitter account @altdeck_io or email. We can offer anti bot measures and marketing.",
+  },
+  {
+    id: "8",
+    avatar: "images/crows.gif",
+    quest: "What is the roadmap for altdeck?",
+    ans: "We plan to focus on the launchpad and have a few successful mints and then focus on fully expanding to a Solana NFT Marketplace.",
+  },
+  {
+    id: "9",
+    avatar: "/images/crows.gif",
+    quest: "What is your contact email",
+    ans: "contact@altdeck.io (you can reach out to our twitter @altdeck_io for support as well)",
   },
 ];
