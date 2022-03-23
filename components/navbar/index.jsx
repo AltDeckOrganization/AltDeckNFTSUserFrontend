@@ -59,7 +59,7 @@ export default function Example() {
 
   return (
     <>
-      <div className="navbar flex items-center justify-between bg-white px-2 md:px-5 py-5 z-50 lg:px-20 fixed left-0 top-0 w-full">
+      <div className="navbar flex items-center justify-between bg-white px-2 md:px-5 py-5 z-50 lg:px-10 fixed left-0 top-0 w-full">
         <div className="flex items-center">
           <div className="logo">
             <Link href="/">
@@ -92,6 +92,16 @@ export default function Example() {
               apply="form-launchpad"
             />
           </li>
+
+          {/* <li className="mx-3">
+            <Dropdown
+              title="Browse"
+              link1="Launchpad"
+              link2="Stats"
+              apply="launchpad"
+              apply2="stats"
+            />
+          </li> */}
 
           {/* <li className="mx-3">
             <Link href="/profile">
@@ -157,6 +167,16 @@ export default function Example() {
               </div>
             </div>
             <ul>
+              <li>
+                <DropdownSmall
+                  title="Browse"
+                  // link1="Apply for collection listing"
+                  link2="Launchpad"
+                  // apply="form-listing"
+                  apply2="launchpad"
+                  onClick={handleMenuClick}
+                />
+              </li>
               <li>
                 <DropdownSmall
                   title="Apply"

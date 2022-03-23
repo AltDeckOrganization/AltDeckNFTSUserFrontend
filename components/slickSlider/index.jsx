@@ -22,10 +22,8 @@ function PrevArrow(props) {
 const SlickSlider = ({ children }) => {
   const options = {
     dots: false,
-    infinite: true,
-    speed: 500,
-    autoplay: true,
-    autoplaySpeed: 5000,
+    infinite: false,
+    autoplay: false,
     slidesToShow: 5,
     slidesToScroll: 1,
     arrows: true,

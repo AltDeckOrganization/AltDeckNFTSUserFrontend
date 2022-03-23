@@ -59,7 +59,7 @@ const Dropdown = ({
                 </a>
               )}
             </Menu.Item>
-            {link2 && (
+            {link2 ? (
               <Menu.Item>
                 {({ active }) => (
                   <a
@@ -73,7 +73,7 @@ const Dropdown = ({
                   </a>
                 )}
               </Menu.Item>
-            )}
+            ) : null}
             {link3 ? (
               <Menu.Item>
                 {({ active }) => (
@@ -111,7 +111,7 @@ const Dropdown = ({
                     href={`/${apply5}`}
                     className={classNames(
                       active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                      "block px-4 py-2 text-sm "
+                      "block px-4 py-2 text-sm"
                     )}
                   >
                     {link5}
@@ -123,10 +123,10 @@ const Dropdown = ({
               <Menu.Item>
                 {({ active }) => (
                   <a
-                    href={`/${apply6}`}
+                    href={`${apply6}`}
                     className={classNames(
                       active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                      "block px-4 py-2 text-sm "
+                      "block px-4 py-2 text-sm"
                     )}
                   >
                     {link6}

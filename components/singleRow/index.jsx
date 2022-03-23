@@ -17,7 +17,10 @@ const SingleRow = ({
         {seeALL && seeAllLink && (
           <Link href={seeAllLink} passHref={true}>
             <h3 className="text-[20px] cursor-pointer w-fit whitespace-nowrap">
+              <Link href="/launchpad">
+                
               See All
+              </Link>
             </h3>
           </Link>
         )}
