@@ -328,7 +328,7 @@ const LaunchpadForm = () => {
               <div className="w-full md:w-1/2 px-3">
                 <label
                   className="block  trackin-wide text-gray-700 text-xs font-bold mb-2"
-                  htmlFor="grid-last-name"
+                  htmlFor="checkbox1"
                 >
                   Is your project a derivative?
                 </label>
@@ -708,10 +708,10 @@ const LaunchpadForm = () => {
                   required
                   type="checkbox"
                   className="input-checkbox"
-                  id="checkbox1"
+                  id="checkbox2"
                   onChange={(e) => setAcceptTOS(e.target.value)}
                 />
-                <label htmlFor="checkbox1" className="input-label text-sm">
+                <label htmlFor="checkbox2" className="input-label text-sm">
                   Accept our TOS.
                 </label>
               </label>
@@ -721,10 +721,10 @@ const LaunchpadForm = () => {
                   required
                   type="checkbox"
                   className="input-checkbox bg-red-500"
-                  id="checkbox1"
+                  id="checkbox3"
                   onChange={(e) => setAcceptDetailsWillBeShowed(e.target.value)}
                 />
-                <label htmlFor="checkbox1" className="input-label text-sm">
+                <label htmlFor="checkbox3" className="input-label text-sm">
                   Accept details provided on your team will be revealed on your
                   collection / launchpad page.
                 </label>
