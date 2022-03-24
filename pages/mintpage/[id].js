@@ -19,7 +19,7 @@ import { GatewayProvider } from "@civic/solana-gateway-react";
 import { GatewayStatus, useGateway } from "@civic/solana-gateway-react";
 import { useAnchorWallet, useWallet } from "@solana/wallet-adapter-react";
 import Countdown from "react-countdown";
-import SEO from "../components/seo/SEO";
+import SEO from "../../components/seo/SEO";
 
 import {
   candyMachineProgram,
