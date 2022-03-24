@@ -1,19 +1,27 @@
 import React, { useState } from "react";
 
 const DropdownForm = () => {
-  const [dropdownVal, setDropdownVal] = useState("Select a Package");
+  const [dropdownVal, setDropdownVal] = useState("None");
+  const [inputChecked, setInputChecked] = useState(false);
   return (
     <>
-      <div className="dropdown">
-        <input type="checkbox" id="dropdown" />
+      <div className="dropdown z-10">
+        <input type="checkbox" id="dropdown" checked={inputChecked} />
 
-        <label className="dropdown__face" htmlFor="dropdown">
+        <label
+          className="dropdown__face"
+          htmlFor="dropdown"
+          onClick={() => setInputChecked(!inputChecked)}
+        >
           <div className="dropdown__text">{dropdownVal}</div>
 
           <div className="dropdown__arrow"></div>
         </label>
 
-        <ul className="dropdown__items">
+        <ul
+          className="dropdown__items"
+          onClick={() => setInputChecked(!inputChecked)}
+        >
           <li className="cursor-pointer" onClick={() => setDropdownVal("None")}>
             None
           </li>
@@ -37,7 +45,12 @@ const DropdownForm = () => {
           </li>
         </ul>
       </div>
-
+      {inputChecked && (
+        <div
+          className="z-0 fixed inset-0"
+          onClick={() => setInputChecked(!inputChecked)}
+        />
+      )}
       <svg className="hidden">
         <filter id="goo">
           <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
