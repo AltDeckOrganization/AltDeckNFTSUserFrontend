@@ -64,7 +64,7 @@ export default function Example() {
           <div className="logo">
             <Link href="/">
               <a>
-                <h1 className="text-xl  font-bold">AltDeck</h1>
+                <h1 className="text-xl font-bold">AltDeck</h1>
               </a>
             </Link>
           </div>

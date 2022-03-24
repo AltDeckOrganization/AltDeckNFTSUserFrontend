@@ -10,6 +10,7 @@ import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import axios from "axios";
 import Dropdown from "../components/dropdown";
+import SEO from "../components/seo/SEO";
 import DropdownForm from "../components/dropdown/DropdownForm";
 
 function classNames(...classes) {
@@ -125,6 +126,8 @@ const LaunchpadForm = () => {
 
   return (
     <div>
+      <SEO />
+
       <div className="launchPad py-5 mt-20 px-1 md:px-10 lg:px-20">
         <div className="launchPad py-5 px-1 md:px-10 lg:px-20">
           {submissionSuccessful === "false" && (

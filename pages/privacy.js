@@ -1,9 +1,12 @@
 import React from "react";
 import PrivacyPolicyDetails from "../components/privacyPolicyDetails";
+import SEO from "../components/seo/SEO";
 
 const PrivacyPolicy = () => {
   return (
     <div className="xl:w-[1156px] mx-auto mt-20 lg:w-[900px] w-full">
+      <SEO />
+
       <div className="px-5 lg:px-0 pt-0 md:pt-5">
         <h1 className="text-3xl text-black font-semibold my-5 md:text-3xl">
           Privacy Policy

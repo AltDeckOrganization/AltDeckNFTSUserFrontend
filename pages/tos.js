@@ -1,9 +1,12 @@
 import React from "react";
+import SEO from "../components/seo/SEO";
 import TosPara from "../components/tos/TosPara";
 
 function tos() {
   return (
     <div className="py-2 mt-20 lg:py-5 px-2 md:px-10 lg:px-40">
+      <SEO />
+
       <h1 className="text-3xl text-black font-semibold mb-5 md:text-3xl">
         Altdeck&apos;s Terms of Service
       </h1>

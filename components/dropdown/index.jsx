@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
+import Link from "next/link";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -48,89 +49,95 @@ const Dropdown = ({
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href={`${apply}`}
-                  className={classNames(
-                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-2 text-sm"
-                  )}
-                >
-                  {link1}
-                </a>
-              )}
-            </Menu.Item>
-            {link2 ? (
-              <Menu.Item>
-                {({ active }) => (
+                <Link href={`${apply}`} passHref>
                   <a
-                    href={`/${apply2}`}
                     className={classNames(
                       active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                       "block px-4 py-2 text-sm"
                     )}
                   >
-                    {link2}
+                    {link1}
                   </a>
+                </Link>
+              )}
+            </Menu.Item>
+            {link2 ? (
+              <Menu.Item>
+                {({ active }) => (
+                  <Link href={`/${apply2}`} passHref>
+                    <a
+                      className={classNames(
+                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                        "block px-4 py-2 text-sm"
+                      )}
+                    >
+                      {link2}
+                    </a>
+                  </Link>
                 )}
               </Menu.Item>
             ) : null}
             {link3 ? (
               <Menu.Item>
                 {({ active }) => (
-                  <a
-                    href={`${apply3}`}
-                    className={classNames(
-                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                      "block px-4 py-2 text-sm"
-                    )}
-                  >
-                    {link3}
-                  </a>
+                  <Link href={`${apply3}`} passHref>
+                    <a
+                      className={classNames(
+                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                        "block px-4 py-2 text-sm"
+                      )}
+                    >
+                      {link3}
+                    </a>
+                  </Link>
                 )}
               </Menu.Item>
             ) : null}
             {link4 ? (
               <Menu.Item>
                 {({ active }) => (
-                  <a
-                    href={`/${apply4}`}
-                    className={classNames(
-                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                      "block px-4 py-2 text-sm "
-                    )}
-                  >
-                    {link4}
-                  </a>
+                  <Link href={`/${apply4}`} passHref>
+                    <a
+                      className={classNames(
+                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                        "block px-4 py-2 text-sm "
+                      )}
+                    >
+                      {link4}
+                    </a>
+                  </Link>
                 )}
               </Menu.Item>
             ) : null}
             {link5 ? (
               <Menu.Item>
                 {({ active }) => (
-                  <a
-                    href={`/${apply5}`}
-                    className={classNames(
-                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                      "block px-4 py-2 text-sm"
-                    )}
-                  >
-                    {link5}
-                  </a>
+                  <Link href={`/${apply5}`} passHref>
+                    <a
+                      className={classNames(
+                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                        "block px-4 py-2 text-sm"
+                      )}
+                    >
+                      {link5}
+                    </a>
+                  </Link>
                 )}
               </Menu.Item>
             ) : null}
             {link6 ? (
               <Menu.Item>
                 {({ active }) => (
-                  <a
-                    href={`${apply6}`}
-                    className={classNames(
-                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                      "block px-4 py-2 text-sm"
-                    )}
-                  >
-                    {link6}
-                  </a>
+                  <Link href={`${apply6}`} passHref>
+                    <a
+                      className={classNames(
+                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                        "block px-4 py-2 text-sm"
+                      )}
+                    >
+                      {link6}
+                    </a>
+                  </Link>
                 )}
               </Menu.Item>
             ) : null}

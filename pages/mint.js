@@ -9,6 +9,7 @@ import Link from "next/link";
 import Mintprogress from "../components/progress/mintprogress";
 import Tab from "../components/tab/mintTab";
 import Countdown from "react-countdown";
+import SEO from "../components/seo/SEO";
 
 const Completionist = () => (
   <div className="text-3xl text-[#50C9C3] font-bold">MINTING COMPLETED</div>
@@ -32,6 +33,8 @@ const renderer = ({ hours, minutes, seconds, completed }) => {
 const Mint = () => {
   return (
     <div className="mint px-2 py-5 md:px-10 mt-20">
+      <SEO />
+
       <div className="px-1 md:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2  gap4">
           <div className="px-5 w-10/12 mx-auto">

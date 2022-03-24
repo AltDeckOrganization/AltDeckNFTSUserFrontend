@@ -5,6 +5,7 @@ import { AiOutlinePlusCircle, AiOutlineCloudUpload } from "react-icons/ai";
 
 //services
 import { getCollections } from "../services/collections";
+import SEO from "../components/seo/SEO";
 
 //components
 import CustomSelect from "../components/customSelect";
@@ -57,6 +58,8 @@ const Create = () => {
 
   return (
     <main className="min-h-[100vh] py-10 w-[610px] mx-auto">
+      <SEO />
+
       <h1 className="font-semibold text-center text-[26px] mb-10">
         Create new Item
       </h1>
