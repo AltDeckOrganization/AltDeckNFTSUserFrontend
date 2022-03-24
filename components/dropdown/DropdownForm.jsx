@@ -1,22 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 
 const DropdownForm = () => {
+  const [dropdownVal, setDropdownVal] = useState("Select a Package");
   return (
     <>
       <div className="dropdown">
         <input type="checkbox" id="dropdown" />
 
         <label className="dropdown__face" htmlFor="dropdown">
-          <div className="dropdown__text">Select a Package</div>
+          <div className="dropdown__text">{dropdownVal}</div>
 
           <div className="dropdown__arrow"></div>
         </label>
 
         <ul className="dropdown__items">
-          <li className="cursor-pointer"> None</li>
-          <li className="cursor-pointer"> Standard</li>
-          <li className="cursor-pointer"> Special</li>
-          <li className="cursor-pointer"> Luxury</li>
+          <li className="cursor-pointer" onClick={() => setDropdownVal("None")}>
+            None
+          </li>
+          <li
+            className="cursor-pointer"
+            onClick={() => setDropdownVal("Standard")}
+          >
+            Standard
+          </li>
+          <li
+            className="cursor-pointer"
+            onClick={() => setDropdownVal("Special")}
+          >
+            Special
+          </li>
+          <li
+            className="cursor-pointer"
+            onClick={() => setDropdownVal("Luxury")}
+          >
+            Luxury
+          </li>
         </ul>
       </div>
 
