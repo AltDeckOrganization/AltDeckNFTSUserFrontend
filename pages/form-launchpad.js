@@ -9,6 +9,8 @@ import { Menu, Transition } from "@headlessui/react";
 
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import axios from "axios";
+import Dropdown from "../components/dropdown";
+import DropdownForm from "../components/dropdown/DropdownForm";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -697,6 +699,14 @@ const LaunchpadForm = () => {
                   onChange={(e) => setFeedback(e.target.value)}
                 ></textarea>
               </div>
+            </div>
+
+            <h3 className="text-base text-black uppercase my-4 font-bold">
+              Packages
+            </h3>
+            <DropdownForm />
+            <div className="mt-5">
+              <img src="/images/launchpad_marketing.jpg" alt="" />
             </div>
 
             <h3 className="text-base text-black uppercase my-4 font-bold">
