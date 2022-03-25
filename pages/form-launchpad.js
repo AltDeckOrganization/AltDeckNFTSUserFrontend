@@ -704,13 +704,13 @@ const LaunchpadForm = () => {
               </div>
             </div>
 
-            <h3 className="text-base text-black uppercase my-4 font-bold">
+            {/* <h3 className="text-base text-black uppercase my-4 font-bold">
               Packages
             </h3>
             <DropdownForm />
             <div className="mt-5">
               <img src="/images/launchpad_marketing.jpg" alt="" />
-            </div>
+            </div> */}
 
             <h3 className="text-base text-black uppercase my-4 font-bold">
               Agreement
