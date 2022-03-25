@@ -5,52 +5,112 @@ export const dropData = [
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
     ],
   },
@@ -60,242 +120,530 @@ export const dropData = [
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
     ],
   },
@@ -305,242 +653,530 @@ export const dropData = [
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
       {
         image: "/animeImmortals.jpg",
         name: "Anime Immortals Village",
+        icons: [
+          {
+            icon: "/discord.svg",
+            link: "Discord",
+          },
+          {
+            icon: "/twitter.svg",
+            link: "Twitter",
+          },
+          {
+            icon: "/internet.svg",
+            link: "Internet",
+          },
+        ],
         price: "0.8",
-        tokens: "2000",
+        supply: "2000",
         date: "Today",
-        filled: "17:00 UTC",
         status: "WL Sale @ 16:00 UTC",
-        link: "mintpage/37",
       },
     ],
   },
