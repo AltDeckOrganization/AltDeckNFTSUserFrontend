@@ -83,7 +83,13 @@ export default function Example() {
         </div>
         <ul className=" items-align hidden lg:flex">
           <li className="mx-3">
-            <Dropdown title="Browse" link1="Launchpad" apply="launchpad" />
+            <Dropdown
+              title="Browse"
+              link1="Launchpad"
+              apply="launchpad"
+              link2="Drops"
+              apply2="drops"
+            />
           </li>
           <li className="mx-3">
             <Dropdown
@@ -171,9 +177,11 @@ export default function Example() {
                 <DropdownSmall
                   title="Browse"
                   // link1="Apply for collection listing"
-                  link2="Launchpad"
+                  link1="Launchpad"
                   // apply="form-listing"
-                  apply2="launchpad"
+                  apply="launchpad"
+                  link2="Drops"
+                  apply2="drops"
                   onClick={handleMenuClick}
                 />
               </li>
