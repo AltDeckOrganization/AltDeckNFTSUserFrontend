@@ -57,20 +57,14 @@ const DropsTable = ({ rows, scroll }) => {
               <TableCell>
                 <div className="flex text-black text-[16px]">
                   {row.icons.map((item, i) => (
-                    <a key={i} href={item.link} className="mr-2">
+                    <a key={i} href={item.link} className="pr-2 md:pr-4">
                       <img src={item.icon} alt={item.link} />
                     </a>
                   ))}
                 </div>
               </TableCell>
               <TableCell>
-                <p className="text-black text-[16px]">{row.price} SOL</p>
-              </TableCell>
-              <TableCell>
                 <p className="text-black text-[16px]">{row.supply}</p>
-              </TableCell>
-              <TableCell>
-                <p className="text-black text-[16px]">{row.status} SOL</p>
               </TableCell>
             </TableRow>
           ))}
@@ -84,9 +78,7 @@ const headCells = [
   { id: "collection", label: "Collection" },
   { id: "date", label: "Launch Date" },
   { id: "links", label: "Links" },
-  { id: "price", label: "Floor Price" },
   { id: "supply", label: "Total Supply" },
-  { id: "status", label: "Status" },
 ];
 
 const CustomTableHead = () => {
