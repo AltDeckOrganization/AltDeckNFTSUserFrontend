@@ -1,6 +1,6 @@
 import React from "react";
-import LaunchpadTable from "../components/launchpadTable";
 import { dropData } from "../components/data/dropsData";
+import DropsTable from "../components/dropsTable";
 
 const Drops = () => {
   return (
@@ -19,7 +19,7 @@ const Drops = () => {
           <div className="text-center text-2xl py-2 bg-gray-400 text-white rounded-md">
             {item.date}
           </div>
-          <LaunchpadTable rows={item.data} scroll />
+          <DropsTable rows={item.data} scroll />
         </div>
       ))}
     </div>
