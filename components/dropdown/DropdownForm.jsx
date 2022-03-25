@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
-const DropdownForm = () => {
-  const [dropdownVal, setDropdownVal] = useState("None");
+const DropdownForm = ({ dropdownVal, setDropdownVal }) => {
   const [inputChecked, setInputChecked] = useState(false);
   return (
     <>

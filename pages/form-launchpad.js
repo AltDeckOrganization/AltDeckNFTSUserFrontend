@@ -45,6 +45,7 @@ const LaunchpadForm = () => {
   const [acceptTOS, setAcceptTOS] = useState("");
   const [acceptDetailsWillBeShowed, setAcceptDetailsWillBeShowed] =
     useState("");
+  const [dropdownVal, setDropdownVal] = useState("None");
   const [submissionSuccessful, setSubmissionSuccesful] = useState("");
   const [pictureName, setPictureName] = useState("");
   const server_url = process.env.NEXT_PUBLIC_BACKEND_URL;
@@ -101,6 +102,7 @@ const LaunchpadForm = () => {
       feedback,
       acceptTOS,
       acceptDetailsWillBeShowed,
+      dropdownVal,
     };
 
     const data = {
@@ -707,7 +709,10 @@ const LaunchpadForm = () => {
             <h3 className="text-base text-black uppercase my-4 font-bold">
               Packages
             </h3>
-            <DropdownForm />
+            <DropdownForm
+              dropdownVal={dropdownVal}
+              setDropdownVal={setDropdownVal}
+            />
             <div className="mt-5">
               <img src="/images/launchpad_marketing.jpg" alt="" />
             </div>
