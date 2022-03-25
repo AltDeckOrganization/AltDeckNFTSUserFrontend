@@ -4,7 +4,7 @@ import { dropData } from "../components/data/dropsData";
 
 const Drops = () => {
   return (
-    <div className="xl:w-[1156px] mx-auto lg:w-[900px] w-full mt-28">
+    <div className="xl:w-[1156px] mx-auto lg:w-[900px] w-full mt-28 px-4 overflow-hidden md:px-0">
       <h1 className="text-3xl">Drops</h1>
       <p className="py-4">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
@@ -19,7 +19,7 @@ const Drops = () => {
           <div className="text-center text-2xl py-2 bg-gray-400 text-white rounded-md">
             {item.date}
           </div>
-          <LaunchpadTable rows={item.data} />
+          <LaunchpadTable rows={item.data} scroll />
         </div>
       ))}
     </div>
