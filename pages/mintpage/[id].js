@@ -19,6 +19,7 @@ import { GatewayProvider } from "@civic/solana-gateway-react";
 import { GatewayStatus, useGateway } from "@civic/solana-gateway-react";
 import { useAnchorWallet, useWallet } from "@solana/wallet-adapter-react";
 import Countdown from "react-countdown";
+import SEO from "../../components/seo/SEO";
 
 import {
   candyMachineProgram,
@@ -490,6 +491,8 @@ const Mint = () => {
 
   return (
     <div className="mint px-2 py-5 md:px-10">
+      <SEO />
+
       <div className="px-1 md:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2  gap4">
           <div className="px-5">

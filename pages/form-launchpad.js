@@ -9,6 +9,9 @@ import { Menu, Transition } from "@headlessui/react";
 
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import axios from "axios";
+import Dropdown from "../components/dropdown";
+import SEO from "../components/seo/SEO";
+import DropdownForm from "../components/dropdown/DropdownForm";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -44,7 +47,6 @@ const LaunchpadForm = () => {
     useState("");
   const [submissionSuccessful, setSubmissionSuccesful] = useState("");
   const [pictureName, setPictureName] = useState("");
-  const [buttonDisbaled, setButtonDisbaled] = useState(true);
   const server_url = process.env.NEXT_PUBLIC_BACKEND_URL;
 
   const handleFiles = (e) => {
@@ -62,68 +64,6 @@ const LaunchpadForm = () => {
       console.log("Error: ", error);
     };
   };
-
-  useEffect(() => {
-    if (
-      !name ||
-      !country ||
-      !picture ||
-      !videoUrl ||
-      !collectionName ||
-      !derivative ||
-      !email ||
-      !discordId ||
-      !projectUniqueDescription ||
-      !projectLongTermGoals ||
-      !teamDescription ||
-      !partnershipProof ||
-      !partners ||
-      !roadmapLink ||
-      !artworkInfo ||
-      !twitterLink ||
-      !instagramLink ||
-      !discordLink ||
-      !websiteLink ||
-      !mintDate ||
-      !mintTime ||
-      !supplyCount ||
-      !mintPrice ||
-      !feedback ||
-      !acceptTOS ||
-      !acceptDetailsWillBeShowed
-    ) {
-      setButtonDisbaled(true);
-    } else {
-      setButtonDisbaled(false);
-    }
-  }, [
-    acceptDetailsWillBeShowed,
-    acceptTOS,
-    artworkInfo,
-    collectionName,
-    country,
-    derivative,
-    discordId,
-    discordLink,
-    email,
-    feedback,
-    instagramLink,
-    mintDate,
-    mintPrice,
-    mintTime,
-    name,
-    partners,
-    partnershipProof,
-    picture,
-    projectLongTermGoals,
-    projectUniqueDescription,
-    roadmapLink,
-    supplyCount,
-    teamDescription,
-    twitterLink,
-    videoUrl,
-    websiteLink,
-  ]);
 
   const submitForm = (e) => {
     e.preventDefault();
@@ -186,6 +126,8 @@ const LaunchpadForm = () => {
 
   return (
     <div>
+      <SEO />
+
       <div className="launchPad py-5 mt-20 px-1 md:px-10 lg:px-20">
         <div className="launchPad py-5 px-1 md:px-10 lg:px-20">
           {submissionSuccessful === "false" && (
@@ -251,6 +193,7 @@ const LaunchpadForm = () => {
                   Name
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="name"
                   type="text"
@@ -276,6 +219,7 @@ const LaunchpadForm = () => {
                   value={country}
                 />
                 {/* <input
+                  required
               className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="grid-last-name"
               type="text"
@@ -320,6 +264,7 @@ const LaunchpadForm = () => {
                           </div>
                         </div>{" "}
                         <input
+                          required
                           id="profile_image"
                           type="file"
                           className="h-full w-full opacity-0"
@@ -342,6 +287,7 @@ const LaunchpadForm = () => {
                     Video(mp3)
                   </label>
                   <input
+                    required
                     className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                     id="name"
                     type="text"
@@ -373,6 +319,7 @@ const LaunchpadForm = () => {
                   Collection Name
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="name"
                   type="text"
@@ -386,7 +333,7 @@ const LaunchpadForm = () => {
               <div className="w-full md:w-1/2 px-3">
                 <label
                   className="block  trackin-wide text-gray-700 text-xs font-bold mb-2"
-                  htmlFor="grid-last-name"
+                  htmlFor="checkbox1"
                 >
                   Is your project a derivative?
                 </label>
@@ -397,6 +344,7 @@ const LaunchpadForm = () => {
                   onChange={(e) => setDerivative(e.target.value)}
                 />
                 {/* <input
+                  required
               className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="grid-last-name"
               type="text"
@@ -414,6 +362,7 @@ const LaunchpadForm = () => {
                   Email
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="email"
                   type="email"
@@ -429,6 +378,7 @@ const LaunchpadForm = () => {
                   Discord ID
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="discord__id"
                   type="text"
@@ -447,6 +397,7 @@ const LaunchpadForm = () => {
                   Describe what makes your project unique
                 </label>
                 <textarea
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="project_unique"
                   type="text"
@@ -462,6 +413,7 @@ const LaunchpadForm = () => {
                   Describe long term goals of your project
                 </label>
                 <textarea
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="project_unique"
                   type="text"
@@ -483,6 +435,7 @@ const LaunchpadForm = () => {
                   team meet, LinkedIn of all team members
                 </label>
                 <textarea
+                  required
                   className="appearance-none block w-full h-50 bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="project_unique"
                   type="text"
@@ -502,6 +455,7 @@ const LaunchpadForm = () => {
                   up
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="supportlinks"
                   type="text"
@@ -517,6 +471,7 @@ const LaunchpadForm = () => {
                   Partnerships, who is your project currently partnered with?
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="discord__id"
                   type="text"
@@ -536,6 +491,7 @@ const LaunchpadForm = () => {
                   links, google drive, etc)
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="support"
                   type="text"
@@ -553,6 +509,7 @@ const LaunchpadForm = () => {
                   project doesn’t sell out.
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="discord__id"
                   type="text"
@@ -572,6 +529,7 @@ const LaunchpadForm = () => {
                   you meet the artist?
                 </label>
                 <textarea
+                  required
                   className="appearance-none block w-full h-50 bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="project_unique"
                   type="text"
@@ -593,6 +551,7 @@ const LaunchpadForm = () => {
                   Twitter
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="twitter"
                   type="text"
@@ -608,6 +567,7 @@ const LaunchpadForm = () => {
                   Discord server
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="discord__id"
                   type="text"
@@ -626,6 +586,7 @@ const LaunchpadForm = () => {
                   Instagram
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="instagram"
                   type="text"
@@ -641,6 +602,7 @@ const LaunchpadForm = () => {
                   Website
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="website"
                   type="text"
@@ -659,6 +621,7 @@ const LaunchpadForm = () => {
                   Mint date
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="mint_date"
                   type="text"
@@ -674,6 +637,7 @@ const LaunchpadForm = () => {
                   Mint Time
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="mint_time"
                   type="text"
@@ -692,6 +656,7 @@ const LaunchpadForm = () => {
                   Supply count
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="supply_count"
                   type="text"
@@ -707,6 +672,7 @@ const LaunchpadForm = () => {
                   Mint price in sol
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="mint_time"
                   type="text"
@@ -739,29 +705,39 @@ const LaunchpadForm = () => {
             </div>
 
             <h3 className="text-base text-black uppercase my-4 font-bold">
+              Packages
+            </h3>
+            <DropdownForm />
+            <div className="mt-5">
+              <img src="/images/launchpad_marketing.jpg" alt="" />
+            </div>
+
+            <h3 className="text-base text-black uppercase my-4 font-bold">
               Agreement
             </h3>
             <div className="flex flex-wrap -mx-3 mb-6">
               <label className="inline-flex items-center mt-3 px-3 gap-2">
                 <input
+                  required
                   type="checkbox"
                   className="input-checkbox"
-                  id="checkbox1"
+                  id="checkbox2"
                   onChange={(e) => setAcceptTOS(e.target.value)}
                 />
-                <label htmlFor="checkbox1" className="input-label text-sm">
+                <label htmlFor="checkbox2" className="input-label text-sm">
                   Accept our TOS.
                 </label>
               </label>
 
               <label className="inline-flex items-center mt-3 px-3 gap-2">
                 <input
+                  required
                   type="checkbox"
                   className="input-checkbox bg-red-500"
-                  id="checkbox1"
+                  id="checkbox3"
                   onChange={(e) => setAcceptDetailsWillBeShowed(e.target.value)}
                 />
-                <label htmlFor="checkbox1" className="input-label text-sm">
+                <label htmlFor="checkbox3" className="input-label text-sm">
                   Accept details provided on your team will be revealed on your
                   collection / launchpad page.
                 </label>
@@ -772,8 +748,8 @@ const LaunchpadForm = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0"></div>
               <div className="w-full md:w-1/2 px-3">
                 <button
-                  disabled={buttonDisbaled ? true : false}
                   className="bg-[#50C9C3]  rounded rounded-md py-3 px-10 text-white float-right"
+                  type="submit"
                 >
                   Submit
                 </button>
