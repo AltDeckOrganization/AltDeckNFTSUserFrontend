@@ -8,11 +8,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -30,11 +30,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -52,11 +52,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -74,11 +74,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -96,11 +96,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -123,11 +123,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -145,11 +145,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -167,11 +167,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -189,11 +189,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -211,11 +211,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -233,11 +233,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -255,11 +255,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -277,11 +277,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -299,11 +299,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -321,11 +321,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -343,11 +343,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -365,11 +365,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -387,11 +387,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -409,11 +409,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -431,11 +431,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -453,11 +453,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -475,11 +475,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -497,11 +497,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -519,11 +519,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -541,11 +541,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -563,11 +563,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -585,11 +585,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -607,11 +607,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -629,11 +629,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -656,11 +656,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -678,11 +678,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -700,11 +700,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -722,11 +722,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -744,11 +744,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -766,11 +766,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -788,11 +788,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -810,11 +810,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -832,11 +832,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -854,11 +854,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -876,11 +876,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -898,11 +898,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -920,11 +920,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -942,11 +942,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -964,11 +964,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -986,11 +986,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -1008,11 +1008,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -1030,11 +1030,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -1052,11 +1052,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -1074,11 +1074,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -1096,11 +1096,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -1118,11 +1118,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -1140,11 +1140,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
@@ -1162,11 +1162,11 @@ export const dropData = [
         icons: [
           {
             icon: "/discord.svg",
-            link: "Discord",
+            link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
             icon: "/twitter.svg",
-            link: "Twitter",
+            link: "https://twitter.com/AltDeck_io",
           },
           {
             icon: "/internet.svg",
