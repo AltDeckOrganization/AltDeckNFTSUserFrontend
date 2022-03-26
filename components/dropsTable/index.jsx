@@ -64,7 +64,16 @@ const DropsTable = ({ rows, scroll }) => {
                 </div>
               </TableCell>
               <TableCell>
+                <p className="text-black text-[16px]">{row.price}</p>
+              </TableCell>
+              <TableCell>
                 <p className="text-black text-[16px]">{row.supply}</p>
+              </TableCell>
+              <TableCell className="w-2/6">
+                <p className="text-black text-[16px]">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Aspernatur, corrupti! Itaque laudantium architecto
+                </p>
               </TableCell>
             </TableRow>
           ))}
@@ -78,7 +87,9 @@ const headCells = [
   { id: "collection", label: "Collection" },
   { id: "date", label: "Launch Date" },
   { id: "links", label: "Links" },
+  { id: "price", label: "Mint Price" },
   { id: "supply", label: "Total Supply" },
+  { id: "desc", label: "Description" },
 ];
 
 const CustomTableHead = () => {
