@@ -90,6 +90,8 @@ export default function Example() {
               title="Apply"
               link1="Apply for launchpad"
               apply="form-launchpad"
+              link2="Apply for drop"
+              apply2="drop-form"
             />
           </li>
 
@@ -181,9 +183,11 @@ export default function Example() {
                 <DropdownSmall
                   title="Apply"
                   // link1="Apply for collection listing"
-                  link2="Apply for launchpad"
+                  link1="Apply for launchpad"
                   // apply="form-listing"
-                  apply2="form-launchpad"
+                  apply="form-launchpad"
+                  link2="Apply for drop"
+                  apply2="drop-form"
                   onClick={handleMenuClick}
                 />
               </li>
