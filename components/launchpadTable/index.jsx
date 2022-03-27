@@ -8,9 +8,13 @@ import {
 } from "@mui/material";
 import Link from "next/link";
 
-const LaunchpadTable = ({ rows }) => {
+const LaunchpadTable = ({ rows, scroll }) => {
   return (
-    <div className="w-full mt-5">
+    <div
+      className={`w-full mt-5 ${
+        scroll && "overflow-x-scroll md:overflow-hidden"
+      }`}
+    >
       <Table className="min-w-[750px]" size="small">
         <CustomTableHead />
         <TableBody
