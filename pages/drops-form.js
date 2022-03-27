@@ -8,17 +8,7 @@ function classNames(...classes) {
 }
 const DropsForm = () => {
   const [projectName, setProjectName] = useState("");
-  const [derivative, setDerivative] = useState("");
-  const [email, setEmail] = useState("");
-  const [discordId, setDiscordId] = useState("");
-  const [projectUniqueDescription, setProjectUniqueDescription] = useState("");
-  const [projectLongTermGoals, setProjectLongTermGoals] = useState("");
-  const [teamDescription, setTeamDescription] = useState("");
-  const [partnershipProof, setPartnershipProof] = useState("");
-  const [partners, setPartners] = useState("");
-  const [additionalLinks, setAdditionalLinks] = useState("");
-  const [roadmapLink, setRoadMapLink] = useState("");
-  const [artworkInfo, setArtworkInfo] = useState("");
+  const [picture, setPicture] = useState("");
   const [twitterLink, setTwitterLink] = useState("");
   const [instagramLink, setInstagramLink] = useState("");
   const [discordLink, setDiscordLink] = useState("");
