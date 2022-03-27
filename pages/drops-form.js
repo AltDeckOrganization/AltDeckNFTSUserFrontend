@@ -7,11 +7,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 const DropsForm = () => {
-  const [name, setName] = useState("");
-  const [country, setCountry] = useState("");
-  const [picture, setPicture] = useState("");
-  const [videoUrl, setVideoUrl] = useState("");
-  const [collectionName, setCollectionName] = useState("");
+  const [projectName, setProjectName] = useState("");
   const [derivative, setDerivative] = useState("");
   const [email, setEmail] = useState("");
   const [discordId, setDiscordId] = useState("");
@@ -117,54 +113,26 @@ const DropsForm = () => {
 
           <form className="w-full  py-5 px-5 md:px-10" onSubmit={submitForm}>
             <h3 className="text-base text-black uppercase my-4 font-bold">
-              Personal Details
+              Project Details
             </h3>
+
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
                   className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
-                  Name
+                  Project Name
                 </label>
                 <input
                   required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="name"
                   type="text"
-                  placeholder="Adam Smith"
-                  onChange={(e) => setName(e.target.value)}
+                  placeholder="Add project name"
+                  onChange={(e) => setProjectName(e.target.value)}
                 />
-                {/* <p className="text-red-500 text-xs italic">
-              Please fill out this field.
-            </p> */}
               </div>
-              <div className="w-full md:w-1/2 px-3">
-                <label
-                  className="block  trackin-wide text-gray-700 text-xs font-bold mb-2"
-                  htmlFor="grid-last-name"
-                >
-                  Country
-                </label>
-                <CountryDropdown
-                  className="block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  onChange={(val) => {
-                    setCountry(val);
-                  }}
-                  value={country}
-                />
-                {/* <input
-                  required
-              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="grid-last-name"
-              type="text"
-              placeholder="Doe"
-            /> */}
-              </div>
-            </div>
-
-            <div className="flex flex-wrap -mx-3 mb-6">
-              {" "}
               <div className="py-3 mb-5  px-3 bg-white md:w-1/2 w-full">
                 <div className="max-w-md mx-auto rounded-lg overflow-hidden md:max-w-xl">
                   <label
@@ -212,271 +180,8 @@ const DropsForm = () => {
                   </div>
                 </div>
               </div>
-              {/* VIDEO */}
-              <div className="py-3  bg-white  px-3 md:w-1/2 w-full">
-                <div className="max-w-md mx-auto rounded-lg overflow-hidden md:max-w-xl">
-                  <label
-                    className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-                    htmlFor="grid-first-name"
-                  >
-                    Video(mp3)
-                  </label>
-                  <input
-                    required
-                    className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                    id="name"
-                    type="text"
-                    placeholder="Video URL"
-                    onChange={(e) => setVideoUrl(e.target.value)}
-                  />
-                  {/* <p className="text-red-500 text-xs italic">
-                Please fill out this field.
-              </p> */}
-                </div>
-              </div>
-            </div>
-            {/* <div className="w-full flex mb-5flex-wrap mb-10">
-          <button className="bg-[#50C9C3]  rounded rounded-md py-3 px-10 text-white float-center">
-            Add another team member
-          </button>
-        </div> */}
-
-            <h3 className="text-base text-black uppercase my-4 font-bold">
-              Collection Details
-            </h3>
-
-            <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  htmlFor="grid-first-name"
-                >
-                  Collection Name
-                </label>
-                <input
-                  required
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  id="name"
-                  type="text"
-                  placeholder="Add collection name"
-                  onChange={(e) => setCollectionName(e.target.value)}
-                />
-                {/* <p className="text-red-500 text-xs italic">
-              Please fill out this field.
-            </p> */}
-              </div>
-              <div className="w-full md:w-1/2 px-3">
-                <label
-                  className="block  trackin-wide text-gray-700 text-xs font-bold mb-2"
-                  htmlFor="checkbox1"
-                >
-                  Is your project a derivative?
-                </label>
-                <input
-                  type="checkbox"
-                  className="input-checkbox bg-red-500"
-                  id="checkbox1"
-                  onChange={(e) => setDerivative(e.target.value)}
-                />
-                {/* <input
-                  required
-              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="grid-last-name"
-              type="text"
-              placeholder="Doe"
-            /> */}
-              </div>
             </div>
 
-            <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  htmlFor="grid-first-name"
-                >
-                  Email
-                </label>
-                <input
-                  required
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  id="email"
-                  type="email"
-                  placeholder="youremail@gmail.com"
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </div>
-              <div className="w-full md:w-1/2 px-3">
-                <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  htmlFor="grid-first-name"
-                >
-                  Discord ID
-                </label>
-                <input
-                  required
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  id="discord__id"
-                  type="text"
-                  placeholder="Paste ID here"
-                  onChange={(e) => setDiscordId(e.target.value)}
-                />
-              </div>
-            </div>
-
-            <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  htmlFor="grid-first-name"
-                >
-                  Describe what makes your project unique
-                </label>
-                <textarea
-                  required
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  id="project_unique"
-                  type="text"
-                  placeholder="Make it short"
-                  onChange={(e) => setProjectUniqueDescription(e.target.value)}
-                ></textarea>
-              </div>
-              <div className="w-full md:w-1/2 px-3">
-                <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  htmlFor="grid-first-name"
-                >
-                  Describe long term goals of your project
-                </label>
-                <textarea
-                  required
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  id="project_unique"
-                  type="text"
-                  placeholder="Make it short"
-                  onChange={(e) => setProjectLongTermGoals(e.target.value)}
-                ></textarea>
-              </div>
-            </div>
-
-            <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full md:w-full px-3 mb-6 md:mb-0">
-                <label
-                  className="block tracking-wide text-gray-700 text-xs w-3/4 font-bold mb-2"
-                  htmlFor="grid-first-name"
-                >
-                  Tell us about your team (how many team members there are
-                  working on the project daily, current occupation of these team
-                  members, past accomplishments of core members, how did the
-                  team meet, LinkedIn of all team members
-                </label>
-                <textarea
-                  required
-                  className="appearance-none block w-full h-50 bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  id="project_unique"
-                  type="text"
-                  placeholder="Make it short"
-                  onChange={(e) => setTeamDescription(e.target.value)}
-                ></textarea>
-              </div>
-            </div>
-
-            <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  htmlFor="grid-first-name"
-                >
-                  Partnership proof, please link links or articles to back this
-                  up
-                </label>
-                <input
-                  required
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  id="supportlinks"
-                  type="text"
-                  placeholder="Paste links here"
-                  onChange={(e) => setPartnershipProof(e.target.value)}
-                />
-              </div>
-              <div className="w-full md:w-1/2 px-3">
-                <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  htmlFor="grid-first-name"
-                >
-                  Partnerships, who is your project currently partnered with?
-                </label>
-                <input
-                  required
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  id="discord__id"
-                  type="text"
-                  placeholder="Paste link here"
-                  onChange={(e) => setPartners(e.target.value)}
-                />
-              </div>
-            </div>
-
-            <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  htmlFor="grid-first-name"
-                >
-                  Add links that support your previously stated case (articles,
-                  links, google drive, etc)
-                </label>
-                <input
-                  required
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  id="support"
-                  type="text"
-                  placeholder="Paste links here"
-                  onChange={(e) => setAdditionalLinks(e.target.value)}
-                />
-              </div>
-              <div className="w-full md:w-1/2 px-3">
-                <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  htmlFor="grid-first-name"
-                >
-                  Roadmap/whitepaper, please link your roadmap below or list
-                  details on it. Please also state what you will do if your
-                  project doesn’t sell out.
-                </label>
-                <input
-                  required
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  id="discord__id"
-                  type="text"
-                  placeholder="Paste link here"
-                  onChange={(e) => setRoadMapLink(e.target.value)}
-                />
-              </div>
-            </div>
-
-            <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full md:w-full px-3 mb-6 md:mb-0">
-                <label
-                  className="block tracking-wide text-gray-700 text-xs w-3/4 font-bold mb-2"
-                  htmlFor="grid-first-name"
-                >
-                  Artwork, is your artwork original? Who’s the artist? How did
-                  you meet the artist?
-                </label>
-                <textarea
-                  required
-                  className="appearance-none block w-full h-50 bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  id="project_unique"
-                  type="text"
-                  placeholder="Make it short"
-                  onChange={(e) => setArtworkInfo(e.target.value)}
-                ></textarea>
-              </div>
-            </div>
-
-            <h3 className="text-base text-black uppercase my-4 font-bold">
-              Socials
-            </h3>
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
@@ -617,35 +322,23 @@ const DropsForm = () => {
               </div>
             </div>
 
-            <h3 className="text-base text-black uppercase my-4 font-bold">
-              Feedback
-            </h3>
-
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-full px-3 mb-6 md:mb-0">
                 <label
                   className="block tracking-wide text-gray-700 text-xs w-3/4 font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
-                  What else should we know?
+                  Description
                 </label>
                 <textarea
                   className="appearance-none block w-full h-50 bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="project_unique"
                   type="text"
-                  placeholder="Make it short"
+                  placeholder="Write all description of your project"
                   onChange={(e) => setFeedback(e.target.value)}
                 ></textarea>
               </div>
             </div>
-
-            {/* <h3 className="text-base text-black uppercase my-4 font-bold">
-              Packages
-            </h3>
-            <DropdownForm />
-            <div className="mt-5">
-              <img src="/images/launchpad_marketing.jpg" alt="" />
-            </div> */}
 
             <h3 className="text-base text-black uppercase my-4 font-bold">
               Agreement
