@@ -97,7 +97,7 @@ export default function Example() {
               link1="Apply for launchpad"
               apply="form-launchpad"
               link2="Apply for drop"
-              apply2="drop-form"
+              apply2="drops-form"
             />
           </li>
 
@@ -195,7 +195,7 @@ export default function Example() {
                   // apply="form-listing"
                   apply="form-launchpad"
                   link2="Apply for drop"
-                  apply2="drop-form"
+                  apply2="drops-form"
                   onClick={handleMenuClick}
                 />
               </li>
