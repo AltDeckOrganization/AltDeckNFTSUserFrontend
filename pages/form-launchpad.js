@@ -126,10 +126,9 @@ const LaunchpadForm = () => {
 
   return (
     <div>
+      <div className="launchPad  md:px-0 xl:w-[1156px] xl:mx-auto lg:px-20  w-full mt-20 md:mt-28">
+        <div className="launchPad ">
       <SEO />
-
-      <div className="launchPad py-5 mt-20 px-1 md:px-10 lg:px-20">
-        <div className="launchPad py-5 px-1 md:px-10 lg:px-20">
           {submissionSuccessful === "false" && (
             <div
               className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
@@ -175,7 +174,7 @@ const LaunchpadForm = () => {
           <div className="text-[#50C9C3]  text-lg  font-semibold  py-3 lg:text-3xl md:text-xl text-center">
             Listing application
           </div>
-          <p className="text-base text-gray-500 px-10 pt-5">
+          <p className="text-base text-gray-500 px-5 md:px-10">
             Please provide details about at least 1 team member (more team
             members, the better).
           </p>

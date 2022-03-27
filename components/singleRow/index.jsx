@@ -11,7 +11,7 @@ const SingleRow = ({
   seeAllLink,
 }) => {
   return (
-    <div className="mt-24 mx-[20px]">
+    <div className="mt-10 mx-[20px]">
       <div className="flex items-center justify-between">
         <h1 className="text-xl font-semibold md:text-[28px]">{heading}</h1>
         {seeALL && seeAllLink && (

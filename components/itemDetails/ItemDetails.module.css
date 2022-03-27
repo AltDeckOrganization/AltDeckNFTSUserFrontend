@@ -198,7 +198,7 @@
 
   .imageofmonkey {
     height: 25rem !important;
-    border-radius: 1rem;
+    border-radius: 10px;
     margin-left: 0rem;
   }
 }

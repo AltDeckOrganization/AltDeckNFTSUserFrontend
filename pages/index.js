@@ -15,10 +15,10 @@ import CollectionCard from "../components/collectionCard";
 
 export default function Home() {
   return (
-    <div className="xl:w-[1156px] mx-auto lg:w-[900px] w-full mt-28">
+    <div className="px-5 md:px-0 xl:w-[1156px] xl:mx-auto lg:px-20  w-full mt-20 md:mt-28">
       <SEO />
       <Hero />
-      <SlideShow />
+      {/* <SlideShow />  */}
       <SingleRow
         data={cardData}
         heading={"Featured Collection"}
