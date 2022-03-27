@@ -33,7 +33,7 @@ function ItemDetails() {
     setValue(newValue);
   };
   return (
-    <div style={{ margin: "10px 0px" }} className="scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100">
+    <div className="scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100">
       {" "}
       <Box sx={{ flexGrow: 1 }}>
         <Grid className={`${astyles.margintopofgrid}`} container spacing={2}>

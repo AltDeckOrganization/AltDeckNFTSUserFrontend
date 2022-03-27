@@ -20,7 +20,7 @@ const LaunchpadForm = () => {
 			<div className='text-[#50C9C3] text-lg  font-semibold  py-3 lg:text-3xl md:text-xl text-center'>
 				Collection Listing Application
 			</div>
-			<p className='text-base text-gray-500 px-10 pt-5'>
+			<p className='text-base text-gray-500 px-5 md:px-10'>
 				Please provide details about at least 1 team member (more team members,
 				the better).
 			</p>
