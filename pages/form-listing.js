@@ -6,6 +6,7 @@ import {
 	CountryRegionData,
 } from 'react-country-region-selector';
 import { Menu, Transition } from '@headlessui/react';
+import SEO from '../components/seo/SEO';
 
 import { ChevronDownIcon } from '@heroicons/react/solid';
 
@@ -17,6 +18,8 @@ const LaunchpadForm = () => {
 	const [country, setCountry] = useState('');
 	return (
 		<div className='launchPad py-5 px-1 mt-20 md:px-10 lg:px-20'>
+			<SEO />
+
 			<div className='text-[#50C9C3] text-lg  font-semibold  py-3 lg:text-3xl md:text-xl text-center'>
 				Collection Listing Application
 			</div>
@@ -24,7 +27,6 @@ const LaunchpadForm = () => {
 				Please provide details about at least 1 team member (more team members,
 				the better).
 			</p>
-
 			<form className='w-full  py-5 px-5 md:px-10'>
 				<h3 className='text-base text-black uppercase my-4 font-bold'>
 					Personal Details

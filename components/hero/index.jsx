@@ -34,8 +34,9 @@ const Hero = () => {
         <h5 className="my-2 text-[#808080] text-sm md:text-lg">
           Buy, Sell and Discover Rare Digital Items
         </h5>
+
         <h1 className="text-2xl text-black font-semibold mb-5 md:text-3xl">
-          The Innovative Solana NFT Marketplace
+          The Innovative Solana NFT Launchpad
         </h1>
       </div>
       <div className="grid grid-cols-1 md:gap-2 lg:gap-0 mt-6 md:grid-cols-3">

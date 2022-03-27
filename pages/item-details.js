@@ -1,4 +1,5 @@
 import ItemDetals from "../components/itemDetails";
+import SEO from "../components/seo/SEO";
 
 function Itemdetails() {
   return (

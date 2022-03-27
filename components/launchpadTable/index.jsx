@@ -96,7 +96,7 @@ const CustomTableHead = () => {
             className="capitalize text-[12px]"
             align={headCell.numeric ? "right" : "left"}
           >
-            <p className="font-medium text-[#50C9C3] text-[15px] uppercase pb-2">
+            <p className="font-semibold text-black text-[15px] uppercase pb-2">
               {headCell.label}
             </p>
           </TableCell>
