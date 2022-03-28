@@ -96,10 +96,6 @@ const DropsForm = () => {
           <div className="text-[#50C9C3]  text-lg  font-semibold  py-3 lg:text-3xl md:text-xl text-center">
             Drops application
           </div>
-          <p className="text-base text-gray-500 px-10 pt-5">
-            Please provide details about at least 1 team member (more team
-            members, the better).
-          </p>
 
           <form className="w-full  py-5 px-5 md:px-10" onSubmit={submitForm}>
             <h3 className="text-base text-black uppercase my-4 font-bold">
@@ -344,20 +340,6 @@ const DropsForm = () => {
                 />
                 <label htmlFor="checkbox2" className="input-label text-sm">
                   Accept our TOS.
-                </label>
-              </label>
-
-              <label className="inline-flex items-center mt-3 px-3 gap-2">
-                <input
-                  required
-                  type="checkbox"
-                  className="input-checkbox bg-red-500"
-                  id="checkbox3"
-                  onChange={(e) => setAcceptDetailsWillBeShowed(e.target.value)}
-                />
-                <label htmlFor="checkbox3" className="input-label text-sm">
-                  Accept details provided on your team will be revealed on your
-                  collection / launchpad page.
                 </label>
               </label>
             </div>
