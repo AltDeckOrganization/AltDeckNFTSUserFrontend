@@ -35,9 +35,9 @@ const Mint = () => {
     <div className="mint px-2 py-5 md:px-10 mt-20">
       <SEO />
 
-      <div className="px-1 md:px-10">
+      <div className="">
         <div className="grid grid-cols-1 lg:grid-cols-2  gap4">
-          <div className="px-5 w-10/12 mx-auto">
+          <div className="w-10/12 mx-auto">
             <Image
               src={Crows}
               alt="Crows"

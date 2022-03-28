@@ -31,6 +31,14 @@ const SlickSlider = ({ children }) => {
     prevArrow: <PrevArrow />,
     responsive: [
       {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
         breakpoint: 1280,
         settings: {
           slidesToShow: 4,

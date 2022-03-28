@@ -17,7 +17,7 @@ const CollectionCard = ({ data }) => {
       </div>
       <div>
         <h2 className="mt-5 text-xl font-medium text-center">{data.head}</h2>
-        <p className="text-sm text-center text-gray-600 line-clamp-2">
+        <p className="text-sm xl:text-base text-center text-gray-600 line-clamp-2">
           {data.para}
         </p>
       </div>
