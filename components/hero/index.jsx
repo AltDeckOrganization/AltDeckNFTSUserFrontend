@@ -29,17 +29,18 @@ const Hero = () => {
   };
 
   return (
-    <div className="hidden my-12 lg:block">
+    <div className="mt-6 mb-28 md:my-12 lg:block">
       <div className="text-center">
         <h5 className="my-2 text-[#808080] text-sm md:text-lg">
           Buy, Sell and Discover Rare Digital Items
         </h5>
-        <h1 className="text-3xl text-black font-semibold mb-5 md:text-3xl">
+
+        <h1 className="text-2xl text-black font-semibold mb-5 md:text-3xl">
           The Innovative Solana NFT Launchpad
         </h1>
       </div>
-      <div className="grid grid-cols-1 mt-6 lg:grid-cols-3">
-        <div className="grid grid-cols-3 gap-1 border-r-3">
+      <div className="grid grid-cols-1 md:gap-2 lg:gap-0 mt-6 md:grid-cols-3">
+        <div className="hidden md:grid grid-cols-3 md:p-2 lg:p-0 gap-1 border-r-3">
           {imagesData.map(({ imgSrc, altText, id }) => (
             <div
               className="flex items-center justify-center mx-1 cursor-pointer "
@@ -47,25 +48,40 @@ const Hero = () => {
               onClick={() => handleOpenAllDetails(id)}
             >
               <img
-                className="m-2 rounded-md h-[100px] w-[100px] md:rounded-lg md:h-[100px] md:w-[100px]"
+                className="m-2 rounded-md h-[50px] w-[50px] md:rounded-lg md:h-[80px] md:w-[80px] lg:h-[100px] lg:w-[100px]"
                 src="/images/sampleImageHome.jpg"
                 alt={altText}
               />
             </div>
           ))}
         </div>
-        <div className="flex items-center justify-center mt-5 lg:mt-0">
+        <div className="flex items-center justify-center md:mt-5 lg:my-2">
           <img
-            className="rounded-md border w-64 h-64 lg:w-10/12 lg:h-[100%] sm:w-96 sm:h-96 object-cover"
+            className="rounded-md border w-full h-[450px] px-3  mx-5 lg:w-10/12 lg:h-[100%] sm:w-96 sm:h-96 object-cover"
             src={filteredData.imgSrc}
             alt={filteredData.altText}
           />
         </div>
-        <div className="relative flex flex-col lg:items-start">
-          <h2 className="px-4 text-base font-semibold lg:text-xl lg:px-0">
+        <div className="overflow-x-auto my-5 md:hidden overflow-hidden">
+        <div className="md:hidden gap-2 flex w-[60pc]">
+          {imagesData.map(({ imgSrc, altText, id }) => (
+            <div
+              className=""
+              key={id}
+              onClick={() => handleOpenAllDetails(id)}
+            >
+              <img
+                className=""
+                src="/images/sampleImageHome.jpg"
+                alt={altText}
+              />
+            </div>
+          ))}</div></div>
+        <div className="relative my-5 flex flex-col my- md:my-2 md:px-2 lg:p-0 lg:items-start">
+          <h2 className=" text-xl md:text-base font-semibold lg:text-xl md:px-0">
             3D Hungry Crows
           </h2>
-          <p className="mt-2 lg:mt-1 text-[#808080] text-sm">
+          <p className="mt-2 lg:mt-1 text-[#808080] text-base md:text-sm">
             From{" "}
             <span className="mr-2 font-semibold text-black">
               {filteredData.price} SOL
@@ -78,14 +94,14 @@ const Hero = () => {
             </span>
           </p>
           <div>
-            <p className="mt-5 text-[#808080] text-sm">
+            <p className="md:mt-5 text-[#808080] text-base md:text-sm">
               Creator:{" "}
               <span className="font-semibold text-black">
                 {" "}
                 {filteredData.artiste}
               </span>
             </p>
-            <p className="mt-1 text-[#808080] text-sm">
+            <p className="md:mt-1 text-[#808080] text-base md:text-sm">
               Minted:{" "}
               <span className="font-semibold text-black">
                 {" "}
@@ -93,10 +109,10 @@ const Hero = () => {
               </span>
             </p>
           </div>
-          <p className="w-full mt-6 lg:mt-12 xl:line-clamp-6 leading-loose leading-6 mb-5 lg:line-clamp-4 text-sm text-[#4F4F4F] absolute bottom-20">
+          <p className="w-full mt-6 lg:mt-2 xl:line-clamp-6 leading-loose leading-6 mb-5 lg:line-clamp-4 text-base md:text-xs lg:text-sm text-[#4F4F4F] ">
             {filteredData.details}
           </p>
-          <div className="absolute bottom-0 flex flex-col justify-center w-11/12 lg:w-full lg:justify-start sm:flex-row">
+          <div className="md:absolute bottom-0 flex flex-col  md:mt-20 justify-center w-11/12 lg:w-full lg:justify-start sm:flex-row">
             <ButtonCommon
               isGreen={true}
               text={`Buy for ${filteredData.price} SOL`}
