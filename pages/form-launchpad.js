@@ -126,9 +126,9 @@ const LaunchpadForm = () => {
 
   return (
     <div>
-      <div className="launchPad  md:px-0 xl:w-[1156px] xl:mx-auto lg:px-20  w-full mt-20 md:mt-28">
+      <div className="launchPad  md:px-0 xl:w-[1156px] xl:mx-auto lg:px-0 w-full mt-20 md:mt-28">
         <div className="launchPad ">
-      <SEO />
+          <SEO />
           {submissionSuccessful === "false" && (
             <div
               className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
