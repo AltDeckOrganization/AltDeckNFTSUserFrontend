@@ -1,6 +1,6 @@
 .dropdown {
   position: relative;
-  width: 400px;
+  width: 20vw;
   filter: url(#goo);
 }
 .dropdown__face,
@@ -55,4 +55,10 @@
   top: calc(100% + 25px);
   visibility: visible;
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .dropdown {
+    width: 86vw;
+  }
 }
