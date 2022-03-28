@@ -17,10 +17,8 @@ const DropsForm = () => {
   const [mintTime, setMintTime] = useState("");
   const [supplyCount, setSupplyCount] = useState("");
   const [mintPrice, setMintPrice] = useState("");
-  const [feedback, setFeedback] = useState("");
+  const [description, setDescription] = useState("");
   const [acceptTOS, setAcceptTOS] = useState("");
-  const [acceptDetailsWillBeShowed, setAcceptDetailsWillBeShowed] =
-    useState("");
   const [submissionSuccessful, setSubmissionSuccesful] = useState("");
   const [pictureName, setPictureName] = useState("");
   const server_url = process.env.NEXT_PUBLIC_BACKEND_URL;
@@ -43,6 +41,40 @@ const DropsForm = () => {
 
   const submitForm = (e) => {
     e.preventDefault();
+
+    const form_data = {
+      projectName,
+      twitterLink,
+      description,
+      instagramLink,
+      discordLink,
+      websiteLink,
+      mintDate,
+      mintTime,
+      supplyCount,
+      mintPrice,
+      acceptTOS,
+    };
+
+    const data = {
+      name: projectName,
+      profile_image_path: picture,
+      collection_image_path: picture,
+      form_data: JSON.stringify(form_data),
+    };
+
+    axios
+      .post(`${server_url}/api/v1/drops`, data)
+      .then((res) => {
+        setSubmissionSuccesful("true");
+        window.scrollTo(0, 0);
+        console.log(res.data);
+      })
+      .catch((e) => {
+        setSubmissionSuccesful("false");
+        window.scrollTo(0, 0);
+        console.log(e);
+      });
   };
 
   return (
@@ -321,7 +353,7 @@ const DropsForm = () => {
                   id="project_unique"
                   type="text"
                   placeholder="Write all description of your project"
-                  onChange={(e) => setFeedback(e.target.value)}
+                  onChange={(e) => setDescription(e.target.value)}
                 ></textarea>
               </div>
             </div>
