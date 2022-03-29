@@ -12,6 +12,7 @@ import axios from "axios";
 import Dropdown from "../components/dropdown";
 import SEO from "../components/seo/SEO";
 import DropdownForm from "../components/dropdown/DropdownForm";
+import Link from "next/link";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -126,7 +127,7 @@ const LaunchpadForm = () => {
 
   return (
     <div>
-      <div className="launchPad  md:px-0 xl:w-[1156px] xl:mx-auto lg:px-0 w-full mt-20 md:mt-28">
+      <div className="launchPad  md:px-0 xl:w-[1156px] xl:mx-auto lg:px-28  w-full mt-20 md:mt-28">
         <div className="launchPad ">
           <SEO />
           {submissionSuccessful === "false" && (
@@ -176,7 +177,10 @@ const LaunchpadForm = () => {
           </div>
           <p className="text-base text-gray-500 px-5 md:px-10">
             Please provide details about at least 1 team member (more team
-            members, the better).
+            members, the better).Read Creator FAQ{" "}
+            <span className="text-[#50c0c3]">
+              <Link href="/creatorfaq"> here</Link>
+            </span>
           </p>
 
           <form className="w-full  py-5 px-5 md:px-10" onSubmit={submitForm}>
