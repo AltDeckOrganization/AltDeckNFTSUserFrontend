@@ -23,6 +23,7 @@ import Dropdown from "../dropdown";
 import DropdownSmall from "../dropdown/DropdownSmall";
 import { useState } from "react";
 import { Button } from "../connectWallet/Button";
+import { useDarkMode } from "../../context/darkMode";
 
 const navigation = [
   { name: "Apply", margin: "px-4" },
@@ -40,6 +41,7 @@ export default function Example() {
   const [applyAnchorEl, setApplyAnchorEl] = React.useState(null);
   const openBrowse = Boolean(browseAnchorEl);
   const openApply = Boolean(applyAnchorEl);
+  const { darkMode, setdarkMode } = useDarkMode();
 
   const handleMenuClick = (e) => {
     setOpenMenu((prevState) => !prevState);
@@ -148,8 +150,11 @@ export default function Example() {
             />
           </li>
           <li className="mx-3 ">
-            <Button className="inline-flex justify-center w-full border border-[#50C9C3] text-white bg-[#50c9c3] shadow-sm px-4 py-2 text-sm font-medium rounded">
-              Dark Mode
+            <Button
+              onClick={() => setdarkMode(!darkMode)}
+              className="inline-flex justify-center w-full border border-[#50C9C3] text-white bg-[#50c9c3] shadow-sm px-4 py-2 text-sm font-medium rounded"
+            >
+              {darkMode ? "Dark " : "Light "}Mode
             </Button>
           </li>
           <li className="mx-3">
