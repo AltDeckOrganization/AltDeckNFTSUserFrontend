@@ -86,6 +86,15 @@ export default function Example() {
             <Dropdown title="Browse" link1="Launchpad" apply="launchpad" />
           </li>
           <li className="mx-3">
+            
+    <Menu as="div" className="relative inline-block text-left">
+      <div>
+          <Menu.Button className="inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ">
+            <Link href="/innovation">Innovation</Link>
+          </Menu.Button></div>
+    </Menu>
+          </li>
+          <li className="mx-3">
             <Dropdown
               title="Apply"
               link1="Apply for launchpad"
@@ -176,6 +185,18 @@ export default function Example() {
                   apply2="launchpad"
                   onClick={handleMenuClick}
                 />
+              </li>
+              <li>
+                
+    <Menu as="div" className="relative inline-block text-left w-full">
+      <div>
+        <Menu.Button className="inline-flex justify-center w-full  border rounded rounded-md  mt-5 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ">
+          <Link href="/innovation">Innovation</Link>
+        </Menu.Button>
+      </div>
+
+    </Menu>
+               
               </li>
               <li>
                 <DropdownSmall

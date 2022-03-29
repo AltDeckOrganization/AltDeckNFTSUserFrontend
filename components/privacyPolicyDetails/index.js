@@ -229,7 +229,7 @@ Another part of our priority is adding protection for children while using the i
 					/>
 
 					<p className='leading-loose leading-6 mb-5'>
-						Website Name does not knowingly collect any Personal Identifiable
+						Altdeck does not knowingly collect any Personal Identifiable
 						Information from children under the age of 13.
 					</p>
 					<p className='leading-loose leading-6 mb-5'>
