@@ -21,11 +21,12 @@ const Dropdown = ({
   link5,
   apply6,
   link6,
+  green = false,
 }) => {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        {link4 ? (
+        {green ? (
           <Menu.Button className="inline-flex justify-center inline-flex justify-center w-full bg-[#50C9C3] text-white shadow-sm px-4 py-2 text-sm font-medium rounded  w-full  shadow-sm px-4 py-2text-sm font-medium  ">
             {title}
           </Menu.Button>

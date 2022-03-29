@@ -1,48 +1,49 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 // import { Menu, MenuItem } from "@mui/material";
-import MenuIcon from '../../public/menu.svg'
-import CloseIcon from '../../public/close.svg'
-import Logo from '../../public/logo.svg'
+import MenuIcon from "../../public/menu.svg";
+import CloseIcon from "../../public/close.svg";
+import Logo from "../../public/logo.svg";
 
-import { Fragment } from 'react'
-import { Menu, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/solid'
+import { Fragment } from "react";
+import { Menu, Transition } from "@headlessui/react";
+import { ChevronDownIcon } from "@heroicons/react/solid";
 
 // styles
-import navStyles from './Navbar.module.css'
+import navStyles from "./Navbar.module.css";
 
 //icons
-import searchIcon from '../../assets/icons/search.svg'
+import searchIcon from "../../assets/icons/search.svg";
 
 // Connect Wallet Button
-import { ConnectWallet } from '../connectWallet'
-import React from 'react'
-import Dropdown from '../dropdown'
-import DropdownSmall from '../dropdown/DropdownSmall'
-import { useState } from 'react'
+import { ConnectWallet } from "../connectWallet";
+import React from "react";
+import Dropdown from "../dropdown";
+import DropdownSmall from "../dropdown/DropdownSmall";
+import { useState } from "react";
+import { Button } from "../connectWallet/Button";
 
 const navigation = [
-  { name: 'Apply', margin: 'px-4' },
-  { name: 'Browse', margin: 'px-4' },
-  { name: 'Profile', href: '/profile', margin: 'px-4' },
-]
+  { name: "Apply", margin: "px-4" },
+  { name: "Browse", margin: "px-4" },
+  { name: "Profile", href: "/profile", margin: "px-4" },
+];
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Example() {
-  const router = useRouter()
-  const [browseAnchorEl, setBrowseAnchorEl] = React.useState(null)
-  const [openMenu, setOpenMenu] = React.useState(false)
-  const [applyAnchorEl, setApplyAnchorEl] = React.useState(null)
-  const openBrowse = Boolean(browseAnchorEl)
-  const openApply = Boolean(applyAnchorEl)
+  const router = useRouter();
+  const [browseAnchorEl, setBrowseAnchorEl] = React.useState(null);
+  const [openMenu, setOpenMenu] = React.useState(false);
+  const [applyAnchorEl, setApplyAnchorEl] = React.useState(null);
+  const openBrowse = Boolean(browseAnchorEl);
+  const openApply = Boolean(applyAnchorEl);
 
   const handleMenuClick = (e) => {
-    setOpenMenu((prevState) => !prevState)
-  }
+    setOpenMenu((prevState) => !prevState);
+  };
   // const handleClick = (event, item) => {
   //   if (item.name === 'Browse') setBrowseAnchorEl(event.target)
   //   else if (item.name === 'Apply') setApplyAnchorEl(event.target)
@@ -153,7 +154,13 @@ export default function Example() {
               apply4="contact@altdeck.io"
               apply5="tos"
               apply6="faqs"
+              green
             />
+          </li>
+          <li className="mx-3 ">
+            <Button className="inline-flex justify-center w-full border border-[#50C9C3] text-white bg-[#50c9c3] shadow-sm px-4 py-2 text-sm font-medium rounded">
+              Dark Mode
+            </Button>
           </li>
           <li className="mx-3">
             <ConnectWallet className="inline-flex justify-center w-full border border-[#50C9C3] text-[#50c9c3] shadow-sm px-4 py-2 text-sm font-medium rounded " />
@@ -168,14 +175,14 @@ export default function Example() {
         {/* Overlay */}
         <div
           className={`${
-            openMenu ? 'fixed' : 'hidden'
+            openMenu ? "fixed" : "hidden"
           } bg-gray-700 opacity-5 h-screen left-0 top-0 w-screen z-40`}
         ></div>
 
         {/* SIDEBAR MENU */}
         <div
           className={`${
-            openMenu ? 'fixed' : 'hidden'
+            openMenu ? "fixed" : "hidden"
           } bg-white w-2/4 md:w-1/3  h-screen right-0 top-0 z-50 lg:hidden`}
         >
           <div className="flex flex-col py-5 px-5 md:px-10">
@@ -216,7 +223,7 @@ export default function Example() {
                       <Link href="/innovation">Innovation</Link>
                     </Menu.Button>
                   </div>
-                </Menu>{' '}
+                </Menu>{" "}
                 <Menu
                   as="div"
                   className="relative inline-block text-left w-full"
@@ -363,5 +370,5 @@ export default function Example() {
       </div>
       <div className="w-full h-[1px] bg-[#E3E1E3]"></div> */}
     </>
-  )
+  );
 }
