@@ -2,10 +2,10 @@ import React from "react";
 import Head from "next/head";
 
 export default function SEO({
-  description = "AltDeck NFT Launchpad",
+  description = "The innovative Solana NFT Launchpad, we launch your project smoothly on our platform",
   author = "AltDeck",
   meta,
-  title = "AltDeck NFT Launchpad",
+  title = "AltDeck Solana Launchpad",
 }) {
   const metaData = [
     {

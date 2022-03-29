@@ -15,8 +15,8 @@ function Meta({title, description, keywords}) {
 }
 
 Meta.defaultProps={
-    title: "ALTDECK",
-    description: "",
+    title: "AltDeck Solana Launchpad",
+    description: "The innovative Solana NFT Launchpad, we launch your project smoothly on our platform",
     keywords: "ALTDECK, altdeck, minting, nft, launchpad collections"
 }
 
