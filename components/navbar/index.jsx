@@ -41,7 +41,7 @@ export default function Example() {
   const [applyAnchorEl, setApplyAnchorEl] = React.useState(null);
   const openBrowse = Boolean(browseAnchorEl);
   const openApply = Boolean(applyAnchorEl);
-  const { darkMode, setdarkMode } = useDarkMode();
+  const { darkMode, setDarkMode } = useDarkMode();
 
   const handleMenuClick = (e) => {
     setOpenMenu((prevState) => !prevState);
@@ -161,7 +161,7 @@ export default function Example() {
           </li>
           <li className="mx-3 ">
             <Button
-              onClick={() => setdarkMode(!darkMode)}
+              onClick={() => setDarkMode(!darkMode)}
               className="inline-flex justify-center w-full border border-[#50C9C3] text-white bg-[#50c9c3] shadow-sm px-4 py-2 text-sm font-medium rounded"
             >
               {darkMode ? "Dark " : "Light "}Mode
@@ -252,25 +252,6 @@ export default function Example() {
                   onClick={handleMenuClick}
                 />
               </li>
-              {/* <li>
-                <DropdownSmall
-                  title="Browse"
-                  link1="launchpad"
-                  link2="stats"
-                  apply="launchpad"
-                  apply2="stats"
-                  apply3="launchpad"
-                  onClick={handleMenuClick}
-                />
-              </li> */}
-              {/* 
-              <li className="" onClick={handleMenuClick}>
-                <Link href="/profile">
-                  <a className="inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-base  w-full  border rounded rounded-md  mt-5  font-medium text-gray-700 hover:bg-gray-50">
-                    Profile
-                  </a>
-                </Link>
-              </li> */}
 
               <li className="" onClick={handleMenuClick}>
                 <DropdownSmall
@@ -289,6 +270,14 @@ export default function Example() {
                   apply6="faqs"
                 />
               </li>
+              <li onClick={handleMenuClick}>
+                <Button
+                  onClick={() => setDarkMode(!darkMode)}
+                  className="inline-flex justify-center w-full border border-[#50C9C3] text-white bg-[#50c9c3] shadow-sm px-4 py-2 text-sm font-medium rounded"
+                >
+                  {darkMode ? "Dark " : "Light "}Mode
+                </Button>
+              </li>
               <li className="" onClick={handleMenuClick}>
                 <ConnectWallet className="inline-flex justify-center w-full border border-[#50C9C3] text-[#50c9c3] shadow-sm px-4 py-2 text-base  w-full  border rounded rounded-md  mt-5  font-medium rounded " />
               </li>
@@ -296,84 +285,6 @@ export default function Example() {
           </div>
         </div>
       </div>
-
-      {/* Initial */}
-      {/* <div
-        className={`bg-white py-6 border-b-1 border-b-[#E3E1E3] flex flex-row items-center justify-between xl:w-[1156px] lg:w-[900px] w-full px-[20px] mx-auto`}
-      >
-        <div className="flex flex-row items-center">
-          <Link href="/" passHref={true}>
-            <p className="font-bold uppercase text-[18px] cursor-pointer">Altdeck</p>
-          </Link>
-          <div
-            className={`mt-1 rounded-lg flex flex-row items-center border border-[#E3E1E3] px-2 py-2 lg:w-[300px] md:w-[240px] xl:w-[450px] ml-10`}
-          >
-            <Image src={searchIcon} alt="" className="w-full" />
-            <input
-              type="text"
-              name="search"
-              id="search"
-              className={`w-full border-0 text-gray-700 leading-tight focus:ring-0 focus:outline-none ml-2 text-[14px]`}
-              placeholder="Search item here"
-            />
-          </div>
-        </div>
-        <div className="flex flex-row items-center mx-4 space-x-4">
-          {navigation.map((item) => (
-            <>
-              <button
-                id={`${item.name.toLowerCase()} button`}
-                key={item.name}
-                className={`px-2 text-[#888888] m-0`}
-                aria-current={item.current ? "page" : undefined}
-                onClick={(e) => handleClick(e, item)}
-              >
-                {item.name}
-              </button>
-              <Menu
-                id="browse-menu"
-                anchorEl={browseAnchorEl}
-                open={openBrowse}
-                onClose={handleBrowseMenuClose}
-                MenuListProps={{
-                  'aria-labelledby': 'browse button',
-                }}
-                elevation={1}
-              >
-                <MenuItem onClick={() => router.push('/explore')} className='uppercase'>Collections</MenuItem>
-                <MenuItem onClick={() => router.push("/stats")} className='uppercase'>Stats</MenuItem>
-                <MenuItem onClick={() => router.push("/launchpad")} className='uppercase'>Launchpad</MenuItem>
-              </Menu>
-              <Menu
-                id="apply-menu"
-                anchorEl={applyAnchorEl}
-                open={openApply}
-                onClose={handleApplyMenuClose}
-                MenuListProps={{
-                  'aria-labelledby': 'apply button',
-                }}
-                elevation={1}
-              >
-                <MenuItem>Apply For Listing</MenuItem>
-                <MenuItem>Apply For Launchpad</MenuItem>
-              </Menu>
-            </>
-          ))}
-          <div className="flex flex-row items-center">
-            <button
-              className={`${navStyles.createbtn} py-2 px-7 rounded-lg text-white`}
-              onClick={() => router.push("/create")}
-            >
-              Create
-            </button>
-
-            <ConnectWallet
-              className={`${navStyles.connectbtn} py-2 px-6 rounded-lg ml-5 `}
-            />
-          </div>
-        </div>
-      </div>
-      <div className="w-full h-[1px] bg-[#E3E1E3]"></div> */}
     </>
   );
 }

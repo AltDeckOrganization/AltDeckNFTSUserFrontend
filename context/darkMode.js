@@ -7,19 +7,19 @@ export const useDarkMode = () => {
 };
 
 const DarkMode = ({ children }) => {
-  const [darkMode, setdarkMode] = useState();
+  const [darkMode, setDarkMode] = useState();
   useEffect(() => {
     if (
       typeof window !== "undefined" &&
       window.matchMedia("(prefers-color-scheme: dark)").matches
     ) {
-      setdarkMode(true);
+      setDarkMode(true);
     } else {
-      setdarkMode(false);
+      setDarkMode(false);
     }
   }, []);
   return (
-    <DarkModeContext.Provider value={{ darkMode, setdarkMode }}>
+    <DarkModeContext.Provider value={{ darkMode, setDarkMode }}>
       {children}
     </DarkModeContext.Provider>
   );
