@@ -22,6 +22,7 @@ import React from "react";
 import Dropdown from "../dropdown";
 import DropdownSmall from "../dropdown/DropdownSmall";
 import { useState } from "react";
+import { Button } from "../connectWallet/Button";
 
 const navigation = [
   { name: "Apply", margin: "px-4" },
@@ -92,13 +93,13 @@ export default function Example() {
             />
           </li>
           <li className="mx-3">
-            
-    <Menu as="div" className="relative inline-block text-left">
-      <div>
-          <Menu.Button className="inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ">
-            <Link href="/innovation">Innovation</Link>
-          </Menu.Button></div>
-    </Menu>
+            <Menu as="div" className="relative inline-block text-left">
+              <div>
+                <Menu.Button className="inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ">
+                  <Link href="/innovation">Innovation</Link>
+                </Menu.Button>
+              </div>
+            </Menu>
           </li>
           <li className="mx-3">
             <Dropdown
@@ -143,7 +144,13 @@ export default function Example() {
               apply4="contact@altdeck.io"
               apply5="tos"
               apply6="faqs"
+              green
             />
+          </li>
+          <li className="mx-3 ">
+            <Button className="inline-flex justify-center w-full border border-[#50C9C3] text-white bg-[#50c9c3] shadow-sm px-4 py-2 text-sm font-medium rounded">
+              Dark Mode
+            </Button>
           </li>
           <li className="mx-3">
             <ConnectWallet className="inline-flex justify-center w-full border border-[#50C9C3] text-[#50c9c3] shadow-sm px-4 py-2 text-sm font-medium rounded " />
@@ -197,16 +204,16 @@ export default function Example() {
                 />
               </li>
               <li>
-                
-    <Menu as="div" className="relative inline-block text-left w-full">
-      <div>
-        <Menu.Button className="inline-flex justify-center w-full  border rounded rounded-md  mt-5 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ">
-          <Link href="/innovation">Innovation</Link>
-        </Menu.Button>
-      </div>
-
-    </Menu>
-               
+                <Menu
+                  as="div"
+                  className="relative inline-block text-left w-full"
+                >
+                  <div>
+                    <Menu.Button className="inline-flex justify-center w-full  border rounded rounded-md  mt-5 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ">
+                      <Link href="/innovation">Innovation</Link>
+                    </Menu.Button>
+                  </div>
+                </Menu>
               </li>
               <li>
                 <DropdownSmall
