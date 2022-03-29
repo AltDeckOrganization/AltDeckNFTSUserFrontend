@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import ButtonCommon from "../buttonCommon";
 import { imagesData } from "../data/imagesData";
 
-const Hero = () => {
+const   Hero = () => {
   const [isOpenAllData, setIsOpenAllData] = useState(1);
   const [filteredData, setFilteredData] = useState({});
   const [isOpenDetails, setIsOpenDetails] = useState(1);
