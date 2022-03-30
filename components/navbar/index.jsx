@@ -163,7 +163,9 @@ export default function Example() {
           <li className="mx-3 ">
             <Button
               onClick={() => setDarkMode(!darkMode)}
-              className="inline-flex justify-center w-full border border-[#50C9C3] text-white bg-[#50c9c3] shadow-sm px-4 py-2 text-sm font-medium rounded"
+              className={`inline-flex justify-center w-full border border-[#50C9C3] text-white bg-[#50c9c3] shadow-sm px-4 py-2 text-sm font-medium rounded ${
+                darkMode && "text-black"
+              }`}
             >
               {darkMode ? "Dark " : "Light "}Mode
             </Button>
