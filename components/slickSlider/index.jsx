@@ -1,10 +1,14 @@
 import React from "react";
 import Slider from "react-slick";
+import { useDarkMode } from "../../context/darkMode";
 function NextArrow(props) {
   const { className, onClick } = props;
+  const { darkMode } = useDarkMode();
   return (
     <div
-      className={`${className} before:text-blackImportant`}
+      className={`${className} before:text-blackImportant ${
+        darkMode && "before:text-whiteImportant"
+      }`}
       onClick={onClick}
     />
   );
@@ -12,9 +16,12 @@ function NextArrow(props) {
 
 function PrevArrow(props) {
   const { className, onClick } = props;
+  const { darkMode } = useDarkMode();
   return (
     <div
-      className={`${className} before:text-blackImportant`}
+      className={`${className} before:text-blackImportant ${
+        darkMode && "before:text-whiteImportant"
+      }`}
       onClick={onClick}
     />
   );
