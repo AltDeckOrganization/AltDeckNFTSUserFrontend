@@ -177,7 +177,14 @@ export default function Example() {
 
         {/* MENU ICON*/}
         <div className="lg:hidden ">
-          <Image src={MenuIcon} alt="Menu Icon" onClick={handleMenuClick} />
+          {darkMode ? (
+            <i
+              className="fa fa-bars text-xl text-white mr-3"
+              onClick={handleMenuClick}
+            ></i>
+          ) : (
+            <Image src={MenuIcon} alt="Menu Icon" onClick={handleMenuClick} />
+          )}
         </div>
 
         {/* Overlay */}
@@ -191,7 +198,9 @@ export default function Example() {
         <div
           className={`${
             openMenu ? "fixed" : "hidden"
-          } bg-white w-2/4 md:w-1/3  h-screen right-0 top-0 z-50 lg:hidden`}
+          }  w-2/4 md:w-1/3  h-screen right-0 top-0 z-50 lg:hidden ${
+            darkMode ? "bg-black" : "bg-white"
+          }`}
         >
           <div className="flex flex-col py-5 px-5 md:px-10">
             <div className="side flex justify-between items-center">
@@ -199,13 +208,20 @@ export default function Example() {
                 <div className="text-xl font-bold "></div>
               </div>
               <div className="close w-[20px]">
-                <Image
-                  src={CloseIcon}
-                  alt="close Icon"
-                  height={25}
-                  width={25}
-                  onClick={handleMenuClick}
-                />
+                {darkMode ? (
+                  <i
+                    className="fa fa-times text-white text-xl"
+                    onClick={handleMenuClick}
+                  ></i>
+                ) : (
+                  <Image
+                    src={CloseIcon}
+                    alt="close Icon"
+                    height={25}
+                    width={25}
+                    onClick={handleMenuClick}
+                  />
+                )}
               </div>
             </div>
             <ul>
@@ -227,7 +243,12 @@ export default function Example() {
                   className="relative inline-block text-left w-full"
                 >
                   <div>
-                    <Menu.Button className="inline-flex justify-center w-full  border rounded rounded-md  mt-5 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ">
+                    <Menu.Button
+                      className={`inline-flex justify-center w-full  border rounded rounded-md  mt-5 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ${
+                        darkMode &&
+                        "bg-black text-whiteImportant hover:text-whiteImportant"
+                      }`}
+                    >
                       <Link href="/innovation">Innovation</Link>
                     </Menu.Button>
                   </div>
@@ -266,7 +287,9 @@ export default function Example() {
               <li onClick={handleMenuClick}>
                 <Button
                   onClick={() => setDarkMode(!darkMode)}
-                  className="inline-flex justify-center w-full border border-[#50C9C3] text-white bg-[#50c9c3] shadow-sm px-4 py-2 text-sm font-medium rounded"
+                  className={`mt-5 md:mt-0 inline-flex justify-center w-full border border-[#50C9C3] text-white bg-[#50c9c3] shadow-sm px-4 py-2 text-sm font-medium rounded ${
+                    darkMode && "text-black"
+                  }`}
                 >
                   {darkMode ? "Dark " : "Light "}Mode
                 </Button>

@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
+import { useDarkMode } from "../../context/darkMode";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -20,10 +21,16 @@ function DropdownSmall({
   apply5,
   apply6,
 }) {
+  const { darkMode } = useDarkMode();
   return (
     <Menu as="div" className="relative inline-block text-left w-full">
       <div>
-        <Menu.Button className="inline-flex justify-center w-full  border rounded rounded-md  mt-5 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ">
+        <Menu.Button
+          className={`inline-flex justify-center w-full border rounded rounded-md  mt-5 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ${
+            darkMode &&
+            "bg-black text-whiteImportant border-gray-400 hover:bg-gray-800"
+          }`}
+        >
           {title}
         </Menu.Button>
       </div>
@@ -37,7 +44,11 @@ function DropdownSmall({
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="origin-top-right absolute z-50 right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items
+          className={`origin-top-right absolute z-50 right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none ${
+            darkMode && "bg-black"
+          }`}
+        >
           <div className="py-1">
             {link1 ? (
               <Menu.Item>
@@ -45,7 +56,11 @@ function DropdownSmall({
                   <a
                     href={`/${apply}`}
                     className={classNames(
-                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                      active
+                        ? "bg-gray-100 text-gray-900"
+                        : darkMode
+                        ? "text-gray-400"
+                        : "text-gray-700",
                       "block px-4 py-2 text-sm md:text-base"
                     )}
                   >
@@ -59,7 +74,11 @@ function DropdownSmall({
                 <a
                   href={`/${apply2}`}
                   className={classNames(
-                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                    active
+                      ? "bg-gray-100 text-gray-900"
+                      : darkMode
+                      ? "text-gray-400"
+                      : "text-gray-700",
                     "block px-4 py-2 text-sm"
                   )}
                 >
@@ -74,7 +93,11 @@ function DropdownSmall({
                   <a
                     href={`/${apply3}`}
                     className={classNames(
-                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                      active
+                        ? "bg-gray-100 text-gray-900"
+                        : darkMode
+                        ? "text-gray-400"
+                        : "text-gray-700",
                       "block px-4 py-2 text-sm"
                     )}
                   >
@@ -90,7 +113,11 @@ function DropdownSmall({
                   <a
                     href={`/${apply4}`}
                     className={classNames(
-                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                      active
+                        ? "bg-gray-100 text-gray-900"
+                        : darkMode
+                        ? "text-gray-400"
+                        : "text-gray-700",
                       "block px-4 py-2 text-sm"
                     )}
                   >
@@ -105,7 +132,11 @@ function DropdownSmall({
                   <a
                     href={`/${apply5}`}
                     className={classNames(
-                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                      active
+                        ? "bg-gray-100 text-gray-900"
+                        : darkMode
+                        ? "text-gray-400"
+                        : "text-gray-700",
                       "block px-4 py-2 text-sm"
                     )}
                   >
@@ -120,7 +151,11 @@ function DropdownSmall({
                   <a
                     href={`/${apply6}`}
                     className={classNames(
-                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                      active
+                        ? "bg-gray-100 text-gray-900"
+                        : darkMode
+                        ? "text-gray-400"
+                        : "text-gray-700",
                       "block px-4 py-2 text-sm"
                     )}
                   >
