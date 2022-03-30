@@ -177,9 +177,9 @@ const LaunchpadForm = () => {
 					</div>
 					<p className='text-base text-gray-500 px-5 md:px-10'>
 						Please provide details about at least 1 team member (more team
-						members, the better).Read Creator FAQ{' '}
+						members, the better).
 						<span className='text-[#50c0c3]'>
-							<Link href='/creatorfaq'> here</Link>
+							<Link href='/creatorfaq'>Read Creator FAQ here</Link>
 						</span>
 					</p>
 
