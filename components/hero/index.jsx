@@ -63,7 +63,7 @@ const Hero = () => {
         </div>
         <div className="flex items-center justify-center md:mt-5 lg:my-2">
           <img
-            className="rounded-md border w-full h-[450px] px-3  mx-5 lg:w-10/12 lg:h-[100%] sm:w-96 sm:h-96 object-cover"
+            className="rounded-md w-full h-[450px] px-3  mx-5 lg:w-10/12 lg:h-[100%] sm:w-96 sm:h-96 object-cover"
             src={filteredData.imgSrc}
             alt={filteredData.altText}
           />
