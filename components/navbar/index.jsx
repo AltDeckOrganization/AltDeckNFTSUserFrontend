@@ -62,11 +62,15 @@ export default function Example() {
 
   return (
     <>
-      <div className="navbar flex items-center justify-between bg-white px-2 md:px-5 py-5 z-50 lg:px-10 fixed left-0 top-0 w-full">
+      <div
+        className={`navbar flex items-center justify-between bg-white px-2 md:px-5 py-5 z-50 lg:px-10 fixed left-0 top-0 w-full ${
+          darkMode && "bg-black"
+        }`}
+      >
         <div className="flex items-center">
           <div className="logo">
             <Link href="/">
-              <a>
+              <a className={darkMode && "text-white"}>
                 <h1 className="text-xl font-bold">AltDeck</h1>
               </a>
             </Link>
@@ -79,7 +83,9 @@ export default function Example() {
               type="text"
               name="search"
               id="search"
-              className={`w-full border-0 text-gray-700 leading-tight focus:ring-0 focus:outline-none ml-2 text-xs`}
+              className={`w-full border-0 text-gray-700 leading-tight focus:ring-0 focus:outline-none ml-2 text-xs ${
+                darkMode && "bg-black"
+              }`}
               placeholder="Search item here"
             />
           </div>
@@ -97,7 +103,12 @@ export default function Example() {
           <li className="mx-3">
             <Menu as="div" className="relative inline-block text-left">
               <div>
-                <Menu.Button className="inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ">
+                <Menu.Button
+                  className={`inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ${
+                    darkMode &&
+                    "bg-black text-gray-400 hover:bg-black hover:text-white"
+                  }`}
+                >
                   <Link href="/innovation">Innovation</Link>
                 </Menu.Button>
               </div>

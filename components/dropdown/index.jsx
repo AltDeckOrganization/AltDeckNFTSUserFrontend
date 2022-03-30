@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import Link from "next/link";
+import { useDarkMode } from "../../context/darkMode";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -23,6 +24,7 @@ const Dropdown = ({
   link6,
   green = false,
 }) => {
+  const { darkMode } = useDarkMode();
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
@@ -31,7 +33,12 @@ const Dropdown = ({
             {title}
           </Menu.Button>
         ) : (
-          <Menu.Button className="inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ">
+          <Menu.Button
+            className={`inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ${
+              darkMode &&
+              "bg-black text-gray-400 hover:bg-black hover:text-white"
+            }`}
+          >
             {title}
           </Menu.Button>
         )}
@@ -46,14 +53,22 @@ const Dropdown = ({
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items
+          className={`origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none ${
+            darkMode && "bg-black"
+          }`}
+        >
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
                 <Link href={`${apply}`} passHref>
                   <a
                     className={classNames(
-                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                      active
+                        ? "bg-gray-100 text-gray-900"
+                        : darkMode
+                        ? "text-gray-400"
+                        : "text-gray-700",
                       "block px-4 py-2 text-sm"
                     )}
                   >
@@ -68,7 +83,13 @@ const Dropdown = ({
                   <Link href={`/${apply2}`} passHref>
                     <a
                       className={classNames(
-                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                        active
+                          ? darkMode
+                            ? "text-gray-400"
+                            : "bg-gray-100 text-gray-900"
+                          : darkMode
+                          ? "text-gray-400"
+                          : "text-gray-700",
                         "block px-4 py-2 text-sm"
                       )}
                     >
@@ -84,7 +105,13 @@ const Dropdown = ({
                   <Link href={`${apply3}`} passHref>
                     <a
                       className={classNames(
-                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                        active
+                          ? darkMode
+                            ? "text-gray-400"
+                            : "bg-gray-100 text-gray-900"
+                          : darkMode
+                          ? "text-gray-400"
+                          : "text-gray-700",
                         "block px-4 py-2 text-sm"
                       )}
                     >
@@ -100,7 +127,13 @@ const Dropdown = ({
                   <Link href={`/${apply4}`} passHref>
                     <a
                       className={classNames(
-                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                        active
+                          ? darkMode
+                            ? "text-gray-400"
+                            : "bg-gray-100 text-gray-900"
+                          : darkMode
+                          ? "text-gray-400"
+                          : "text-gray-700",
                         "block px-4 py-2 text-sm "
                       )}
                     >
@@ -116,7 +149,13 @@ const Dropdown = ({
                   <Link href={`/${apply5}`} passHref>
                     <a
                       className={classNames(
-                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                        active
+                          ? darkMode
+                            ? "text-gray-400"
+                            : "bg-gray-100 text-gray-900"
+                          : darkMode
+                          ? "text-gray-400"
+                          : "text-gray-700",
                         "block px-4 py-2 text-sm"
                       )}
                     >
@@ -132,7 +171,13 @@ const Dropdown = ({
                   <Link href={`${apply6}`} passHref>
                     <a
                       className={classNames(
-                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                        active
+                          ? darkMode
+                            ? "text-gray-400"
+                            : "bg-gray-100 text-gray-900"
+                          : darkMode
+                          ? "text-gray-400"
+                          : "text-gray-700",
                         "block px-4 py-2 text-sm"
                       )}
                     >
