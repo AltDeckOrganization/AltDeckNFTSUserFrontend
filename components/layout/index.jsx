@@ -5,11 +5,10 @@ import { useDarkMode } from "../../context/darkMode";
 export default function Layout({ children }) {
   const { darkMode } = useDarkMode();
   return (
-    <>
-      <SEO />
+    <div className={`min-h-screen ${darkMode && "bg-black"}`}>
       <Nav />
       <main className={darkMode && "bg-black text-white"}>{children}</main>
       <Footer />
-    </>
+    </div>
   );
 }
