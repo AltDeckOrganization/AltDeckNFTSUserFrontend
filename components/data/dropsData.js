@@ -7,15 +7,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -29,15 +29,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -51,15 +51,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -73,15 +73,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -95,15 +95,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -122,15 +122,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -144,15 +144,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -166,15 +166,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -188,15 +188,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -210,15 +210,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -232,15 +232,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -254,15 +254,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -276,15 +276,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -298,15 +298,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -320,15 +320,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -342,15 +342,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -364,15 +364,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -386,15 +386,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -408,15 +408,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -430,15 +430,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -452,15 +452,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -474,15 +474,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -496,15 +496,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -518,15 +518,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -540,15 +540,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -562,15 +562,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -584,15 +584,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -606,15 +606,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -628,15 +628,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -655,15 +655,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -677,15 +677,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -699,15 +699,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -721,15 +721,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -743,15 +743,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -765,15 +765,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -787,15 +787,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -809,15 +809,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -831,15 +831,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -853,15 +853,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -875,15 +875,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -897,15 +897,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -919,15 +919,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -941,15 +941,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -963,15 +963,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -985,15 +985,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -1007,15 +1007,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -1029,15 +1029,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -1051,15 +1051,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -1073,15 +1073,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -1095,15 +1095,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -1117,15 +1117,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -1139,15 +1139,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
@@ -1161,15 +1161,15 @@ export const dropData = [
         name: "Anime Immortals Village",
         icons: [
           {
-            icon: "/discord.svg",
+            iconClass: "fab fa-brands fa-discord",
             link: "https://discord.com/invite/ec9cZCCSHK",
           },
           {
-            icon: "/twitter.svg",
+            iconClass: "fab fa-brands fa-twitter",
             link: "https://twitter.com/AltDeck_io",
           },
           {
-            icon: "/internet.svg",
+            iconClass: "fa fa-solid fa-globe",
             link: "Internet",
           },
         ],
