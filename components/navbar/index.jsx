@@ -1,48 +1,48 @@
-import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import Image from 'next/image'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 // import { Menu, MenuItem } from "@mui/material";
-import MenuIcon from "../../public/menu.svg";
-import CloseIcon from "../../public/close.svg";
-import Logo from "../../public/logo.svg";
+import MenuIcon from '../../public/menu.svg'
+import CloseIcon from '../../public/close.svg'
+import Logo from '../../public/logo.svg'
 
-import { Fragment } from "react";
-import { Menu, Transition } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/solid";
+import { Fragment } from 'react'
+import { Menu, Transition } from '@headlessui/react'
+import { ChevronDownIcon } from '@heroicons/react/solid'
 
 // styles
-import navStyles from "./Navbar.module.css";
+import navStyles from './Navbar.module.css'
 
 //icons
-import searchIcon from "../../assets/icons/search.svg";
+import searchIcon from '../../assets/icons/search.svg'
 
 // Connect Wallet Button
-import { ConnectWallet } from "../connectWallet";
-import React from "react";
-import Dropdown from "../dropdown";
-import DropdownSmall from "../dropdown/DropdownSmall";
-import { useState } from "react";
+import { ConnectWallet } from '../connectWallet'
+import React from 'react'
+import Dropdown from '../dropdown'
+import DropdownSmall from '../dropdown/DropdownSmall'
+import { useState } from 'react'
 
 const navigation = [
-  { name: "Apply", margin: "px-4" },
-  { name: "Browse", margin: "px-4" },
-  { name: "Profile", href: "/profile", margin: "px-4" },
-];
+  { name: 'Apply', margin: 'px-4' },
+  { name: 'Browse', margin: 'px-4' },
+  { name: 'Profile', href: '/profile', margin: 'px-4' },
+]
 function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
+  return classes.filter(Boolean).join(' ')
 }
 
 export default function Example() {
-  const router = useRouter();
-  const [browseAnchorEl, setBrowseAnchorEl] = React.useState(null);
-  const [openMenu, setOpenMenu] = React.useState(false);
-  const [applyAnchorEl, setApplyAnchorEl] = React.useState(null);
-  const openBrowse = Boolean(browseAnchorEl);
-  const openApply = Boolean(applyAnchorEl);
+  const router = useRouter()
+  const [browseAnchorEl, setBrowseAnchorEl] = React.useState(null)
+  const [openMenu, setOpenMenu] = React.useState(false)
+  const [applyAnchorEl, setApplyAnchorEl] = React.useState(null)
+  const openBrowse = Boolean(browseAnchorEl)
+  const openApply = Boolean(applyAnchorEl)
 
   const handleMenuClick = (e) => {
-    setOpenMenu((prevState) => !prevState);
-  };
+    setOpenMenu((prevState) => !prevState)
+  }
   // const handleClick = (event, item) => {
   //   if (item.name === 'Browse') setBrowseAnchorEl(event.target)
   //   else if (item.name === 'Apply') setApplyAnchorEl(event.target)
@@ -68,7 +68,9 @@ export default function Example() {
               </a>
             </Link>
           </div>
-          <div
+
+          {/* SEARCH BAR HERE */}
+          {/* <div
             className={`mt-1 rounded-lg flex flex-row items-center border border-[#E3E1E3] px-2 py-2 lg:w-[300px] md:w-[510px] xl:w-[450px] ml-10`}
           >
             <Image src={searchIcon} alt="" className="w-full" />
@@ -79,20 +81,28 @@ export default function Example() {
               className={`w-full border-0 text-gray-700 leading-tight focus:ring-0 focus:outline-none ml-2 text-xs`}
               placeholder="Search item here"
             />
-          </div>
+          </div> */}
         </div>
         <ul className=" items-align hidden lg:flex">
           <li className="mx-3">
             <Dropdown title="Browse" link1="Launchpad" apply="launchpad" />
           </li>
           <li className="mx-3">
-            
-    <Menu as="div" className="relative inline-block text-left">
-      <div>
-          <Menu.Button className="inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ">
-            <Link href="/innovation">Innovation</Link>
-          </Menu.Button></div>
-    </Menu>
+            <Menu as="div" className="relative inline-block text-left">
+              <div>
+                <Menu.Button className="inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ">
+                  <Link href="/innovation">Innovation</Link>
+                </Menu.Button>
+              </div>
+            </Menu>
+
+            <Menu as="div" className="relative inline-block text-left">
+              <div>
+                <Menu.Button className="inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ">
+                  <Link href="/marketing">Marketing</Link>
+                </Menu.Button>
+              </div>
+            </Menu>
           </li>
           <li className="mx-3">
             <Dropdown
@@ -150,14 +160,14 @@ export default function Example() {
         {/* Overlay */}
         <div
           className={`${
-            openMenu ? "fixed" : "hidden"
+            openMenu ? 'fixed' : 'hidden'
           } bg-gray-700 opacity-5 h-screen left-0 top-0 w-screen z-40`}
         ></div>
 
         {/* SIDEBAR MENU */}
         <div
           className={`${
-            openMenu ? "fixed" : "hidden"
+            openMenu ? 'fixed' : 'hidden'
           } bg-white w-2/4 md:w-1/3  h-screen right-0 top-0 z-50 lg:hidden`}
         >
           <div className="flex flex-col py-5 px-5 md:px-10">
@@ -187,16 +197,26 @@ export default function Example() {
                 />
               </li>
               <li>
-                
-    <Menu as="div" className="relative inline-block text-left w-full">
-      <div>
-        <Menu.Button className="inline-flex justify-center w-full  border rounded rounded-md  mt-5 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ">
-          <Link href="/innovation">Innovation</Link>
-        </Menu.Button>
-      </div>
-
-    </Menu>
-               
+                <Menu
+                  as="div"
+                  className="relative inline-block text-left w-full"
+                >
+                  <div>
+                    <Menu.Button className="inline-flex justify-center w-full  border rounded rounded-md  mt-5 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ">
+                      <Link href="/innovation">Innovation</Link>
+                    </Menu.Button>
+                  </div>
+                </Menu>{' '}
+                <Menu
+                  as="div"
+                  className="relative inline-block text-left w-full"
+                >
+                  <div>
+                    <Menu.Button className="inline-flex justify-center w-full  border rounded rounded-md  mt-5 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ">
+                      <Link href="/marketing">Marketing</Link>
+                    </Menu.Button>
+                  </div>
+                </Menu>
               </li>
               <li>
                 <DropdownSmall
@@ -331,5 +351,5 @@ export default function Example() {
       </div>
       <div className="w-full h-[1px] bg-[#E3E1E3]"></div> */}
     </>
-  );
+  )
 }
