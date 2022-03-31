@@ -13,6 +13,7 @@ import Dropdown from '../components/dropdown';
 import SEO from '../components/seo/SEO';
 import DropdownForm from '../components/dropdown/DropdownForm';
 import Link from 'next/link';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
@@ -47,8 +48,14 @@ const LaunchpadForm = () => {
 	const [acceptDetailsWillBeShowed, setAcceptDetailsWillBeShowed] =
 		useState('');
 	const [submissionSuccessful, setSubmissionSuccesful] = useState('');
+	const [verify, setverify] = useState(false);
 	const [pictureName, setPictureName] = useState('');
 	const server_url = process.env.NEXT_PUBLIC_BACKEND_URL;
+
+	const handleCaptchaChange = (value) => {
+		console.log('Captcha value:', value);
+		setverify(true);
+	};
 
 	const handleFiles = (e) => {
 		const fileInput = document.getElementById(e.target.id);
@@ -746,6 +753,10 @@ const LaunchpadForm = () => {
 								</label>
 							</label>
 						</div>
+						<ReCAPTCHA
+							sitekey='6Lfe_i4fAAAAAMAnM_vPnyG-_3xlwb-QT3zGej-F'
+							onChange={handleCaptchaChange}
+						/>
 
 						<div className='flex flex-wrap -mx-3 mb-6'>
 							<div className='w-full md:w-1/2 px-3 mb-6 md:mb-0'></div>
@@ -753,6 +764,7 @@ const LaunchpadForm = () => {
 								<button
 									className='bg-[#50C9C3]  rounded rounded-md py-3 px-10 text-white float-right'
 									type='submit'
+									disabled={!verify}
 								>
 									Submit
 								</button>
