@@ -28,5 +28,6 @@ module.exports = withTM({
   webpack5: true,
   images: {
     domains: ["placeimg.com"]
-  }
+  },
+  GOOGLE_ANALYTICS_ID : 'G-FRDZSZMQ8H'
 })
