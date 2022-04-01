@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import Script from "next/script";
 
 import { useRouter } from "next/router";
-import * as ga from "next/router";
+import * as ga from "../lib/ga";
 
 //components
 import Layout from "../components/layout";
