@@ -81,7 +81,7 @@ const DropsForm = () => {
     <div>
       <SEO />
 
-      <div className="launchPad py-5 mt-20 px-1 md:px-10 lg:px-20">
+      <div className="xl:w-[1156px] mx-auto lg:w-[900px] w-full pt-28 px-4 overflow-hidden md:px-0 launchPad ">
         <div className="launchPad py-5 px-1 md:px-10 lg:px-20">
           {submissionSuccessful === "false" && (
             <div
