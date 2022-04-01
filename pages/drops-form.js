@@ -2,6 +2,7 @@ import React, { Fragment, useState, useEffect } from "react";
 import { CountryDropdown } from "react-country-region-selector";
 import axios from "axios";
 import SEO from "../components/seo/SEO";
+import { useDarkMode } from "../context/darkMode";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -77,6 +78,8 @@ const DropsForm = () => {
       });
   };
 
+  const { darkMode } = useDarkMode();
+
   return (
     <div>
       <SEO />
@@ -130,21 +133,31 @@ const DropsForm = () => {
           </div>
 
           <form className="w-full  py-5 px-5 md:px-10" onSubmit={submitForm}>
-            <h3 className="text-base text-black uppercase my-4 font-bold">
+            <h3
+              className={`text-base uppercase my-4 font-bold ${
+                darkMode ? "text-white" : "text-dark"
+              }`}
+            >
               Project Details
             </h3>
 
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className={`block tracking-wide text-xs font-bold mb-2 ${
+                    darkMode ? "text-gray-200" : "text-gray-700"
+                  }`}
                   htmlFor="grid-first-name"
                 >
                   Project Name
                 </label>
                 <input
                   required
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
+                    darkMode
+                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
+                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
+                  }`}
                   id="name"
                   type="text"
                   placeholder="Add project name"
@@ -154,7 +167,9 @@ const DropsForm = () => {
               <div className="py-3 mb-5  px-3 bg-white md:w-1/2 w-full">
                 <div className="max-w-md mx-auto rounded-lg overflow-hidden md:max-w-xl">
                   <label
-                    className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    className={`block tracking-wide text-xs font-bold mb-2 ${
+                      darkMode ? "text-gray-200" : "text-gray-700"
+                    }`}
                     htmlFor="grid-first-name"
                   >
                     Picture(PNG/JPG/JPEG)
@@ -203,14 +218,20 @@ const DropsForm = () => {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className={`block tracking-wide text-xs font-bold mb-2 ${
+                    darkMode ? "text-gray-200" : "text-gray-700"
+                  }`}
                   htmlFor="grid-first-name"
                 >
                   Twitter
                 </label>
                 <input
                   required
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
+                    darkMode
+                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
+                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
+                  }`}
                   id="twitter"
                   type="text"
                   placeholder="Paste links here"
@@ -219,14 +240,20 @@ const DropsForm = () => {
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className={`block tracking-wide text-xs font-bold mb-2 ${
+                    darkMode ? "text-gray-200" : "text-gray-700"
+                  }`}
                   htmlFor="grid-first-name"
                 >
                   Discord server
                 </label>
                 <input
                   required
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
+                    darkMode
+                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
+                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
+                  }`}
                   id="discord__id"
                   type="text"
                   placeholder="Paste link here"
@@ -238,14 +265,20 @@ const DropsForm = () => {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className={`block tracking-wide text-xs font-bold mb-2 ${
+                    darkMode ? "text-gray-200" : "text-gray-700"
+                  }`}
                   htmlFor="grid-first-name"
                 >
                   Instagram
                 </label>
                 <input
                   required
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
+                    darkMode
+                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
+                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
+                  }`}
                   id="instagram"
                   type="text"
                   placeholder="Paste links here"
@@ -254,14 +287,20 @@ const DropsForm = () => {
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className={`block tracking-wide text-xs font-bold mb-2 ${
+                    darkMode ? "text-gray-200" : "text-gray-700"
+                  }`}
                   htmlFor="grid-first-name"
                 >
                   Website
                 </label>
                 <input
                   required
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
+                    darkMode
+                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
+                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
+                  }`}
                   id="website"
                   type="text"
                   placeholder="Paste link here"
@@ -273,14 +312,20 @@ const DropsForm = () => {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className={`block tracking-wide text-xs font-bold mb-2 ${
+                    darkMode ? "text-gray-200" : "text-gray-700"
+                  }`}
                   htmlFor="grid-first-name"
                 >
                   Mint date
                 </label>
                 <input
                   required
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
+                    darkMode
+                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
+                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
+                  }`}
                   id="mint_date"
                   type="text"
                   placeholder="Paste links here"
@@ -289,14 +334,20 @@ const DropsForm = () => {
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className={`block tracking-wide text-xs font-bold mb-2 ${
+                    darkMode ? "text-gray-200" : "text-gray-700"
+                  }`}
                   htmlFor="grid-first-name"
                 >
                   Mint Time
                 </label>
                 <input
                   required
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
+                    darkMode
+                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
+                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
+                  }`}
                   id="mint_time"
                   type="text"
                   placeholder="Paste link here"
@@ -308,14 +359,20 @@ const DropsForm = () => {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className={`block tracking-wide text-xs font-bold mb-2 ${
+                    darkMode ? "text-gray-200" : "text-gray-700"
+                  }`}
                   htmlFor="grid-first-name"
                 >
                   Supply count
                 </label>
                 <input
                   required
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
+                    darkMode
+                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
+                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
+                  }`}
                   id="supply_count"
                   type="text"
                   placeholder="Paste links here"
@@ -324,14 +381,20 @@ const DropsForm = () => {
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
-                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className={`block tracking-wide text-xs font-bold mb-2 ${
+                    darkMode ? "text-gray-200" : "text-gray-700"
+                  }`}
                   htmlFor="grid-first-name"
                 >
                   Mint price in sol
                 </label>
                 <input
                   required
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
+                    darkMode
+                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
+                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
+                  }`}
                   id="mint_time"
                   type="text"
                   placeholder="200sol"
@@ -358,7 +421,11 @@ const DropsForm = () => {
               </div>
             </div>
 
-            <h3 className="text-base text-black uppercase my-4 font-bold">
+            <h3
+              className={`text-base uppercase my-4 font-bold ${
+                darkMode ? "text-white" : "text-dark"
+              }`}
+            >
               Agreement
             </h3>
             <div className="flex flex-wrap -mx-3 mb-6">
