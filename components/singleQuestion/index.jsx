@@ -20,16 +20,16 @@ const SingleQuestion = ({ data }) => {
               <div className="col-span-11">
                 <div className="py-6 md:py-12">
                   <h6
-                    className={`font-bold text-base text-[#808080] ${
-                      darkMode && "text-gray-200"
+                    className={`font-bold text-base ${
+                      darkMode ? "text-gray-200" : "text-[#808080]"
                     }`}
                   >
                     {quest}
                   </h6>
                   {linkans ? (
                     <p
-                      className={`mt-2 text-[#808080] text-sm leading-loose leading-6 ${
-                        darkMode && "text-gray-200"
+                      className={`mt-2 text-sm leading-loose leading-6 ${
+                        darkMode ? "text-gray-200" : "text-[#808080]"
                       }`}
                     >
                       {ans}
@@ -39,8 +39,8 @@ const SingleQuestion = ({ data }) => {
                     </p>
                   ) : (
                     <p
-                      className={`mt-2 text-[#808080] text-sm leading-loose leading-6 ${
-                        darkMode && "text-gray-200"
+                      className={`mt-2 text-sm leading-loose leading-6 ${
+                        darkMode ? "text-gray-200" : "text-[#808080]"
                       }`}
                     >
                       {ans}
@@ -48,8 +48,8 @@ const SingleQuestion = ({ data }) => {
                   )}
                   {ansPara2 && (
                     <p
-                      className={`mt-3 text-[#808080] text-sm leading-loose leading-6 ${
-                        darkMode && "text-gray-200"
+                      className={`mt-3 text-sm leading-loose leading-6 ${
+                        darkMode ? "text-gray-200" : "text-[#808080]"
                       }`}
                     >
                       {ansPara2}
@@ -57,8 +57,8 @@ const SingleQuestion = ({ data }) => {
                   )}
                   {questList && (
                     <p
-                      className={`mt-3 text-[#808080] text-sm leading-loose leading-6 ${
-                        darkMode && "text-gray-200"
+                      className={`mt-3 text-sm leading-loose leading-6 ${
+                        darkMode ? "text-gray-200" : "text-[#808080]"
                       }`}
                     >
                       {questList}
@@ -69,8 +69,8 @@ const SingleQuestion = ({ data }) => {
                       {ansList.map(({ listData }, i) => (
                         <li
                           key={i}
-                          className={`mt-3 text-[#808080] text-sm leading-loose leading- ${
-                            darkMode && "text-gray-200"
+                          className={`mt-3 text-sm leading-loose leading- ${
+                            darkMode ? "text-gray-200" : "text-[#808080]"
                           }`}
                         >
                           {listData}
