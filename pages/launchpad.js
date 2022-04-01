@@ -15,10 +15,12 @@ import { homeLaunchpadData } from "../components/data/homeLaunchpad";
 // Connect Wallet Button
 import { ConnectWallet } from "../components/connectWallet";
 import axios from "axios";
+import { useDarkMode } from "../context/darkMode";
 
 const LaunchPad = () => {
   const [launches, setLaunches] = useState([]);
   const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
+  const { darkMode } = useDarkMode();
 
   useEffect(() => {
     axios.get(`${BACKEND_URL}/api/v1/launches`).then((res) => {
@@ -35,7 +37,13 @@ const LaunchPad = () => {
         <div className="  bg-gradient-to-r from-[#50C9C3] to-[#197F7A] rounded-md py-5 px-5">
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="my-10 px-3">
-              <button className="rounded border-white text-xs lg:text-sm font-semibold text-white border-2 py-3 px-2 ">
+              <button
+                className={`rounded text-xs lg:text-sm font-semibold border-2 py-3 px-2 ${
+                  darkMode
+                    ? "text-black border-black"
+                    : "border-white text-white"
+                }`}
+              >
                 Featured Launch
               </button>
               <h1 className="text-3xl lg:text-5xl my-3 font-bold text-white">
