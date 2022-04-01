@@ -7,8 +7,10 @@ import {
   TableBody,
 } from "@mui/material";
 import Link from "next/link";
+import { useDarkMode } from "../../context/darkMode";
 
 const LaunchpadTable = ({ rows, scroll }) => {
+  const { darkMode } = useDarkMode();
   return (
     <div
       className={`w-full mt-5 ${
@@ -35,9 +37,15 @@ const LaunchpadTable = ({ rows, scroll }) => {
                 tabIndex={-1}
                 className={`border-b-0 border-l-4 hover:border-l-orange 
                 border-transparent ${
-                  index % 2 === 0 ? "bg-[#50C9C314]/10" : "bg-white"
+                  index % 2 === 0
+                    ? darkMode
+                      ? "bg-[#1e8b84] hover:bg-[#6db9b5]"
+                      : "bg-[#50C9C314]/10 hover:bg-[#50C9C314]/20"
+                    : darkMode
+                    ? "bg-black hover:bg-[#6db9b5]"
+                    : "bg-white"
                 } 
-                hover:bg-[#50C9C314]/20 cursor-pointer`}
+                 cursor-pointer`}
               >
                 <TableCell>
                   <div className={`flex flex-row items-center`}>
@@ -46,25 +54,59 @@ const LaunchpadTable = ({ rows, scroll }) => {
                       alt=""
                       className={`w-[40px] h-[40px] rounded-sm mr-2`}
                     />
-                    <p className="py-3 text-[16px] font-medium text-gray2">
+                    <p
+                      className={`py-3 text-[16px] font-medium ${
+                        darkMode ? "text-white" : "text-black"
+                      }`}
+                    >
                       {row.name}
                     </p>
                   </div>
                 </TableCell>
                 <TableCell>
-                  <p className="text-black text-[16px]">{row.price} SOL</p>
+                  <p
+                    className={`text-[16px] ${
+                      darkMode ? "text-white" : "text-black"
+                    }`}
+                  >
+                    {row.price} SOL
+                  </p>
                 </TableCell>
                 <TableCell>
-                  <p className="text-black text-[16px]">{row.tokens}</p>
+                  <p
+                    className={`text-[16px] ${
+                      darkMode ? "text-white" : "text-black"
+                    }`}
+                  >
+                    {row.tokens}
+                  </p>
                 </TableCell>
                 <TableCell>
-                  <p className="text-black text-[16px]">{row.date}</p>
+                  <p
+                    className={`text-[16px] ${
+                      darkMode ? "text-white" : "text-black"
+                    }`}
+                  >
+                    {row.date}
+                  </p>
                 </TableCell>
                 <TableCell>
-                  <p className="text-black text-[16px]">{row.filled}</p>
+                  <p
+                    className={`text-[16px] ${
+                      darkMode ? "text-white" : "text-black"
+                    }`}
+                  >
+                    {row.filled}
+                  </p>
                 </TableCell>
                 <TableCell>
-                  <p className="text-black text-[16px]">{row.status}</p>
+                  <p
+                    className={`text-[16px] ${
+                      darkMode ? "text-white" : "text-black"
+                    }`}
+                  >
+                    {row.status}
+                  </p>
                 </TableCell>
               </TableRow>
             </Link>
@@ -85,6 +127,7 @@ const headCells = [
 ];
 
 const CustomTableHead = () => {
+  const { darkMode } = useDarkMode();
   return (
     <TableHead className="bg-transparent">
       <TableRow
@@ -100,7 +143,11 @@ const CustomTableHead = () => {
             className="capitalize text-[12px]"
             align={headCell.numeric ? "right" : "left"}
           >
-            <p className="font-semibold text-black text-[15px] uppercase pb-2">
+            <p
+              className={`font-semibold text-[15px] ${
+                darkMode ? "text-white" : "text-black"
+              } uppercase pb-2`}
+            >
               {headCell.label}
             </p>
           </TableCell>
