@@ -38,8 +38,8 @@ const Hero = () => {
         </h5>
 
         <h1
-          className={`text-2xl text-black font-semibold mb-5 md:text-3xl ${
-            darkMode && "text-gray-100"
+          className={`text-2xl font-semibold mb-5 md:text-3xl ${
+            darkMode ? "text-gray-100" : "text-black "
           }`}
         >
           The Innovative Solana NFT Launchpad
@@ -92,21 +92,22 @@ const Hero = () => {
           <p className="mt-2 lg:mt-1 text-[#808080] text-base md:text-sm">
             From{" "}
             <span
-              className={`mr-2 font-semibold text-black ${
-                darkMode && "text-gray-100"
+              className={`mr-2 font-semibold ${
+                darkMode ? "text-gray-100" : "text-black"
               }`}
             >
               {filteredData.price} SOL
             </span>
             <span
-              className={`font-semibold text-black 
-            ${darkMode && "text-gray-100"}
+              className={`font-semibold ${
+                darkMode ? "text-gray-100" : "text-black"
+              }
             `}
             >
               ·
             </span>
             <span
-              className={`ml-2 text-gray-500 ${darkMode && "text-gray-100"}`}
+              className={`ml-2 ${darkMode ? "text-gray-100" : "text-gray-500"}`}
             >
               {" "}
               {filteredData.availableCards} of {filteredData.totalCards}{" "}
@@ -117,8 +118,9 @@ const Hero = () => {
             <p className="md:mt-5 text-[#808080] text-base md:text-sm">
               Creator:{" "}
               <span
-                className={`font-semibold text-black 
-                          ${darkMode && "text-gray-100"}
+                className={`font-semibold ${
+                  darkMode ? "text-gray-100" : "text-black"
+                }
               `}
               >
                 {" "}
@@ -128,8 +130,9 @@ const Hero = () => {
             <p className="md:mt-1 text-[#808080] text-base md:text-sm">
               Minted:{" "}
               <span
-                className={`font-semibold text-black 
-                        ${darkMode && "text-gray-100"}
+                className={`font-semibold ${
+                  darkMode ? "text-gray-100" : "text-black"
+                }
               `}
               >
                 {" "}
