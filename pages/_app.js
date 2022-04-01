@@ -51,13 +51,13 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			<Script
-				strategy='lazyOnLoad'
+				strategy='afterInteractive'
 				src={`https://www.googletagmanager.com/gtag/js?id=G-LF1L5DCKBY`}
 			/>
 
 			{/* <Script id='my-script'>{`console.log('Hello world!');`}</Script> */}
 
-			<Script strategy='lazyOnLoad' id='my-script'>
+			<Script strategy='afterInteractive' id='my-script'>
 				{`
          window.dataLayer = window.dataLayer || [];
            function gtag(){dataLayer.push(arguments);}
