@@ -39,10 +39,10 @@ const DropsTable = ({ rows, scroll }) => {
                 border-transparent ${
                   index % 2 === 0
                     ? darkMode
-                      ? "bg-[#459f9a] hover:bg-[#2c6663]"
+                      ? "bg-[#1e8b84] hover:bg-[#6db9b5]"
                       : "bg-[#50C9C314]/10 hover:bg-[#50C9C314]/20"
                     : darkMode
-                    ? "bg-black hover:bg-[#2c6663]"
+                    ? "bg-black hover:bg-[#6db9b5]"
                     : "bg-white"
                 } 
                  cursor-pointer`}

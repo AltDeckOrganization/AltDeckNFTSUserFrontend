@@ -30,17 +30,18 @@ const Dropdown = ({
       <div>
         {green ? (
           <Menu.Button
-            className={`inline-flex justify-center inline-flex justify-center w-full bg-[#50C9C3] text-white shadow-sm px-4 py-2 text-sm font-medium rounded  w-full  shadow-sm px-4 py-2text-sm font-medium ${
-              darkMode && "text-black "
+            className={`inline-flex justify-center inline-flex justify-center w-full bg-[#50C9C3] shadow-sm px-4 py-2 text-sm font-medium rounded  w-full  shadow-sm px-4 py-2text-sm font-medium ${
+              darkMode ? "bg-black text-white" : " text-black"
             }`}
           >
             {title}
           </Menu.Button>
         ) : (
           <Menu.Button
-            className={`inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ${
-              darkMode &&
-              "bg-black text-gray-400 hover:bg-black hover:text-white"
+            className={`inline-flex justify-center w-full  shadow-sm px-4 py-2 text-sm font-medium  ${
+              darkMode
+                ? "bg-black text-gray-400 hover:bg-black hover:text-white"
+                : "bg-white text-gray-700 hover:bg-gray-50"
             }`}
           >
             {title}
@@ -58,8 +59,8 @@ const Dropdown = ({
         leaveTo="transform opacity-0 scale-95"
       >
         <Menu.Items
-          className={`origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none ${
-            darkMode && "bg-black"
+          className={`origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ${
+            darkMode ? "bg-black" : "bg-white"
           }`}
         >
           <div className="py-1">

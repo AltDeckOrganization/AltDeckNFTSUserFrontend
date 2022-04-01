@@ -63,8 +63,8 @@ export default function Example() {
   return (
     <>
       <div
-        className={`navbar flex items-center justify-between bg-white px-2 md:px-5 py-5 z-50 lg:px-10 fixed left-0 top-0 w-full ${
-          darkMode && "bg-black"
+        className={`navbar flex items-center justify-between px-2 md:px-5 py-5 z-50 lg:px-10 fixed left-0 top-0 w-full ${
+          darkMode ? "bg-black" : "bg-white"
         }`}
       >
         <div className="flex items-center">
@@ -84,7 +84,7 @@ export default function Example() {
               name="search"
               id="search"
               className={`w-full border-0 text-gray-700 leading-tight focus:ring-0 focus:outline-none ml-2 text-xs ${
-                darkMode && "bg-black"
+                darkMode ? "bg-black" : "bg-white"
               }`}
               placeholder="Search item here"
             />
@@ -104,9 +104,10 @@ export default function Example() {
             <Menu as="div" className="relative inline-block text-left">
               <div>
                 <Menu.Button
-                  className={`inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ${
-                    darkMode &&
-                    "bg-black text-gray-400 hover:bg-black hover:text-white"
+                  className={`inline-flex justify-center w-full  shadow-sm px-4 py-2 text-sm font-medium ${
+                    darkMode
+                      ? "bg-black text-gray-400 hover:bg-black hover:text-white"
+                      : "bg-white text-gray-700 hover:bg-gray-500"
                   }`}
                 >
                   <Link href="/innovation">Innovation</Link>
