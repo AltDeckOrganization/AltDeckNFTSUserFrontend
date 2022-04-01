@@ -48,7 +48,7 @@ const LaunchPad = () => {
               </button>
               <h1
                 className={`text-3xl lg:text-5xl my-3 font-bold ${
-                  darkMode ? "text-black" : "text-white"
+                  darkMode ? "text-white" : "text-white"
                 }`}
               >
                 Folktales of Lunaria: Blood Moonstones:
@@ -57,8 +57,9 @@ const LaunchPad = () => {
                 <div
                   className={`flex flex-col px-2 w-[80px] lg:w-[50px] items-center rounded text-sm font-bold py-2 py-1 ${
                     darkMode
-                      ? "text-black bg-[#4edfd7]"
+                      ? "text-white bg-[#207A76]"
                       : "text-white bg-[#207A76]"
+                    // ? "text-black bg-[#4edfd7]"
                   }`}
                 >
                   <div className="uppercase">Items</div>
@@ -67,7 +68,7 @@ const LaunchPad = () => {
               </div>
               <p
                 className={`text-base my-3 text-regular ${
-                  darkMode ? "text-black" : "text-white"
+                  darkMode ? "text-white" : "text-white"
                 }`}
               >
                 Blood Moonstones have the power to corrupt Lunarians on October
