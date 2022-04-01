@@ -109,10 +109,12 @@ export default function Example() {
                   className={`inline-flex justify-center w-full  shadow-sm px-4 py-2 text-sm font-medium ${
                     darkMode
                       ? "bg-black text-gray-400 hover:bg-black hover:text-white"
-                      : "bg-white text-gray-700 hover:bg-gray-500"
+                      : "bg-white text-gray-700 hover:bg-gray-50"
                   }`}
                 >
-                  <Link href="/innovation">Innovation</Link>
+                  <Link href="/innovation">
+                    <div>Innovation</div>
+                  </Link>
                 </Menu.Button>
               </div>
             </Menu>
@@ -168,14 +170,13 @@ export default function Example() {
               apply4="contact@altdeck.io"
               apply5="tos"
               apply6="faqs"
-              green
             />
           </li>
           <li className="mx-3 ">
             <Button
               onClick={() => setDarkMode(!darkMode)}
-              className={`inline-flex justify-center w-full border border-[#50C9C3] text-white bg-[#50c9c3] shadow-sm px-4 py-2 text-sm font-medium rounded ${
-                darkMode && "text-black"
+              className={`inline-flex justify-center w-full border border-[#50C9C3] bg-[#50c9c3] shadow-sm px-4 py-2 text-sm font-medium rounded ${
+                darkMode ? "text-black" : "text-white"
               }`}
             >
               {darkMode ? "Dark " : "Light "}Mode
@@ -255,9 +256,10 @@ export default function Example() {
                 >
                   <div>
                     <Menu.Button
-                      className={`inline-flex justify-center w-full  border rounded rounded-md  mt-5 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ${
-                        darkMode &&
-                        "bg-black text-whiteImportant hover:text-whiteImportant"
+                      className={`inline-flex justify-center w-full  border rounded rounded-md  mt-5 shadow-sm px-4 py-2 text-sm font-medium ${
+                        darkMode
+                          ? "bg-black text-gray-400 hover:bg-black hover:text-white"
+                          : "bg-white text-gray-700 hover:bg-gray-50"
                       }`}
                     >
                       <Link href="/innovation">Innovation</Link>
@@ -308,8 +310,8 @@ export default function Example() {
               <li onClick={handleMenuClick}>
                 <Button
                   onClick={() => setDarkMode(!darkMode)}
-                  className={`mt-5 md:mt-0 inline-flex justify-center w-full border border-[#50C9C3] text-white bg-[#50c9c3] shadow-sm px-4 py-2 text-sm font-medium rounded ${
-                    darkMode && "text-black"
+                  className={`mt-5 md:mt-0 inline-flex justify-center w-full border border-[#50C9C3] bg-[#50c9c3] shadow-sm px-4 py-2 text-sm font-medium rounded ${
+                    darkMode ? "text-black" : "text-white"
                   }`}
                 >
                   {darkMode ? "Dark " : "Light "}Mode

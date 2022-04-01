@@ -26,9 +26,10 @@ function DropdownSmall({
     <Menu as="div" className="relative inline-block text-left w-full">
       <div>
         <Menu.Button
-          className={`inline-flex justify-center w-full border rounded rounded-md  mt-5 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ${
-            darkMode &&
-            "bg-black text-whiteImportant border-gray-400 hover:bg-gray-800"
+          className={`inline-flex justify-center w-full border rounded rounded-md mt-5 shadow-sm px-4 py-2 text-sm font-medium ${
+            darkMode
+              ? "bg-black text-gray-400 hover:bg-black hover:text-white"
+              : "bg-white text-gray-700 hover:bg-gray-50"
           }`}
         >
           {title}
@@ -45,8 +46,8 @@ function DropdownSmall({
         leaveTo="transform opacity-0 scale-95"
       >
         <Menu.Items
-          className={`origin-top-right absolute z-50 right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none ${
-            darkMode && "bg-black"
+          className={`origin-top-right absolute z-50 right-0 mt-2 w-56 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ${
+            darkMode ? "bg-black" : "bg-white"
           }`}
         >
           <div className="py-1">
