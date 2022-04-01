@@ -75,7 +75,9 @@ export default function Example() {
               </a>
             </Link>
           </div>
-          <div
+
+          {/* SEARCH BAR HERE */}
+          {/* <div
             className={`mt-1 rounded-lg flex flex-row items-center border border-[#E3E1E3] px-2 py-2 lg:w-[300px] md:w-[510px] xl:w-[450px] ml-10`}
           >
             <Image src={searchIcon} alt="" className="w-full" />
@@ -88,7 +90,7 @@ export default function Example() {
               }`}
               placeholder="Search item here"
             />
-          </div>
+          </div> */}
         </div>
         <ul className=" items-align hidden lg:flex">
           <li className="mx-3">
@@ -112,6 +114,22 @@ export default function Example() {
                 >
                   <Link href="/innovation">
                     <div>Innovation</div>
+                  </Link>
+                </Menu.Button>
+              </div>
+            </Menu>
+
+            <Menu as="div" className="relative inline-block text-left">
+              <div>
+                <Menu.Button
+                  className={`inline-flex justify-center w-full  shadow-sm px-4 py-2 text-sm font-medium ${
+                    darkMode
+                      ? "bg-black text-gray-400 hover:bg-black hover:text-white"
+                      : "bg-white text-gray-700 hover:bg-gray-50"
+                  }`}
+                >
+                  <Link href="/marketing">
+                    <div>Marketing</div>
                   </Link>
                 </Menu.Button>
               </div>
@@ -253,6 +271,22 @@ export default function Example() {
                       }`}
                     >
                       <Link href="/innovation">Innovation</Link>
+                    </Menu.Button>
+                  </div>
+                </Menu>
+                <Menu
+                  as="div"
+                  className="relative inline-block text-left w-full"
+                >
+                  <div>
+                    <Menu.Button
+                      className={`inline-flex justify-center w-full  border rounded rounded-md  mt-5 shadow-sm px-4 py-2 text-sm font-medium ${
+                        darkMode
+                          ? "bg-black text-gray-400 hover:bg-black hover:text-white"
+                          : "bg-white text-gray-700 hover:bg-gray-50"
+                      }`}
+                    >
+                      <Link href="/marketing">Marketing</Link>
                     </Menu.Button>
                   </div>
                 </Menu>
