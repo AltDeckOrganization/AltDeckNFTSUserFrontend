@@ -13,6 +13,7 @@ import "tailwindcss/tailwind.css";
 import "../styles/globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Provider from "../context/Provider";
 import { useEffect } from "react";
 require("@solana/wallet-adapter-react-ui/styles.css");
 
