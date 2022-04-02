@@ -6,8 +6,8 @@ function NextArrow(props) {
   const { darkMode } = useDarkMode();
   return (
     <div
-      className={`${className} before:text-blackImportant ${
-        darkMode && "before:text-whiteImportant"
+      className={`${className} ${
+        darkMode ? "slick_arrows_white" : "slick_arrows_black"
       }`}
       onClick={onClick}
     />
@@ -19,8 +19,8 @@ function PrevArrow(props) {
   const { darkMode } = useDarkMode();
   return (
     <div
-      className={`${className} before:text-blackImportant ${
-        darkMode && "before:text-whiteImportant"
+      className={`${className} ${
+        darkMode ? "slick_arrows_white" : "slick_arrows_black"
       }`}
       onClick={onClick}
     />
