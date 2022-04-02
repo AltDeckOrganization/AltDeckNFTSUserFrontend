@@ -164,7 +164,11 @@ const DropsForm = () => {
                   onChange={(e) => setProjectName(e.target.value)}
                 />
               </div>
-              <div className="py-3 mb-5  px-3 bg-white md:w-1/2 w-full">
+              <div
+                className={`py-3 mb-5  px-3 md:w-1/2 w-full ${
+                  darkMode ? "bg-black" : "bg-white"
+                }`}
+              >
                 <div className="max-w-md mx-auto rounded-lg overflow-hidden md:max-w-xl">
                   <label
                     className={`block tracking-wide text-xs font-bold mb-2 ${
@@ -176,7 +180,11 @@ const DropsForm = () => {
                   </label>
                   <div className="md:flex">
                     <div className="w-full">
-                      <div className="relative border-dotted h-48 rounded-lg border-dashed border-2 border-blue-700 bg-gray-100 flex justify-center items-center">
+                      <div
+                        className={`relative h-48 rounded-lg border-dashed border-2 flex justify-center items-center ${
+                          darkMode ? "bg-black" : "bg-gray-100"
+                        }`}
+                      >
                         <div className="absolute">
                           <div className="flex flex-col items-center">
                             <svg
@@ -194,7 +202,11 @@ const DropsForm = () => {
                                 d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z"
                               />
                             </svg>
-                            <span className="block text-gray-400 font-normal">
+                            <span
+                              className={`block font-normal ${
+                                darkMode ? "text-gray-100" : "text-gray-400"
+                              }`}
+                            >
                               Drag and drop picture here
                             </span>{" "}
                           </div>
@@ -412,7 +424,11 @@ const DropsForm = () => {
                   Description
                 </label>
                 <textarea
-                  className="appearance-none block w-full h-50 bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  className={`appearance-none block w-full h-50 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none  ${
+                    darkMode
+                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
+                      : "focus:bg-white border-gray-100 bg-gray-200 text-gray-700"
+                  }`}
                   id="project_unique"
                   type="text"
                   placeholder="Write all description of your project"
