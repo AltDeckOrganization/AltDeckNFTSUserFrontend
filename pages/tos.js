@@ -7,7 +7,7 @@ import { useDarkMode } from "../context/darkMode";
 function Tos() {
   const { darkMode } = useDarkMode();
   return (
-    <div className="py-2 mt-20 lg:py-5 px-2 md:px-10 lg:px-40">
+    <div className="py-2 lg:pb-5 pt-20 px-2 md:px-10 lg:px-40">
       <SEO />
 
       <h1
