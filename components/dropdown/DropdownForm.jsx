@@ -1,15 +1,17 @@
 import React, { useState } from "react";
+import { useDarkMode } from "../../context/darkMode";
 
 const DropdownForm = () => {
   const [dropdownVal, setDropdownVal] = useState("None");
   const [inputChecked, setInputChecked] = useState(false);
+  const { darkMode } = useDarkMode();
   return (
     <>
       <div className="dropdown z-10">
         <input type="checkbox" id="dropdown" checked={inputChecked} />
 
         <label
-          className="dropdown__face"
+          className={`dropdown__face ${darkMode && "bg-black"}`}
           htmlFor="dropdown"
           onClick={() => setInputChecked(!inputChecked)}
         >
@@ -19,7 +21,9 @@ const DropdownForm = () => {
         </label>
 
         <ul
-          className="dropdown__items"
+          className={`dropdown__items ${
+            darkMode && "bg-black before:bg-black"
+          }`}
           onClick={() => setInputChecked(!inputChecked)}
         >
           <li className="cursor-pointer" onClick={() => setDropdownVal("None")}>
