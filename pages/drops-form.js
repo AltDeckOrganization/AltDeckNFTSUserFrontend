@@ -463,7 +463,9 @@ const DropsForm = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0"></div>
               <div className="w-full md:w-1/2 px-3">
                 <button
-                  className="bg-[#50C9C3]  rounded rounded-md py-3 px-10 text-white float-right"
+                  className={`bg-[#50C9C3] rounded rounded-md py-3 px-10 float-right ${
+                    darkMode ? "text-black" : "text-white"
+                  }`}
                   type="submit"
                 >
                   Submit
