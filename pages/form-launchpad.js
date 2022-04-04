@@ -14,6 +14,12 @@ import SEO from '../components/seo/SEO';
 import DropdownForm from '../components/dropdown/DropdownForm';
 import Link from 'next/link';
 import ReCAPTCHA from 'react-google-recaptcha';
+import {
+	loadCaptchaEnginge,
+	LoadCanvasTemplate,
+	LoadCanvasTemplateNoReload,
+	validateCaptcha,
+} from 'react-simple-captcha';
 
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
@@ -76,6 +82,17 @@ const LaunchpadForm = () => {
 	const submitForm = (e) => {
 		e.preventDefault();
 
+		let user_captcha = document.getElementById('user_captcha_input').value;
+
+		if (validateCaptcha(user_captcha) == true) {
+			alert('Captcha Matched');
+			loadCaptchaEnginge(6);
+			document.getElementById('user_captcha_input').value = '';
+		} else {
+			alert('Captcha Does Not Match');
+			document.getElementById('user_captcha_input').value = '';
+		}
+
 		const form_data = {
 			personal_info: {
 				name,
@@ -131,6 +148,10 @@ const LaunchpadForm = () => {
 				console.log(e);
 			});
 	};
+
+	useEffect(() => {
+		loadCaptchaEnginge(6);
+	}, []);
 
 	return (
 		<div>
@@ -753,10 +774,22 @@ const LaunchpadForm = () => {
 								</label>
 							</label>
 						</div>
-						<ReCAPTCHA
-							sitekey='6Lfe_i4fAAAAAMAnM_vPnyG-_3xlwb-QT3zGej-F'
-							onChange={handleCaptchaChange}
-						/>
+
+						<div className='col mt-3'>
+							<LoadCanvasTemplate />
+						</div>
+
+						<div className='col mt-3'>
+							<div>
+								<input
+									placeholder='Enter Captcha Value'
+									id='user_captcha_input'
+									name='user_captcha_input'
+									type='text'
+									className="appearance-none block border border-gray-400 bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+								></input>
+							</div>
+						</div>
 
 						<div className='flex flex-wrap -mx-3 mb-6'>
 							<div className='w-full md:w-1/2 px-3 mb-6 md:mb-0'></div>
