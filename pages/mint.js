@@ -34,7 +34,7 @@ const renderer = ({ hours, minutes, seconds, completed }) => {
 const Mint = () => {
   const { darkMode } = useDarkMode();
   return (
-    <div className="mint px-2 py-5 md:px-10 mt-20">
+    <div className="mint px-2 py-5 md:px-10 pt-20">
       <SEO />
 
       <div className="">
