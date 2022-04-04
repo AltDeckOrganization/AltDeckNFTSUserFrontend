@@ -12,7 +12,7 @@ function Footer() {
       }`}
     >
       <div className="">
-        &copy; 2021{" "}
+        &copy; 2022{" "}
         <span
           className={`text-black font-bold text-sm  ${footerStyles.span} ${
             darkMode && "text-whiteImportant"
