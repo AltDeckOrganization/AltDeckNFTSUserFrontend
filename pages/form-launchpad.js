@@ -910,7 +910,7 @@ const LaunchpadForm = () => {
               </label>
             </div>
             <ReCAPTCHA
-              sitekey="6Lfe_i4fAAAAAMAnM_vPnyG-_3xlwb-QT3zGej-F"
+              sitekey="6Leyc0AfAAAAANJcTNSMG5q2l7nJtvRoXOCCV52X"
               onChange={handleCaptchaChange}
             />
 
