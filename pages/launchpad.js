@@ -31,7 +31,7 @@ const LaunchPad = () => {
   // }, [setLaunches]);
 
   return (
-    <div className="xl:w-[1156px] mt-20 mx-auto xl:w-[1156px] xl:mx-auto lg:px-0 w-full">
+    <div className="xl:w-[1156px] pt-20 mx-auto xl:w-[1156px] xl:mx-auto lg:px-28 w-full">
       <SEO />
       <div className="min-h-[100vh] py-[20px] mx-[20px]">
         <div className="  bg-gradient-to-r from-[#50C9C3] to-[#197F7A] rounded-md py-5 px-5">
