@@ -56,3 +56,9 @@
   visibility: visible;
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  .dropdown {
+    width: 100%;
+  }
+}
