@@ -190,12 +190,13 @@ const LaunchpadForm = () => {
             Please provide details about at least 1 team member (more team
             members, the better).
             <span className="text-[#50c0c3]">
+              <br />
               <Link href="/creatorfaq">Read Creator FAQ here</Link>
             </span>
           </p>
 
           <form className="w-full  py-5 px-5 md:px-10" onSubmit={submitForm}>
-            <h3 className="text-base text-black uppercase my-4 font-bold">
+            <h3 className="text-base uppercase my-4 font-bold">
               Personal Details
             </h3>
             <div className="flex flex-wrap -mx-3 mb-6">
@@ -352,7 +353,7 @@ const LaunchpadForm = () => {
           </button>
         </div> */}
 
-            <h3 className="text-base text-black uppercase my-4 font-bold">
+            <h3 className="text-base uppercase my-4 font-bold">
               Collection Details
             </h3>
 
@@ -653,9 +654,7 @@ const LaunchpadForm = () => {
               </div>
             </div>
 
-            <h3 className="text-base text-black uppercase my-4 font-bold">
-              Socials
-            </h3>
+            <h3 className="text-base uppercase my-4 font-bold">Socials</h3>
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
@@ -844,9 +843,7 @@ const LaunchpadForm = () => {
               </div>
             </div>
 
-            <h3 className="text-base text-black uppercase my-4 font-bold">
-              Feedback
-            </h3>
+            <h3 className="text-base uppercase my-4 font-bold">Feedback</h3>
 
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-full px-3 mb-6 md:mb-0">
@@ -887,9 +884,7 @@ const LaunchpadForm = () => {
               />
             </div>
 
-            <h3 className="text-base text-black uppercase my-4 font-bold">
-              Agreement
-            </h3>
+            <h3 className="text-base uppercase my-4 font-bold">Agreement</h3>
             <div className="flex flex-wrap -mx-3 mb-6">
               <label className="inline-flex items-center mt-3 px-3 gap-2">
                 <input
