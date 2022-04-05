@@ -63,7 +63,14 @@ const Mint = () => {
             </div>
             <div className="flex gap-2">
               <div className="text-[#808080] text-sm">
-                Price: <span className="text-black font-bold">0.72</span>
+                Price:{" "}
+                <span
+                  className={`font-bold ${
+                    darkMode ? "text-white" : "text-black"
+                  }`}
+                >
+                  0.72
+                </span>
               </div>
               <Image src={Internet} alt="Internet" width={20} height={20} />
               <Image src={Discord} alt="Internet" width={20} height={20} />
