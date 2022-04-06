@@ -1,10 +1,30 @@
 import React from "react";
-import { dropData } from "../components/data/dropsData";
+// import { dropData } from "../components/data/dropsData";
 import DropsTable from "../components/dropsTable";
 import SEO from "../components/seo/SEO";
 import { useDarkMode } from "../context/darkMode";
 
-const Drops = () => {
+
+export async function getStaticProps() {
+  const res = await fetch(`https://api.howrare.is/v0.1/drops`)
+  const data = await res.json()
+  const dropsData = []
+  dropsData.push(data.result.data)
+  // console.log(dropsData)
+
+  if (!data) {
+    return {
+      notFound: true,
+    }
+  }
+
+  return {
+    props: {dropData: dropsData}, 
+  }
+}
+
+const Drops = ({dropData}) => {
+  let i
   const { darkMode } = useDarkMode();
   return (
     <div className="xl:w-[1156px] mx-auto lg:w-[900px] w-full pt-28 px-4 overflow-hidden md:px-0">
@@ -22,9 +42,9 @@ const Drops = () => {
               darkMode ? "bg-gray-300 text-black" : "text-white bg-gray-400"
             }`}
           >
-            {item.date}
+            {Object.keys(item)[i]}
           </div>
-          <DropsTable rows={item.data} scroll />
+          <DropsTable rows={Object.values(item)[i]} scroll />
         </div>
       ))}
     </div>
