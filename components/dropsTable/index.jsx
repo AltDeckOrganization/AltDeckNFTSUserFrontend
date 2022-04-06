@@ -5,7 +5,7 @@ import {
   TableRow,
   Table,
   TableBody,
-} from "@mui/material"
+} from "@mui/material";
 import Link from "next/link";
 import { useDarkMode } from "../../context/darkMode";
 
@@ -13,8 +13,9 @@ const DropsTable = ({ rows, scroll }) => {
   const { darkMode } = useDarkMode();
   return (
     <div
-      className={`w-full mt-5 ${scroll && "overflow-x-scroll md:overflow-hidden"
-        }`}
+      className={`w-full mt-5 ${
+        scroll && "overflow-x-scroll md:overflow-hidden"
+      }`}
     >
       <Table className="min-w-[750px]" size="small">
         <CustomTableHead />
@@ -35,11 +36,12 @@ const DropsTable = ({ rows, scroll }) => {
               key={index}
               tabIndex={-1}
               className={`border-b-0 border-l-4 hover:border-l-orange 
-                border-transparent ${index % 2 === 0
-                  ? darkMode
-                    ? "bg-[#1e8b84] hover:bg-[#6db9b5]"
-                    : "bg-[#50C9C314]/10 hover:bg-[#50C9C314]/20"
-                  : darkMode
+                border-transparent ${
+                  index % 2 === 0
+                    ? darkMode
+                      ? "bg-[#1e8b84] hover:bg-[#6db9b5]"
+                      : "bg-[#50C9C314]/10 hover:bg-[#50C9C314]/20"
+                    : darkMode
                     ? "bg-black hover:bg-[#6db9b5]"
                     : "bg-white"
                 } 
@@ -53,8 +55,9 @@ const DropsTable = ({ rows, scroll }) => {
                     className={`w-[40px] h-[40px] rounded-sm mr-2`}
                   />
                   <p
-                    className={`py-3 text-[16px] font-medium ${darkMode ? "text-white" : "text-black"
-                      }`}
+                    className={`py-3 text-[16px] font-medium ${
+                      darkMode ? "text-white" : "text-black"
+                    }`}
                   >
                     {row.name}
                   </p>
@@ -62,58 +65,83 @@ const DropsTable = ({ rows, scroll }) => {
               </TableCell>
               <TableCell>
                 <p
-                  className={`text-[16px] ${darkMode ? "text-white" : "text-black"
-                    }`}
+                  className={`text-[16px] ${
+                    darkMode ? "text-white" : "text-black"
+                  }`}
                 >
                   {row.date}
                 </p>
               </TableCell>
               <TableCell>
-                {/* <div
+                <div
                   className={`flex text-[16px] ${
                     darkMode ? "text-white" : "text-black"
                   }`}
                 >
-                  {row.icons.map((item, i) => (
-                    <a key={i} href={item.link} className="pr-2 md:pr-4">
+                  {row.website && (
+                    <a href={row.website} className="pr-2 md:pr-4">
                       <i
-                        className={`${item.iconClass} ${
+                        className={`fa fa-solid fa-globe ${
                           !darkMode ? "text-black" : "text-white"
                         }
                         `}
                       ></i>
                     </a>
-                  ))}
-                </div> */}
-                <div>
+                  )}{" "}
+                  {row.twitter && (
+                    <a href={row.twitter} className="pr-2 md:pr-4">
+                      <i
+                        className={`fab fa-brands fa-twitter ${
+                          !darkMode ? "text-black" : "text-white"
+                        }
+                        `}
+                      ></i>
+                    </a>
+                  )}
+                  {row.discord && (
+                    <a href={row.discord} className="pr-2 md:pr-4">
+                      <i
+                        className={`fab fa-brands fa-discord ${
+                          !darkMode ? "text-black" : "text-white"
+                        }
+                        `}
+                      ></i>
+                    </a>
+                  )}
+                </div>
+                {/* <div>
                   <p
-                    className={`text-[16px] ${darkMode ? "text-white" : "text-black"
-                      }`}
+                    className={`text-[16px] ${
+                      darkMode ? "text-white" : "text-black"
+                    }`}
                   >
                     {row.website} {row.twitter} {row.discord}
                   </p>
-                </div>
+                </div> */}
               </TableCell>
               <TableCell>
                 <p
-                  className={`text-[16px] ${darkMode ? "text-white" : "text-black"
-                    }`}
+                  className={`text-[16px] ${
+                    darkMode ? "text-white" : "text-black"
+                  }`}
                 >
                   {row.price}
                 </p>
               </TableCell>
               <TableCell>
                 <p
-                  className={`text-[16px] ${darkMode ? "text-white" : "text-black"
-                    }`}
+                  className={`text-[16px] ${
+                    darkMode ? "text-white" : "text-black"
+                  }`}
                 >
                   {row.nft_count}
                 </p>
               </TableCell>
               <TableCell className="w-2/6">
                 <p
-                  className={`text-[16px] ${darkMode ? "text-white" : "text-black"
-                    }`}
+                  className={`text-[16px] ${
+                    darkMode ? "text-white" : "text-black"
+                  }`}
                 >
                   {row.extra}
                 </p>
@@ -153,8 +181,9 @@ const CustomTableHead = () => {
             align={headCell.numeric ? "right" : "left"}
           >
             <p
-              className={`font-semibold text-[15px] uppercase pb-2 ${darkMode ? "text-white" : "text-black"
-                }`}
+              className={`font-semibold text-[15px] uppercase pb-2 ${
+                darkMode ? "text-white" : "text-black"
+              }`}
             >
               {headCell.label}
             </p>

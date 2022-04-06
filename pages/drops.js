@@ -4,27 +4,27 @@ import DropsTable from "../components/dropsTable";
 import SEO from "../components/seo/SEO";
 import { useDarkMode } from "../context/darkMode";
 
-
 export async function getStaticProps() {
-  const res = await fetch(`https://api.howrare.is/v0.1/drops`)
-  const data = await res.json()
-  const dropsData = []
-  dropsData.push(data.result.data)
+  const res = await fetch(`https://api.howrare.is/v0.1/drops`);
+  const data = await res.json();
+  const dropsData = data.result.data;
+  const keys = Object.keys(data.result.data);
   // console.log(dropsData)
 
   if (!data) {
     return {
       notFound: true,
-    }
+    };
   }
 
   return {
-    props: {dropData: dropsData}, 
-  }
+    props: { dropData: dropsData, ObjectKeys: keys },
+  };
 }
 
-const Drops = ({dropData}) => {
-  let i
+const Drops = ({ dropData, ObjectKeys }) => {
+  let i;
+  console.log(dropData);
   const { darkMode } = useDarkMode();
   return (
     <div className="xl:w-[1156px] mx-auto lg:w-[900px] w-full pt-28 px-4 overflow-hidden md:px-0">
@@ -35,18 +35,20 @@ const Drops = ({dropData}) => {
         AltDeck <br />
         Apply here as an upcoming drop - Drop Application
       </p>
-      {dropData.map((item, i) => (
-        <div key={i} className={`${i !== 0 ? "mt-20" : "mt-8"}`}>
-          <div
-            className={`text-center text-2xl py-2 rounded-md ${
-              darkMode ? "bg-gray-300 text-black" : "text-white bg-gray-400"
-            }`}
-          >
-            {Object.keys(item)[i]}
+      {ObjectKeys.map((item, i) => {
+        return (
+          <div key={i} className={`${i !== 0 ? "mt-20" : "mt-8"}`}>
+            <div
+              className={`text-center text-2xl py-2 rounded-md ${
+                darkMode ? "bg-gray-300 text-black" : "text-white bg-gray-400"
+              }`}
+            >
+              {Object.keys(dropData)[i]}
+            </div>
+            <DropsTable rows={Object.values(dropData)[i]} scroll />
           </div>
-          <DropsTable rows={Object.values(item)[i]} scroll />
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 };
