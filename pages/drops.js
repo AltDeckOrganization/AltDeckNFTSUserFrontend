@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 // import { dropData } from "../components/data/dropsData";
 import DropsTable from "../components/dropsTable";
@@ -33,7 +34,10 @@ const Drops = ({ dropData, ObjectKeys }) => {
       <p className="py-4 text-center">
         Projects listed are not an endorsement or a guarantee of a listing on
         AltDeck <br />
-        Apply here as an upcoming drop - Drop Application
+        Apply here as an upcoming drop -{" "}
+        <span className="text-[#50C9C3]">
+          <Link href={"/drops-form"}>Drop Application</Link>
+        </span>
       </p>
       {ObjectKeys.map((item, i) => {
         return (
