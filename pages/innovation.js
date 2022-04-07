@@ -9,8 +9,7 @@ function Innovation() {
 
       <p className="leading-loose leading-6 mb-5 text-[#808080] text-base ">
         Below explains how we’re developing to be a unique launchpad platform
-        and how our development towards an innovative Solana NFT Launchpad
-        before we launch as a full marketplace
+        and how our development towards an innovative Solana NFT Launchpad.
       </p>
       <h3 className="text-[#50C9C3] font-bold mb-5 text-xl ">
         Publicly Doxxed Projects
