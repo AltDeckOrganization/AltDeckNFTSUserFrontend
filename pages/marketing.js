@@ -26,7 +26,17 @@ function Markting() {
         </div>
       </div>
       <iframe
-        src="https://calendly.com/altdecknfts/15min?month=2022-04"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSeCXpxVbqQpi9MaEbQs_wiZf3gDy6maP1poSyo4LjQmg2SS5g/viewform?embedded=true"
+        width="640"
+        height="1935"
+        frameBorder="0"
+        marginHeight="0"
+        marginWidth="0"
+      >
+        Loading…
+      </iframe>
+      <iframe
+        src="https://calendly.com/altdeckmarketing/15min"
         className="h-screen w-full"
       ></iframe>
       <div></div>
