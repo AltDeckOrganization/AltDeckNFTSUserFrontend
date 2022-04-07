@@ -85,7 +85,7 @@ const Dropdown = ({
             {link2 ? (
               <Menu.Item>
                 {({ active }) => (
-                  <Link href={`/${apply2}`} passHref>
+                  <Link href={`${apply2}`} passHref>
                     <a
                       className={classNames(
                         active
@@ -129,7 +129,7 @@ const Dropdown = ({
             {link4 ? (
               <Menu.Item>
                 {({ active }) => (
-                  <Link href={`/${apply4}`} passHref>
+                  <Link href={`${apply4}`} passHref>
                     <a
                       className={classNames(
                         active
