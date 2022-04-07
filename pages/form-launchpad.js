@@ -753,18 +753,13 @@ const LaunchpadForm = () => {
 								</label>
 							</label>
 						</div>
-						<ReCAPTCHA
-							sitekey='6Lfe_i4fAAAAAMAnM_vPnyG-_3xlwb-QT3zGej-F'
-							onChange={handleCaptchaChange}
-						/>
-
+						
 						<div className='flex flex-wrap -mx-3 mb-6'>
 							<div className='w-full md:w-1/2 px-3 mb-6 md:mb-0'></div>
 							<div className='w-full md:w-1/2 px-3'>
 								<button
 									className='bg-[#50C9C3]  rounded rounded-md py-3 px-10 text-white float-right'
 									type='submit'
-									disabled={!verify}
 								>
 									Submit
 								</button>
