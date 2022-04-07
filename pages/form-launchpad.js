@@ -110,6 +110,7 @@ const LaunchpadForm = () => {
       feedback,
       acceptTOS,
       acceptDetailsWillBeShowed,
+      marketingPackage: dropdownVal,
     };
 
     const data = {
