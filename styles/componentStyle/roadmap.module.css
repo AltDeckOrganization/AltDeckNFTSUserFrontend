@@ -33,7 +33,6 @@
   padding: 3rem 0;
 }
 .wrapper {
-  background: #1a1a1a;
   padding: 2rem;
   border-radius: 15px;
   max-width: 470px;
@@ -49,7 +48,6 @@
   position: relative;
   padding-left: 20px;
   margin-left: 10px;
-  color: #bbbbbb;
 }
 .sessions li::before {
   content: "";
