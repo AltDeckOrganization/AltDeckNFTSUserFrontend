@@ -11,18 +11,6 @@ function Markting() {
           <h1 className="text-[#50C9C3] font-bold mb-5 text-3xl text-center">
             Marketing
           </h1>
-          All of our services are{" "}
-          <a
-            href="https://docs.google.com/document/d/10c9krMJSh9ncwiKi4QScsi7maJ0vtRvWYeu0tPxYN8Y/edit"
-            className="underline text-[#50C9C3]"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            Here
-          </a>
-          <br />
-          You can also book a meeting with AltDeck. Just select a date and time
-          and you are good to go 😀
         </div>
       </div>
       <iframe
