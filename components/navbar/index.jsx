@@ -175,7 +175,7 @@ export default function Example() {
               apply="https://www.twitter.com/@AltDeck_io"
               apply2="https://medium.com/@AltDeck"
               apply3="https://discord.gg/ec9cZCCSHK"
-              apply4="contact@altdeck.io"
+              apply4="mailto:contact@altdeck.io"
               apply5="tos"
               apply6="faqs"
             />
@@ -316,7 +316,7 @@ export default function Example() {
                   apply="https://www.twitter.com/@AltDeck_io"
                   apply2="https://medium.com/@AltDeck"
                   apply3="https://discord.gg/ec9cZCCSHK"
-                  apply4="contact@altdeck.io"
+                  apply4="mail:contact@altdeck.io"
                   apply5="tos"
                   apply6="faqs"
                 />
