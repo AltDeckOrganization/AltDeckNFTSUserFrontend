@@ -1,10 +1,10 @@
 import React from "react";
 
-function Innovation() {
+function Roadmap() {
   return (
     <div className="px-5 md:px-0 xl:w-[1156px] xl:mx-auto lg:px-28 xl:px-0 w-full pt-28">
       <h1 className={`text-[#50C9C3] font-bold mb-5 text-3xl text-center`}>
-        Innovation
+        Roadmap
       </h1>
 
       <p className="leading-loose leading-6 mb-5 text-[#808080] text-base ">
@@ -24,4 +24,4 @@ function Innovation() {
   );
 }
 
-export default Innovation;
+export default Roadmap;

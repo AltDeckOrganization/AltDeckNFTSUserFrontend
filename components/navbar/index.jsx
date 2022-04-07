@@ -112,8 +112,8 @@ export default function Example() {
                       : "bg-white text-gray-700 hover:bg-gray-50"
                   }`}
                 >
-                  <Link href="/innovation">
-                    <div>Innovation</div>
+                  <Link href="/roadmap">
+                    <div>Roadmap</div>
                   </Link>
                 </Menu.Button>
               </div>
@@ -262,7 +262,7 @@ export default function Example() {
                           : "bg-white text-gray-700 hover:bg-gray-50"
                       }`}
                     >
-                      <Link href="/innovation">Innovation</Link>
+                      <Link href="/roadmap">Roadmap</Link>
                     </Menu.Button>
                   </div>
                 </Menu>{" "}
