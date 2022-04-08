@@ -104,8 +104,8 @@ The personal information that you are asked to provide, and the reasons why you 
             Google is one of a third-party vendor on our site. It also uses
             cookies, known as DART cookies, to serve ads to our site visitors
             based upon their visit to{" "}
-            <Link href="www.website.com">
-              <a className="text-[#50C9C3]">www.website.com</a>
+            <Link href="www.altdeck.io">
+              <a className="text-[#50C9C3]">www.altdeck.io</a>
             </Link>{" "}
             and other sites on the internet. However, visitors may choose to
             decline the use of DART cookies by visiting the Google ad and
