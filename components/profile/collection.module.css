@@ -16,6 +16,7 @@
 .imageCard {
   margin: 0 auto;
   width: 200px;
+  background: #fff;
 }
 @media (min-width: 1440px) {
   .positionCard {

@@ -1,15 +1,9 @@
 import React from "react";
-import { useDarkMode } from "../../context/darkMode";
 
 function TosPara({ title, desc, titleNumber }) {
-  const { darkMode } = useDarkMode();
   return (
     <div>
-      <p
-        className={`text-base text-sm font-bold ${
-          darkMode ? "text-white" : "text-black"
-        }`}
-      >
+      <p className="text-base text-black text-sm font-bold">
         {titleNumber && <span className="text-[#50C9C3]">{titleNumber}. </span>}
         {title}
       </p>

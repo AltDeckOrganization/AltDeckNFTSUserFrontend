@@ -9,10 +9,8 @@ import CollectionCard from "../components/collectionCard";
 import Link from "next/link";
 import { cardData } from "../components/data/cardData";
 import SEO from "../components/seo/SEO";
-import { useDarkMode } from "../context/darkMode";
 
-function Collection() {
-  const { darkMode } = useDarkMode();
+function collection() {
   return (
     <div>
       <CollCard />
@@ -38,11 +36,7 @@ function Collection() {
           <Select />
         </div>
         <div className="col-span-2">
-          <div
-            className={`flex p-7 rounded-lg justify-between ${
-              darkMode ? "bg-gray-700" : "bg-gray-300"
-            }`}
-          >
+          <div className="flex bg-gray-300 p-7 rounded-lg  justify-between">
             <div className="flex justify-center justify-items-center">
               <Image
                 src="/images/Icon.svg"
@@ -50,11 +44,7 @@ function Collection() {
                 height="10"
                 alt="filters"
               />
-              <div
-                className={`text-sans uppercase pl-2 text-xs ${
-                  darkMode ? "text-gray-100" : "text-gray-500"
-                }`}
-              >
+              <div className="text-sans uppercase pl-2 text-xs text-gray-500">
                 Filters
               </div>
             </div>
@@ -65,11 +55,7 @@ function Collection() {
                 height="15"
                 alt="Magnifier"
               />
-              <div
-                className={`text-sans uppercase pl-1 text-xs ${
-                  darkMode ? "text-gray-100" : "text-gray-500"
-                }`}
-              >
+              <div className="text-sans uppercase pl-1 text-xs text-gray-500">
                 Price: Low to High
               </div>
             </div>
@@ -107,4 +93,4 @@ function Collection() {
   );
 }
 
-export default Collection;
+export default collection;

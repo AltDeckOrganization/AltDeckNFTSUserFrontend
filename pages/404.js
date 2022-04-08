@@ -4,7 +4,7 @@ import SEO from "../components/seo/SEO";
 
 export default function Custom404() {
   return (
-    <div className="flex flex-col justify-center items-align  pt-28">
+    <div className="flex flex-col justify-center items-align pt-10">
       <SEO />
       <Image
         src={NotFound}

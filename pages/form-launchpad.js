@@ -6,7 +6,6 @@ import {
   CountryRegionData,
 } from "react-country-region-selector";
 import { Menu, Transition } from "@headlessui/react";
-
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import axios from "axios";
 import Dropdown from "../components/dropdown";
@@ -14,7 +13,6 @@ import SEO from "../components/seo/SEO";
 import DropdownForm from "../components/dropdown/DropdownForm";
 import Link from "next/link";
 import ReCAPTCHA from "react-google-recaptcha";
-import { useDarkMode } from "../context/darkMode";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -78,6 +76,8 @@ const LaunchpadForm = () => {
   const submitForm = (e) => {
     e.preventDefault();
 
+
+
     const form_data = {
       personal_info: {
         name,
@@ -134,7 +134,8 @@ const LaunchpadForm = () => {
         console.log(e);
       });
   };
-  const { darkMode } = useDarkMode();
+
+
 
   return (
     <div>
@@ -190,32 +191,25 @@ const LaunchpadForm = () => {
             Please provide details about at least 1 team member (more team
             members, the better).
             <span className="text-[#50c0c3]">
-              <br />
               <Link href="/creatorfaq">Read Creator FAQ here</Link>
             </span>
           </p>
 
           <form className="w-full  py-5 px-5 md:px-10" onSubmit={submitForm}>
-            <h3 className="text-base uppercase my-4 font-bold">
+            <h3 className="text-base text-black uppercase my-4 font-bold">
               Personal Details
             </h3>
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   Name
                 </label>
                 <input
                   required
-                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
-                  }`}
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="name"
                   type="text"
                   placeholder="Adam Smith"
@@ -227,19 +221,13 @@ const LaunchpadForm = () => {
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block  trackin-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-last-name"
                 >
                   Country
                 </label>
                 <CountryDropdown
-                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
-                  }`}
+                  className="block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   onChange={(val) => {
                     setCountry(val);
                   }}
@@ -257,27 +245,17 @@ const LaunchpadForm = () => {
 
             <div className="flex flex-wrap -mx-3 mb-6">
               {" "}
-              <div
-                className={`py-3 mb-5  px-3 md:w-1/2 w-full ${
-                  darkMode ? "bg-black" : "bg-white"
-                }`}
-              >
+              <div className="py-3 mb-5  px-3 bg-white md:w-1/2 w-full">
                 <div className="max-w-md mx-auto rounded-lg overflow-hidden md:max-w-xl">
                   <label
-                    className={`block tracking-wide text-xs font-bold mb-2 ${
-                      darkMode ? "text-gray-200" : "text-gray-700"
-                    }`}
+                    className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                     htmlFor="grid-first-name"
                   >
                     Picture(PNG/JPG/JPEG)
                   </label>
                   <div className="md:flex">
                     <div className="w-full">
-                      <div
-                        className={`relative h-48 rounded-lg border-dashed border-2 flex justify-center items-center ${
-                          darkMode ? "bg-black" : "bg-gray-100"
-                        }`}
-                      >
+                      <div className="relative border-dotted h-48 rounded-lg border-dashed border-2 border-blue-700 bg-gray-100 flex justify-center items-center">
                         <div className="absolute">
                           <div className="flex flex-col items-center">
                             <svg
@@ -295,11 +273,7 @@ const LaunchpadForm = () => {
                                 d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z"
                               />
                             </svg>
-                            <span
-                              className={`block font-normal ${
-                                darkMode ? "text-gray-100" : "text-gray-400"
-                              }`}
-                            >
+                            <span className="block text-gray-400 font-normal">
                               Drag and drop picture here
                             </span>{" "}
                           </div>
@@ -319,23 +293,17 @@ const LaunchpadForm = () => {
                 </div>
               </div>
               {/* VIDEO */}
-              <div className="py-3  px-3 md:w-1/2 w-full">
+              <div className="py-3  bg-white  px-3 md:w-1/2 w-full">
                 <div className="max-w-md mx-auto rounded-lg overflow-hidden md:max-w-xl">
                   <label
-                    className={`block tracking-wide text-xs font-bold mb-2 ${
-                      darkMode ? "text-gray-200" : "text-gray-700"
-                    }`}
+                    className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                     htmlFor="grid-first-name"
                   >
                     Video(mp3)
                   </label>
                   <input
                     required
-                    className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
-                      darkMode
-                        ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                        : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
-                    }`}
+                    className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                     id="name"
                     type="text"
                     placeholder="Video URL"
@@ -353,27 +321,21 @@ const LaunchpadForm = () => {
           </button>
         </div> */}
 
-            <h3 className="text-base uppercase my-4 font-bold">
+            <h3 className="text-base text-black uppercase my-4 font-bold">
               Collection Details
             </h3>
 
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   Collection Name
                 </label>
                 <input
                   required
-                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
-                  }`}
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="name"
                   type="text"
                   placeholder="Add collection name"
@@ -385,9 +347,7 @@ const LaunchpadForm = () => {
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block  trackin-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="checkbox1"
                 >
                   Is your project a derivative?
@@ -411,20 +371,14 @@ const LaunchpadForm = () => {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   Email
                 </label>
                 <input
                   required
-                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
-                  }`}
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="email"
                   type="email"
                   placeholder="youremail@gmail.com"
@@ -433,20 +387,14 @@ const LaunchpadForm = () => {
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   Discord ID
                 </label>
                 <input
                   required
-                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
-                  }`}
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="discord__id"
                   type="text"
                   placeholder="Paste ID here"
@@ -458,20 +406,14 @@ const LaunchpadForm = () => {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   Describe what makes your project unique
                 </label>
                 <textarea
                   required
-                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
-                  }`}
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="project_unique"
                   type="text"
                   placeholder="Make it short"
@@ -480,20 +422,14 @@ const LaunchpadForm = () => {
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   Describe long term goals of your project
                 </label>
                 <textarea
                   required
-                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
-                  }`}
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="project_unique"
                   type="text"
                   placeholder="Make it short"
@@ -505,9 +441,7 @@ const LaunchpadForm = () => {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-full px-3 mb-6 md:mb-0">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs w-3/4 font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   Tell us about your team (how many team members there are
@@ -517,11 +451,7 @@ const LaunchpadForm = () => {
                 </label>
                 <textarea
                   required
-                  className={`appearance-none block w-full h-50 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none  ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "focus:bg-white border-gray-100 bg-gray-200 text-gray-700"
-                  }`}
+                  className="appearance-none block w-full h-50 bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="project_unique"
                   type="text"
                   placeholder="Make it short"
@@ -533,9 +463,7 @@ const LaunchpadForm = () => {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   Partnership proof, please link links or articles to back this
@@ -543,11 +471,7 @@ const LaunchpadForm = () => {
                 </label>
                 <input
                   required
-                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
-                  }`}
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="supportlinks"
                   type="text"
                   placeholder="Paste links here"
@@ -556,20 +480,14 @@ const LaunchpadForm = () => {
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   Partnerships, who is your project currently partnered with?
                 </label>
                 <input
                   required
-                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
-                  }`}
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="discord__id"
                   type="text"
                   placeholder="Paste link here"
@@ -581,9 +499,7 @@ const LaunchpadForm = () => {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   Add links that support your previously stated case (articles,
@@ -591,11 +507,7 @@ const LaunchpadForm = () => {
                 </label>
                 <input
                   required
-                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
-                  }`}
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="support"
                   type="text"
                   placeholder="Paste links here"
@@ -604,9 +516,7 @@ const LaunchpadForm = () => {
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   Roadmap/whitepaper, please link your roadmap below or list
@@ -615,11 +525,7 @@ const LaunchpadForm = () => {
                 </label>
                 <input
                   required
-                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
-                  }`}
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="discord__id"
                   type="text"
                   placeholder="Paste link here"
@@ -631,9 +537,7 @@ const LaunchpadForm = () => {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-full px-3 mb-6 md:mb-0">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs w-3/4 font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   Artwork, is your artwork original? Who’s the artist? How did
@@ -641,11 +545,7 @@ const LaunchpadForm = () => {
                 </label>
                 <textarea
                   required
-                  className={`appearance-none block w-full h-50 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none  ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "focus:bg-white border-gray-100 bg-gray-200 text-gray-700"
-                  }`}
+                  className="appearance-none block w-full h-50 bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="project_unique"
                   type="text"
                   placeholder="Make it short"
@@ -654,24 +554,20 @@ const LaunchpadForm = () => {
               </div>
             </div>
 
-            <h3 className="text-base uppercase my-4 font-bold">Socials</h3>
+            <h3 className="text-base text-black uppercase my-4 font-bold">
+              Socials
+            </h3>
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   Twitter
                 </label>
                 <input
                   required
-                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
-                  }`}
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="twitter"
                   type="text"
                   placeholder="Paste links here"
@@ -680,20 +576,14 @@ const LaunchpadForm = () => {
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   Discord server
                 </label>
                 <input
                   required
-                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
-                  }`}
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="discord__id"
                   type="text"
                   placeholder="Paste link here"
@@ -705,20 +595,14 @@ const LaunchpadForm = () => {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   Instagram
                 </label>
                 <input
                   required
-                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
-                  }`}
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="instagram"
                   type="text"
                   placeholder="Paste links here"
@@ -727,20 +611,14 @@ const LaunchpadForm = () => {
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   Website
                 </label>
                 <input
                   required
-                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
-                  }`}
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="website"
                   type="text"
                   placeholder="Paste link here"
@@ -752,20 +630,14 @@ const LaunchpadForm = () => {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   Mint date
                 </label>
                 <input
                   required
-                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
-                  }`}
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="mint_date"
                   type="text"
                   placeholder="Paste links here"
@@ -774,20 +646,14 @@ const LaunchpadForm = () => {
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   Mint Time
                 </label>
                 <input
                   required
-                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
-                  }`}
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="mint_time"
                   type="text"
                   placeholder="Paste link here"
@@ -799,20 +665,14 @@ const LaunchpadForm = () => {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   Supply count
                 </label>
                 <input
                   required
-                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
-                  }`}
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="supply_count"
                   type="text"
                   placeholder="Paste links here"
@@ -821,20 +681,14 @@ const LaunchpadForm = () => {
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   Mint price in sol
                 </label>
                 <input
                   required
-                  className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "bg-gray-200 text-gray-700 focus:bg-white border-gray-100"
-                  }`}
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="mint_time"
                   type="text"
                   placeholder="200sol"
@@ -843,24 +697,20 @@ const LaunchpadForm = () => {
               </div>
             </div>
 
-            <h3 className="text-base uppercase my-4 font-bold">Feedback</h3>
+            <h3 className="text-base text-black uppercase my-4 font-bold">
+              Feedback
+            </h3>
 
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-full px-3 mb-6 md:mb-0">
                 <label
-                  className={`block tracking-wide text-xs font-bold mb-2 ${
-                    darkMode ? "text-gray-200" : "text-gray-700"
-                  }`}
+                  className="block tracking-wide text-gray-700 text-xs w-3/4 font-bold mb-2"
                   htmlFor="grid-first-name"
                 >
                   What else should we know?
                 </label>
                 <textarea
-                  className={`appearance-none block w-full h-50 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none  ${
-                    darkMode
-                      ? "bg-black text-gray-200 focus:bg-black border-gray-900"
-                      : "focus:bg-white border-gray-100 bg-gray-200 text-gray-700"
-                  }`}
+                  className="appearance-none block w-full h-50 bg-gray-200 text-gray-700 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="project_unique"
                   type="text"
                   placeholder="Make it short"
@@ -884,13 +734,15 @@ const LaunchpadForm = () => {
               />
             </div>
 
-            <h3 className="text-base uppercase my-4 font-bold">Agreement</h3>
+            <h3 className="text-base text-black uppercase my-4 font-bold">
+              Agreement
+            </h3>
             <div className="flex flex-wrap -mx-3 mb-6">
               <label className="inline-flex items-center mt-3 px-3 gap-2">
                 <input
                   required
                   type="checkbox"
-                  className="input-checkbox min-w-[20px]"
+                  className="input-checkbox"
                   id="checkbox2"
                   onChange={(e) => setAcceptTOS(e.target.value)}
                 />
@@ -903,31 +755,24 @@ const LaunchpadForm = () => {
                 <input
                   required
                   type="checkbox"
-                  className="input-checkbox bg-red-500 min-w-[20px]"
+                  className="input-checkbox bg-red-500"
                   id="checkbox3"
                   onChange={(e) => setAcceptDetailsWillBeShowed(e.target.value)}
                 />
-                <label htmlFor="checkbox3" className="input-label text-sm ">
+                <label htmlFor="checkbox3" className="input-label text-sm">
                   Accept details provided on your team will be revealed on your
                   collection / launchpad page.
                 </label>
               </label>
             </div>
-            <ReCAPTCHA
-              sitekey="6Leyc0AfAAAAANJcTNSMG5q2l7nJtvRoXOCCV52X"
-              onChange={handleCaptchaChange}
-            />
 
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0"></div>
               <div className="w-full md:w-1/2 px-3">
                 <button
-                  className={`bg-[#50C9C3] rounded rounded-md py-3 px-10 float-right ${
-                    darkMode ? "text-black" : "text-white"
-                  }`}
+                  className="bg-[#50C9C3]  rounded rounded-md py-3 px-10 text-white float-right"
                   type="submit"
                 >
-                  {" "}
                   Submit
                 </button>
               </div>
