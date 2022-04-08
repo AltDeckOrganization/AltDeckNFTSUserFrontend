@@ -98,7 +98,7 @@ The personal information that you are asked to provide, and the reasons why you 
               darkMode ? "text-white" : "text-black"
             }`}
           >
-            DoubleClick DART Cookie
+            DoubleClick DART Cookie {""}
           </p>
           <p className="leading-loose leading-6 mb-5">
             Google is one of a third-party vendor on our site. It also uses
