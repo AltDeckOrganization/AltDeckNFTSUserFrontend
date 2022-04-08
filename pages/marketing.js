@@ -13,21 +13,21 @@ function Markting() {
           </h1>
         </div>
       </div>
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSeCXpxVbqQpi9MaEbQs_wiZf3gDy6maP1poSyo4LjQmg2SS5g/viewform?embedded=true"
-        width="640"
-        height="1935"
-        frameBorder="0"
-        marginHeight="0"
-        marginWidth="0"
-      >
-        Loading…
-      </iframe>
-      <iframe
-        src="https://calendly.com/altdeckmarketing/15min"
-        className="h-screen w-full"
-      ></iframe>
-      <div></div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSeCXpxVbqQpi9MaEbQs_wiZf3gDy6maP1poSyo4LjQmg2SS5g/viewform?embedded=true"
+          frameBorder="0"
+          marginHeight="0"
+          marginWidth="0"
+          className="w-full h-[2200px] md:w-full md:h-[1935px]"
+        >
+          Loading…
+        </iframe>
+        <iframe
+          src="https://calendly.com/altdeckmarketing/15min"
+          className="h-[900px] md:h-screen w-full mt-4"
+        ></iframe>
+      </div>
     </div>
   );
 }
