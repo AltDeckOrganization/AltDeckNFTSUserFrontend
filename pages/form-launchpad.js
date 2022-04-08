@@ -6,7 +6,6 @@ import {
   CountryRegionData,
 } from "react-country-region-selector";
 import { Menu, Transition } from "@headlessui/react";
-
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import axios from "axios";
 import Dropdown from "../components/dropdown";
@@ -77,6 +76,8 @@ const LaunchpadForm = () => {
   const submitForm = (e) => {
     e.preventDefault();
 
+
+
     const form_data = {
       personal_info: {
         name,
@@ -133,6 +134,8 @@ const LaunchpadForm = () => {
         console.log(e);
       });
   };
+
+
 
   return (
     <div>
