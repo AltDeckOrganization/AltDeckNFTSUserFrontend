@@ -16,14 +16,6 @@ import { useDarkMode } from "../context/darkMode";
 
 export default function Home() {
   const { darkMode } = useDarkMode();
-  //   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRDZSZMQ8H"></script>
-  // <script>
-  //   window.dataLayer = window.dataLayer || [];
-  //   function gtag(){dataLayer.push(arguments);}
-  //   gtag('js', new Date());
-
-  //   gtag('config', 'G-FRDZSZMQ8H');
-  // </script>
   return (
     <div
       className={`px-5 md:px-0 xl:w-[1156px] xl:mx-auto lg:px-28 xl:px-0  w-full pt-28 ${

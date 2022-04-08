@@ -881,9 +881,7 @@ const LaunchpadForm = () => {
               />
             </div>
 
-            <h3 className="text-base text-black uppercase my-4 font-bold">
-              Agreement
-            </h3>
+            <h3 className="text-base uppercase my-4 font-bold">Agreement</h3>
             <div className="flex flex-wrap -mx-3 mb-6">
               <label className="inline-flex items-center mt-3 px-3 gap-2">
                 <input
