@@ -890,7 +890,7 @@ const LaunchpadForm = () => {
                 <input
                   required
                   type="checkbox"
-                  className="input-checkbox"
+                  className="input-checkbox min-w-[20px]"
                   id="checkbox2"
                   onChange={(e) => setAcceptTOS(e.target.value)}
                 />
@@ -903,11 +903,11 @@ const LaunchpadForm = () => {
                 <input
                   required
                   type="checkbox"
-                  className="input-checkbox bg-red-500"
+                  className="input-checkbox bg-red-500 min-w-[20px]"
                   id="checkbox3"
                   onChange={(e) => setAcceptDetailsWillBeShowed(e.target.value)}
                 />
-                <label htmlFor="checkbox3" className="input-label text-sm">
+                <label htmlFor="checkbox3" className="input-label text-sm ">
                   Accept details provided on your team will be revealed on your
                   collection / launchpad page.
                 </label>
