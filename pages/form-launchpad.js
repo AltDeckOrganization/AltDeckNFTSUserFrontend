@@ -16,9 +16,6 @@ import Link from "next/link";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useDarkMode } from "../context/darkMode";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
 const LaunchpadForm = () => {
   const [name, setName] = useState("");
   const [country, setCountry] = useState("");
@@ -51,6 +48,7 @@ const LaunchpadForm = () => {
   const [submissionSuccessful, setSubmissionSuccesful] = useState("");
   const [verify, setverify] = useState(false);
   const [pictureName, setPictureName] = useState("");
+  const [dropdownVal, setDropdownVal] = useState("None");
   const server_url = process.env.NEXT_PUBLIC_BACKEND_URL;
 
   const handleCaptchaChange = (value) => {
@@ -110,6 +108,7 @@ const LaunchpadForm = () => {
       feedback,
       acceptTOS,
       acceptDetailsWillBeShowed,
+      marketingPackage: dropdownVal,
     };
 
     const data = {
@@ -867,13 +866,24 @@ const LaunchpadForm = () => {
               </div>
             </div>
 
-            <h3 className="text-base uppercase my-4 font-bold">Packages</h3>
-            <DropdownForm />
+            <h3 className="text-base text-black uppercase my-4 font-bold">
+              Packages
+            </h3>
+            <DropdownForm
+              dropdownVal={dropdownVal}
+              setDropdownVal={setDropdownVal}
+            />
             <div className="mt-5">
-              <img src="/images/launchpad_marketing.jpg" alt="" />
+              <img
+                src="/images/launchpad_marketing.jpg"
+                alt=""
+                className="md:h-80"
+              />
             </div>
 
-            <h3 className="text-base uppercase my-4 font-bold">Agreement</h3>
+            <h3 className="text-base text-black uppercase my-4 font-bold">
+              Agreement
+            </h3>
             <div className="flex flex-wrap -mx-3 mb-6">
               <label className="inline-flex items-center mt-3 px-3 gap-2">
                 <input

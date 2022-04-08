@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { useDarkMode } from "../../context/darkMode";
 
-const DropdownForm = () => {
-  const [dropdownVal, setDropdownVal] = useState("None");
+const DropdownForm = ({ dropdownVal, setDropdownVal }) => {
   const [inputChecked, setInputChecked] = useState(false);
   const { darkMode } = useDarkMode();
   return (
