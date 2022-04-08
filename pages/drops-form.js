@@ -60,7 +60,6 @@ const DropsForm = () => {
     const data = {
       name: projectName,
       profile_image_path: picture,
-      collection_image_path: picture,
       form_data: JSON.stringify(form_data),
     };
 
