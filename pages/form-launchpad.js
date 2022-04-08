@@ -16,9 +16,6 @@ import Link from "next/link";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useDarkMode } from "../context/darkMode";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
 const LaunchpadForm = () => {
   const [name, setName] = useState("");
   const [country, setCountry] = useState("");
@@ -138,7 +135,7 @@ const LaunchpadForm = () => {
 
   return (
     <div>
-      <div className="launchPad  md:px-0 xl:w-[1156px] xl:mx-auto lg:px-28  w-full mt-20 md:mt-28">
+      <div className="launchPad  md:px-0 xl:w-[1156px] xl:mx-auto lg:px-28  w-full pt-20 md:pt-28">
         <div className="launchPad ">
           <SEO />
           {submissionSuccessful === "false" && (
@@ -926,6 +923,7 @@ const LaunchpadForm = () => {
                     darkMode ? "text-black" : "text-white"
                   }`}
                   type="submit"
+                  disabled={!verify}
                 >
                   {" "}
                   Submit

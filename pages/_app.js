@@ -1,5 +1,3 @@
-import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
-import dynamic from "next/dynamic";
 import Script from "next/script";
 
 import { useRouter } from "next/router";
@@ -16,25 +14,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Provider from "../context/Provider";
 import { useEffect } from "react";
 require("@solana/wallet-adapter-react-ui/styles.css");
-
-// <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF1L5DCKBY"></script>
-// <script>
-//   window.dataLayer = window.dataLayer || [];
-//   function gtag(){dataLayer.push(arguments);}
-//   gtag('js', new Date());
-
-//   gtag('config', 'G-LF1L5DCKBY');
-// </script>
-
-const WalletConnectionProvider = dynamic(
-  () =>
-    import("../components/walletConnectionProvider/index").then(
-      (WalletConnectionProvider) => WalletConnectionProvider
-    ),
-  {
-    ssr: false,
-  }
-);
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -67,13 +46,11 @@ function MyApp({ Component, pageProps }) {
            gtag('config', 'G-LF1L5DCKBY');
         `}
       </Script>
-      <WalletConnectionProvider>
-        <WalletModalProvider>
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
-        </WalletModalProvider>
-      </WalletConnectionProvider>
+      <Provider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </Provider>
     </>
   );
 }
