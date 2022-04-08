@@ -1,13 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
+import { useDarkMode } from "../../context/darkMode";
 
 import ButtonCommon from "../buttonCommon";
 import { imagesData } from "../data/imagesData";
 
-const   Hero = () => {
+const Hero = () => {
   const [isOpenAllData, setIsOpenAllData] = useState(1);
   const [filteredData, setFilteredData] = useState({});
   const [isOpenDetails, setIsOpenDetails] = useState(1);
+  const { darkMode } = useDarkMode();
   const handleOpenAllDetails = (value) => {
     setIsOpenAllData(value);
   };
@@ -35,7 +37,11 @@ const   Hero = () => {
           Buy, Sell and Discover Rare Digital Items
         </h5>
 
-        <h1 className="text-2xl text-black font-semibold mb-5 md:text-3xl">
+        <h1
+          className={`text-2xl font-semibold mb-5 md:text-3xl ${
+            darkMode ? "text-gray-100" : "text-black "
+          }`}
+        >
           The Innovative Solana NFT Launchpad
         </h1>
       </div>
@@ -57,37 +63,52 @@ const   Hero = () => {
         </div>
         <div className="flex items-center justify-center md:mt-5 lg:my-2">
           <img
-            className="rounded-md border w-full h-[450px] px-3  mx-5 lg:w-10/12 lg:h-[100%] sm:w-96 sm:h-96 object-cover"
+            className="rounded-md w-full h-[450px] px-3  mx-5 lg:w-10/12 lg:h-[100%] sm:w-96 sm:h-96 object-cover"
             src={filteredData.imgSrc}
             alt={filteredData.altText}
           />
         </div>
         <div className="overflow-x-auto my-5 md:hidden overflow-hidden">
-        <div className="md:hidden gap-2 flex w-[60pc]">
-          {imagesData.map(({ imgSrc, altText, id }) => (
-            <div
-              className=""
-              key={id}
-              onClick={() => handleOpenAllDetails(id)}
-            >
-              <img
+          <div className="md:hidden gap-2 flex w-[60pc]">
+            {imagesData.map(({ imgSrc, altText, id }) => (
+              <div
                 className=""
-                src="/images/sampleImageHome.jpg"
-                alt={altText}
-              />
-            </div>
-          ))}</div></div>
+                key={id}
+                onClick={() => handleOpenAllDetails(id)}
+              >
+                <img
+                  className=""
+                  src="/images/sampleImageHome.jpg"
+                  alt={altText}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
         <div className="relative my-5 flex flex-col my- md:my-2 md:px-2 lg:p-0 lg:items-start">
           <h2 className=" text-xl md:text-base font-semibold lg:text-xl md:px-0">
             3D Hungry Crows
           </h2>
           <p className="mt-2 lg:mt-1 text-[#808080] text-base md:text-sm">
             From{" "}
-            <span className="mr-2 font-semibold text-black">
+            <span
+              className={`mr-2 font-semibold ${
+                darkMode ? "text-gray-100" : "text-black"
+              }`}
+            >
               {filteredData.price} SOL
             </span>
-            <span className="font-semibold text-black">·</span>
-            <span className="ml-2 text-gray-500">
+            <span
+              className={`font-semibold ${
+                darkMode ? "text-gray-100" : "text-black"
+              }
+            `}
+            >
+              ·
+            </span>
+            <span
+              className={`ml-2 ${darkMode ? "text-gray-100" : "text-gray-500"}`}
+            >
               {" "}
               {filteredData.availableCards} of {filteredData.totalCards}{" "}
               available
@@ -96,14 +117,24 @@ const   Hero = () => {
           <div>
             <p className="md:mt-5 text-[#808080] text-base md:text-sm">
               Creator:{" "}
-              <span className="font-semibold text-black">
+              <span
+                className={`font-semibold ${
+                  darkMode ? "text-gray-100" : "text-black"
+                }
+              `}
+              >
                 {" "}
                 {filteredData.artiste}
               </span>
             </p>
             <p className="md:mt-1 text-[#808080] text-base md:text-sm">
               Minted:{" "}
-              <span className="font-semibold text-black">
+              <span
+                className={`font-semibold ${
+                  darkMode ? "text-gray-100" : "text-black"
+                }
+              `}
+              >
                 {" "}
                 {filteredData.dateCreated}
               </span>

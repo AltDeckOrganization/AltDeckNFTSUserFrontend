@@ -10,6 +10,7 @@ import Mintprogress from "../components/progress/mintprogress";
 import Tab from "../components/tab/mintTab";
 import Countdown from "react-countdown";
 import SEO from "../components/seo/SEO";
+import { useDarkMode } from "../context/darkMode";
 
 const Completionist = () => (
   <div className="text-3xl text-[#50C9C3] font-bold">MINTING COMPLETED</div>
@@ -31,8 +32,9 @@ const renderer = ({ hours, minutes, seconds, completed }) => {
 };
 
 const Mint = () => {
+  const { darkMode } = useDarkMode();
   return (
-    <div className="mint px-2 py-5 md:px-10 mt-20">
+    <div className="mint px-2 py-5 md:px-10 pt-20">
       <SEO />
 
       <div className="">
@@ -45,6 +47,7 @@ const Mint = () => {
               height={400}
               layout="responsive"
               priority="true"
+              className="rounded-[13px]"
             />
             <div className="mt-5">
               <Mintprogress />
@@ -60,7 +63,14 @@ const Mint = () => {
             </div>
             <div className="flex gap-2">
               <div className="text-[#808080] text-sm">
-                Price: <span className="text-black font-bold">0.72</span>
+                Price:{" "}
+                <span
+                  className={`font-bold ${
+                    darkMode ? "text-white" : "text-black"
+                  }`}
+                >
+                  0.72
+                </span>
               </div>
               <Image src={Internet} alt="Internet" width={20} height={20} />
               <Image src={Discord} alt="Internet" width={20} height={20} />
@@ -81,7 +91,11 @@ const Mint = () => {
             <div className="w-full my-5">
               <Link href="/collection">
                 <a>
-                  <button className="w-full font-semibold bg-[#50c9c3] rounded py-3 text-white">
+                  <button
+                    className={`w-full font-semibold bg-[#50c9c3] rounded py-3 ${
+                      darkMode ? "text-black" : "text-white"
+                    }`}
+                  >
                     Visit Collection
                   </button>
                 </a>

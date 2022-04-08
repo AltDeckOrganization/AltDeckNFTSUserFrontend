@@ -2,6 +2,7 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   mode: "jit",
+  important: true,
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -22,6 +23,8 @@ module.exports = {
       primary: "#50C9C3",
       green: colors.green,
       blackImportant: "#000 !important",
+
+      whiteImportant: "#fff !important",
     },
   },
   plugins: [require("@tailwindcss/line-clamp"), require("tailwind-scrollbar")],
