@@ -369,8 +369,11 @@ export default function Example() {
                   {darkMode ? "Dark " : "Light "}Mode
                 </Button>
               </li>
-              <li className="" onClick={handleMenuClick}>
-                <ConnectWallet className="inline-flex justify-center w-full border border-[#50C9C3] text-[#50c9c3] shadow-sm px-4 py-2 text-base  w-full  border rounded rounded-md  mt-5  font-medium rounded " />
+              <li className="">
+                <ConnectWallet
+                  onClickMobile={handleMenuClick}
+                  className="inline-flex justify-center w-full border border-[#50C9C3] text-[#50c9c3] shadow-sm px-4 py-2 text-base  w-full  border rounded rounded-md  mt-5  font-medium rounded "
+                />
               </li>
             </ul>
           </div>
