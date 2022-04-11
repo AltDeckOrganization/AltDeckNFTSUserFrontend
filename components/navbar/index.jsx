@@ -6,7 +6,7 @@ import MenuIcon from "../../public/menu.svg";
 import CloseIcon from "../../public/close.svg";
 import Logo from "../../public/logo.svg";
 
-import { Fragment } from "react";
+import { Fragment, useMemo } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 
@@ -24,6 +24,7 @@ import DropdownSmall from "../dropdown/DropdownSmall";
 import { useState } from "react";
 import { Button } from "../connectWallet/Button";
 import { useDarkMode } from "../../context/darkMode";
+import { useWallet } from "@solana/wallet-adapter-react";
 
 const navigation = [
   { name: "Apply", margin: "px-4" },
@@ -41,7 +42,9 @@ export default function Example() {
   const [applyAnchorEl, setApplyAnchorEl] = React.useState(null);
   const openBrowse = Boolean(browseAnchorEl);
   const openApply = Boolean(applyAnchorEl);
+  const { publicKey } = useWallet();
   const { darkMode, setDarkMode } = useDarkMode();
+  const base58 = useMemo(() => publicKey?.toBase58(), [publicKey]);
 
   const handleMenuClick = (e) => {
     setOpenMenu((prevState) => !prevState);
@@ -94,6 +97,23 @@ export default function Example() {
         </div>
         <ul className=" items-align hidden lg:flex">
           <li className="mx-3">
+            {base58 && (
+              <Menu as="div" className="relative inline-block text-left">
+                <div>
+                  <Menu.Button
+                    className={`inline-flex justify-center w-full  shadow-sm px-4 py-2 text-sm font-medium ${
+                      darkMode
+                        ? "bg-black text-gray-400 hover:bg-black hover:text-white"
+                        : "bg-white text-gray-700 hover:bg-gray-50"
+                    }`}
+                  >
+                    <Link href="/dashboard">
+                      <div>Dashboard</div>
+                    </Link>
+                  </Menu.Button>
+                </div>
+              </Menu>
+            )}
             <Dropdown
               title="Browse"
               link1="Launchpad"
@@ -246,6 +266,24 @@ export default function Example() {
             </div>
             <ul>
               <li>
+                {base58 && (
+                  <Menu
+                    as="div"
+                    className="relative inline-block text-left w-full"
+                  >
+                    <div>
+                      <Menu.Button
+                        className={`inline-flex justify-center w-full  border rounded rounded-md  mt-5 shadow-sm px-4 py-2 text-sm font-medium ${
+                          darkMode
+                            ? "bg-black text-gray-400 hover:bg-black hover:text-white"
+                            : "bg-white text-gray-700 hover:bg-gray-50"
+                        }`}
+                      >
+                        <Link href="/dashboard">Dashboard</Link>
+                      </Menu.Button>
+                    </div>
+                  </Menu>
+                )}
                 <DropdownSmall
                   title="Browse"
                   // link1="Apply for collection listing"
