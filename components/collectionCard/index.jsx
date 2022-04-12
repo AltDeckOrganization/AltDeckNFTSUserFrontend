@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-import { useRouter } from "next/router";
 
 const CollectionCard = ({ data }) => {
-  const router = useRouter();
   return (
-    <div
+    <a
       className="rounded-2xl shadow-[0px_11px_35px_-29px_grey] cursor-pointer"
-      onClick={() => router.push("/mint")}
+      href={data.link}
+      target={"_blank"}
+      rel="noreferrer"
     >
       <div className="flex justify-center pt-4">
         <img
@@ -21,7 +21,7 @@ const CollectionCard = ({ data }) => {
           {data.para}
         </p>
       </div>
-    </div>
+    </a>
   );
 };
 
