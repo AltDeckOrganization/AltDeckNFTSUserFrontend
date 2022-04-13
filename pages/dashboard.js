@@ -49,7 +49,7 @@ const Dashboard = () => {
       <h1 className="text-[#50C9C3] font-bold mb-5 text-3xl text-center">
         Dashboard
       </h1>
-      <div className="grid grid-cols-6 h-[50vh] gap-x-4">
+      <div className="grid grid-cols-6 h-[80vh] gap-x-8 pt-10">
         <div className="flex flex-col justify-between">
           <div>
             <SingleLeftColoumn
@@ -72,7 +72,7 @@ const Dashboard = () => {
             Support
           </SingleLeftColoumn>
         </div>
-        <div className="col-span-5 my-2 overflow-scroll">
+        <div className="col-span-5 my-2">
           {value === 0 && (
             <div className="grid grid-rows-3 grid-flow-col gap-4 h-full">
               <div
@@ -105,7 +105,26 @@ const Dashboard = () => {
               </div>
             </div>
           )}
-          {value === 1 && <DashboardTable rows={dashboardData} />}
+          {value === 1 && (
+            <div className="overflow-scroll md:overflow-hidden">
+              <DashboardTable rows={dashboardData} />
+            </div>
+          )}
+          {value === 2 && (
+            <div>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Quibusdam eaque aliquid sunt ipsum molestiae minus hic ipsam
+              exercitationem similique vitae debitis quaerat vero natus, ad
+              obcaecati. Perspiciatis nesciunt, quis dolore veritatis
+              <a href="mailto:contact@altdeck.io" className="text-[#50c9c3]">
+                {" "}
+                contact@altdeck.io{" "}
+              </a>
+              consectetur amet animi, libero magni eligendi id tenetur et qui
+              optio. Ipsam molestias et ea blanditiis voluptas. Voluptate,
+              magnam.
+            </div>
+          )}
         </div>
       </div>
     </div>
