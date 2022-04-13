@@ -171,3 +171,6 @@ input[type="number"] {
 .slick-track {
   margin: 0 !important;
 }
+.slick-slide.slick-cloned {
+  display: none !important;
+}
