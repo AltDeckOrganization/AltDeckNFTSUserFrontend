@@ -883,9 +883,7 @@ const LaunchpadForm = () => {
               </div>
             </div>
 
-            <h3 className="text-base text-black uppercase my-4 font-bold">
-              Packages
-            </h3>
+            <h3 className="text-base uppercase my-4 font-bold">Packages</h3>
             <DropdownForm
               dropdownVal={dropdownVal}
               setDropdownVal={setDropdownVal}
