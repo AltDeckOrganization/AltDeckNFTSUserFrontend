@@ -119,11 +119,10 @@ const LaunchpadTable = ({ rows, scroll }) => {
 
 const headCells = [
   { id: "collection", label: "Collection" },
-  { id: "price", label: "Token Price" },
-  { id: "tokens", label: "Tokens" },
-  { id: "date", label: "Launch Date" },
-  { id: "filled", label: "Filled" },
-  { id: "status", label: "Status" },
+  { id: "publicSaleMint", label: "Public Sale Price" },
+  { id: "wlSaleMint", label: "WL Sale Price" },
+  { id: "publicMint", label: "Public Price" },
+  { id: "wlMint", label: "WL Price" },
 ];
 
 const CustomTableHead = () => {
