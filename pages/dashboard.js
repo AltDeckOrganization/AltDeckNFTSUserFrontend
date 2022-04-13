@@ -72,7 +72,7 @@ const Dashboard = () => {
             Support
           </SingleLeftColoumn>
         </div>
-        <div className="col-span-5 my-2">
+        <div className="col-span-5 my-2 overflow-scroll">
           {value === 0 && (
             <div className="grid grid-rows-3 grid-flow-col gap-4 h-full">
               <div
