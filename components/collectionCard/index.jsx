@@ -1,6 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 
-const CollectionCard = ({ data }) => {
+import { useState } from "react";
+import { useDarkMode } from "../../context/darkMode";
+
+const CollectionCard = ({ data, hover = false }) => {
+  const [hoverImg, setHover] = useState(true);
+  const { darkMode } = useDarkMode();
   return (
     <a
       className="rounded-2xl shadow-[0px_11px_35px_-29px_grey] cursor-pointer"
@@ -8,12 +13,32 @@ const CollectionCard = ({ data }) => {
       target={"_blank"}
       rel="noreferrer"
     >
-      <div className="flex justify-center pt-4">
-        <img
-          src={data.img}
-          className="w-full h-full mt-4 rounded-2xl"
-          alt={data.head}
-        />
+      <div className={`flex justify-center pt-4`}>
+        {hoverImg ? (
+          <img
+            src={data.img}
+            onMouseEnter={() => setHover(false)}
+            onMouseLeave={() => setHover(true)}
+            className={`w-full h-full mt-4 rounded-2xl ${
+              hover && "hover:hidden"
+            }`}
+            alt={data.head}
+          />
+        ) : (
+          <div
+            className={`
+              ${
+                hover &&
+                "flex items-center justify-center text-center h-[180px] rounded-xl w-full"
+              } ${darkMode ? "bg-gray-800" : "bg-gray-200"}
+            `}
+            onMouseEnter={() => setHover(false)}
+            onMouseLeave={() => setHover(true)}
+          >
+            {data.wlSale} <br />
+            {data.publicSale}
+          </div>
+        )}
       </div>
       <div>
         <h2 className="mt-5 text-xl font-medium text-center">{data.head}</h2>

@@ -31,12 +31,12 @@ export default function Home() {
       />
       <SingleRow
         data={upcomingLaunches}
-        seeAllLink={`mintpage/37`}
         heading={"Upcoming Launches"}
-        renderItem={(item, index) => <CollectionCard data={item} key={index} />}
+        renderItem={(item, index) => (
+          <CollectionCard data={item} key={index} hover />
+        )}
       />
       <SingleRow
-        seeAllLink={`mintpage/37`}
         heading={"Launchpad Collections Live"}
         renderItem={(item, index) => <CollectionCard data={item} key={index} />}
       />
