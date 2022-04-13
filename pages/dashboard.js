@@ -9,7 +9,7 @@ const SingleLeftColoumn = ({ condition, hanldeClick, children }) => {
   const { darkMode } = useDarkMode();
   return (
     <div
-      className={`my-2 py-2 px-2 text-center rounded-xl cursor-pointer border border-[#50C9C3] ${
+      className={`my-2 py-2 px-2 mx-1 text-center rounded-xl h-fit cursor-pointer border border-[#50C9C3] ${
         condition
           ? darkMode
             ? "text-black bg-[#50c9c3] hover:bg-[#50c9c3] hover:text-black"
@@ -49,9 +49,9 @@ const Dashboard = () => {
       <h1 className="text-[#50C9C3] font-bold mb-5 text-3xl text-center">
         Dashboard
       </h1>
-      <div className="grid grid-cols-6 h-[80vh] gap-x-8 pt-10">
-        <div className="flex flex-col justify-between">
-          <div>
+      <div className="grid grid-cols-6 h-fit min-h-[70vh] md:h-[80vh] md:gap-x-8 pt-10">
+        <div className="flex md:flex-col md:justify-between col-span-6 md:col-span-1">
+          <div className="flex md:block">
             <SingleLeftColoumn
               condition={value === 0}
               hanldeClick={() => setValue(0)}
@@ -72,7 +72,7 @@ const Dashboard = () => {
             Support
           </SingleLeftColoumn>
         </div>
-        <div className="col-span-5 my-2">
+        <div className="col-span-6 md:col-span-5 my-2">
           {value === 0 && (
             <div className="grid grid-rows-3 grid-flow-col gap-4 h-full">
               <div
