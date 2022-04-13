@@ -93,7 +93,7 @@ export default function Example() {
           </div> */}
         </div>
         <ul className=" items-align hidden lg:flex">
-          <li className="mx-3">
+          <li>
             <Menu as="div" className="relative inline-block text-left">
               <div>
                 <Menu.Button
