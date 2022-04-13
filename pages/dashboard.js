@@ -5,6 +5,26 @@ import DashboardTable from "../components/dashboardTable";
 import { dashboardData } from "../components/data/dashboardData";
 import { useDarkMode } from "../context/darkMode";
 
+const SingleLeftColoumn = ({ condition, hanldeClick, children }) => {
+  const { darkMode } = useDarkMode();
+  return (
+    <div
+      className={`my-2 py-2 px-2 text-center rounded-xl cursor-pointer border border-[#50C9C3] ${
+        condition
+          ? darkMode
+            ? "text-black bg-[#50c9c3] hover:bg-[#50c9c3] hover:text-black"
+            : "text-white bg-[#50c9c3]"
+          : darkMode
+          ? "text-white hover:bg-[#50c9c3] hover:text-black"
+          : "text-black hover:bg-[#50c9c3] hover:text-white"
+      } `}
+      onClick={hanldeClick}
+    >
+      {children}
+    </div>
+  );
+};
+
 const Dashboard = () => {
   const [value, setValue] = useState(0);
   const { publicKey } = useWallet();
@@ -32,63 +52,55 @@ const Dashboard = () => {
       <div className="grid grid-cols-6 h-[50vh] gap-x-4">
         <div className="flex flex-col justify-between">
           <div>
-            <div
-              className={`my-2 py-2 px-2 text-center rounded-xl cursor-pointer border border-[#50C9C3] ${
-                value === 0
-                  ? darkMode
-                    ? "text-black bg-[#50c9c3] hover:bg-[#50c9c3] hover:text-black"
-                    : "text-white bg-[#50c9c3]"
-                  : darkMode
-                  ? "text-white hover:bg-[#50c9c3] hover:text-black"
-                  : "text-black hover:bg-[#50c9c3] hover:text-white"
-              } `}
-              onClick={() => setValue(0)}
+            <SingleLeftColoumn
+              condition={value === 0}
+              hanldeClick={() => setValue(0)}
             >
               Statistics
-            </div>
-            <div
-              className={`my-2 py-2 px-2 text-center rounded-xl cursor-pointer border border-[#50C9C3] ${
-                value === 1
-                  ? darkMode
-                    ? "text-black bg-[#50c9c3] hover:bg-[#50c9c3] hover:text-black"
-                    : "text-white bg-[#50c9c3]"
-                  : darkMode
-                  ? "text-white hover:bg-[#50c9c3] hover:text-black"
-                  : "text-black hover:bg-[#50c9c3] hover:text-white"
-              } `}
-              onClick={() => setValue(1)}
+            </SingleLeftColoumn>
+            <SingleLeftColoumn
+              condition={value === 1}
+              hanldeClick={() => setValue(1)}
             >
               My Applications
-            </div>
+            </SingleLeftColoumn>
           </div>
-          <div
-            className={`my-2 py-2 px-2 text-center rounded-xl cursor-pointer border border-[#50C9C3] ${
-              value === 2
-                ? darkMode
-                  ? "text-black bg-[#50c9c3] hover:bg-[#50c9c3] hover:text-black"
-                  : "text-white bg-[#50c9c3]"
-                : darkMode
-                ? "text-white hover:bg-[#50c9c3] hover:text-black"
-                : "text-black hover:bg-[#50c9c3] hover:text-white"
-            } `}
-            onClick={() => setValue(2)}
+          <SingleLeftColoumn
+            condition={value === 2}
+            hanldeClick={() => setValue(2)}
           >
             Support
-          </div>
+          </SingleLeftColoumn>
         </div>
         <div className="col-span-5 my-2">
           {value === 0 && (
             <div className="grid grid-rows-3 grid-flow-col gap-4 h-full">
-              <div className="col-span-2 bg-[#1a1a1a] rounded-xl flex items-center justify-center h-full w-full">
+              <div
+                className={`col-span-2 rounded-xl flex items-center justify-center h-full w-full ${
+                  darkMode ? "bg-[#1a1a1a]" : "bg-[#efefef]"
+                }`}
+              >
                 02
               </div>
-              <div className="row-span-2 col-span-2 bg-[#1a1a1a] rounded-xl flex items-center justify-center h-full w-full">
+              <div
+                className={`row-span-2 col-span-2 rounded-xl flex items-center justify-center h-full w-full ${
+                  darkMode ? "bg-[#1a1a1a]" : "bg-[#efefef]"
+                }`}
+              >
                 03
               </div>
-              <div className="row-span-2 col-span-2 bg-[#1a1a1a] rounded-xl flex items-center justify-center h-full w-full">
+              <div
+                className={`row-span-2 col-span-2 rounded-xl flex items-center justify-center h-full w-full ${
+                  darkMode ? "bg-[#1a1a1a]" : "bg-[#efefef]"
+                }`}
+              >
                 03
               </div>
-              <div className="col-span-2 bg-[#1a1a1a] rounded-xl flex items-center justify-center h-full w-full">
+              <div
+                className={`col-span-2 rounded-xl flex items-center justify-center h-full w-full ${
+                  darkMode ? "bg-[#1a1a1a]" : "bg-[#efefef]"
+                }`}
+              >
                 02
               </div>
             </div>
