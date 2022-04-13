@@ -6,9 +6,9 @@ export const upcomingLaunches = [
     link: "https://twitter.com/doggostyleart?s=21",
   },
   {
-    head: "Anime Immortals Village",
-    img: "/animeImmortals.jpg",
-    para: "Anime Immortals Village is a collection of 2000 royalty earning pixels and 2D NFTs. A project is based on Anime's and it's stories. Every Anime's has some unique abilities.",
-    date: "2021-12-15",
+    head: "Digital Detonators",
+    img: "/upcomingLaunches/digitalDetonators.jpg",
+    para: "A 100 supply collection with real-world utility coming to Solana with a unique design ",
+    link: "https://twitter.com/d_detonators?s=21",
   },
 ];
