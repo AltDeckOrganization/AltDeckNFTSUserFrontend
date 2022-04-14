@@ -24,7 +24,6 @@ export default function Home() {
     >
       <SEO />
       <Hero />
-      {/* <SlideShow />  */}
       <SingleRow
         heading={"Featured Collection"}
         renderItem={(item, index) => <CollectionCard data={item} key={index} />}
