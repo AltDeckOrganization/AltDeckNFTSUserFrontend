@@ -6,7 +6,7 @@ import MenuIcon from "../../public/menu.svg";
 import CloseIcon from "../../public/close.svg";
 import Logo from "../../public/logo.svg";
 
-import { Fragment } from "react";
+import { Fragment, useMemo } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 
@@ -93,7 +93,22 @@ export default function Example() {
           </div> */}
         </div>
         <ul className=" items-align hidden lg:flex">
-          <li className="mx-3">
+          <li>
+            {/* <Menu as="div" className="relative inline-block text-left">
+              <div>
+                <Menu.Button
+                  className={`inline-flex justify-center w-full  shadow-sm px-4 py-2 text-sm font-medium ${
+                    darkMode
+                      ? "bg-black text-gray-400 hover:bg-black hover:text-white"
+                      : "bg-white text-gray-700 hover:bg-gray-50"
+                  }`}
+                >
+                  <Link href="/dashboard">
+                    <div>Dashboard</div>
+                  </Link>
+                </Menu.Button>
+              </div>
+            </Menu> */}
             <Dropdown
               title="Browse"
               link1="Launchpad"
@@ -246,6 +261,22 @@ export default function Example() {
             </div>
             <ul>
               <li>
+                {/* <Menu
+                  as="div"
+                  className="relative inline-block text-left w-full"
+                >
+                  <div>
+                    <Menu.Button
+                      className={`inline-flex justify-center w-full  border rounded rounded-md  mt-5 shadow-sm px-4 py-2 text-sm font-medium ${
+                        darkMode
+                          ? "bg-black text-gray-400 hover:bg-black hover:text-white"
+                          : "bg-white text-gray-700 hover:bg-gray-50"
+                      }`}
+                    >
+                      <Link href="/dashboard">Dashboard</Link>
+                    </Menu.Button>
+                  </div>
+                </Menu> */}
                 <DropdownSmall
                   title="Browse"
                   // link1="Apply for collection listing"
@@ -331,8 +362,11 @@ export default function Example() {
                   {darkMode ? "Dark " : "Light "}Mode
                 </Button>
               </li>
-              <li className="" onClick={handleMenuClick}>
-                <ConnectWallet className="inline-flex justify-center w-full border border-[#50C9C3] text-[#50c9c3] shadow-sm px-4 py-2 text-base  w-full  border rounded rounded-md  mt-5  font-medium rounded " />
+              <li className="">
+                <ConnectWallet
+                  onClickMobile={handleMenuClick}
+                  className="inline-flex justify-center w-full border border-[#50C9C3] text-[#50c9c3] shadow-sm px-4 py-2 text-base  w-full  border rounded rounded-md  mt-5  font-medium rounded "
+                />
               </li>
             </ul>
           </div>
