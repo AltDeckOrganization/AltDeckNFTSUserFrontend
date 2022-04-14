@@ -72,8 +72,8 @@ const Dropdown = ({
                       active
                         ? "bg-gray-100 text-gray-900"
                         : darkMode
-                        ? "text-gray-400"
-                        : "text-gray-700",
+                        ? "text-gray-400 hover:text-white"
+                        : "text-gray-600 hover:text-black",
                       "block px-4 py-2 text-sm"
                     )}
                   >
@@ -89,12 +89,10 @@ const Dropdown = ({
                     <a
                       className={classNames(
                         active
-                          ? darkMode
-                            ? "text-gray-400"
-                            : "bg-gray-100 text-gray-900"
+                          ? "bg-gray-100 text-gray-900"
                           : darkMode
-                          ? "text-gray-400"
-                          : "text-gray-700",
+                          ? "text-gray-400 hover:text-white"
+                          : "text-gray-600 hover:text-black",
                         "block px-4 py-2 text-sm"
                       )}
                     >
@@ -111,12 +109,10 @@ const Dropdown = ({
                     <a
                       className={classNames(
                         active
-                          ? darkMode
-                            ? "text-gray-400"
-                            : "bg-gray-100 text-gray-900"
+                          ? "bg-gray-100 text-gray-900"
                           : darkMode
-                          ? "text-gray-400"
-                          : "text-gray-700",
+                          ? "text-gray-400 hover:text-white"
+                          : "text-gray-600 hover:text-black",
                         "block px-4 py-2 text-sm"
                       )}
                     >
@@ -155,12 +151,10 @@ const Dropdown = ({
                     <a
                       className={classNames(
                         active
-                          ? darkMode
-                            ? "text-gray-400"
-                            : "bg-gray-100 text-gray-900"
+                          ? "bg-gray-100 text-gray-900"
                           : darkMode
-                          ? "text-gray-400"
-                          : "text-gray-700",
+                          ? "text-gray-400 hover:text-white"
+                          : "text-gray-600 hover:text-black",
                         "block px-4 py-2 text-sm"
                       )}
                     >
@@ -177,12 +171,10 @@ const Dropdown = ({
                     <a
                       className={classNames(
                         active
-                          ? darkMode
-                            ? "text-gray-400"
-                            : "bg-gray-100 text-gray-900"
+                          ? "bg-gray-100 text-gray-900"
                           : darkMode
-                          ? "text-gray-400"
-                          : "text-gray-700",
+                          ? "text-gray-400 hover:text-white"
+                          : "text-gray-600 hover:text-black",
                         "block px-4 py-2 text-sm"
                       )}
                     >

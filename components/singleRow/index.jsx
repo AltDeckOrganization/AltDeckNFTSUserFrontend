@@ -17,22 +17,25 @@ const SingleRow = ({
         {seeALL && seeAllLink && (
           <Link href={seeAllLink} passHref={true}>
             <h3 className="text-[20px] cursor-pointer w-fit whitespace-nowrap">
-              <Link href="/launchpad">
-                
-              See All
-              </Link>
+              <Link href="/launchpad">See All</Link>
             </h3>
           </Link>
         )}
       </div>
       <div className="">
-        <SlickSlider>
-          {data.map((item, i) => (
-            <div key={i} className="px-4">
-              {renderItem(item, i)}
-            </div>
-          ))}
-        </SlickSlider>
+        {data ? (
+          <SlickSlider>
+            {data.map((item, i) => (
+              <div key={i} className="px-4">
+                {renderItem(item, i)}
+              </div>
+            ))}
+          </SlickSlider>
+        ) : (
+          <div className="min-h-[300px] flex items-center justify-center text-2xl font-semibold">
+            Coming Soon
+          </div>
+        )}
       </div>
     </div>
   );

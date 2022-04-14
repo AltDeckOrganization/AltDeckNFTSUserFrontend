@@ -16,7 +16,13 @@ const DropdownForm = ({ dropdownVal, setDropdownVal }) => {
         >
           <div className="dropdown__text">{dropdownVal}</div>
 
-          <div className="dropdown__arrow"></div>
+          <div
+            className={
+              darkMode
+                ? "dropdown__arrow dropdown__arrow__dark"
+                : "dropdown__arrow"
+            }
+          ></div>
         </label>
 
         <ul

@@ -9,7 +9,7 @@ import SEO from "../components/seo/SEO";
 
 //Data
 
-import { cardData } from "../components/data/cardData";
+import { upcomingLaunches } from "../components/data/cardData";
 import SingleRow from "../components/singleRow";
 import CollectionCard from "../components/collectionCard";
 import { useDarkMode } from "../context/darkMode";
@@ -26,21 +26,17 @@ export default function Home() {
       <Hero />
       {/* <SlideShow />  */}
       <SingleRow
-        data={cardData}
         heading={"Featured Collection"}
         renderItem={(item, index) => <CollectionCard data={item} key={index} />}
       />
       <SingleRow
-        data={cardData}
-        seeALL
-        seeAllLink={`mintpage/37`}
+        data={upcomingLaunches}
         heading={"Upcoming Launches"}
-        renderItem={(item, index) => <CollectionCard data={item} key={index} />}
+        renderItem={(item, index) => (
+          <CollectionCard data={item} key={index} hover />
+        )}
       />
       <SingleRow
-        data={cardData}
-        seeALL
-        seeAllLink={`mintpage/37`}
         heading={"Launchpad Collections Live"}
         renderItem={(item, index) => <CollectionCard data={item} key={index} />}
       />

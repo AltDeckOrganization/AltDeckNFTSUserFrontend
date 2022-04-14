@@ -9,7 +9,7 @@ import {
 import Link from "next/link";
 import { useDarkMode } from "../../context/darkMode";
 
-const LaunchpadTable = ({ rows, scroll }) => {
+const DashboardTable = ({ rows, scroll }) => {
   const { darkMode } = useDarkMode();
   return (
     <div
@@ -31,7 +31,7 @@ const LaunchpadTable = ({ rows, scroll }) => {
           }}
         >
           {rows.map((row, index) => (
-            <Link href={row.link} key={index} passHref>
+            <>
               <TableRow
                 hover
                 tabIndex={-1}
@@ -100,16 +100,22 @@ const LaunchpadTable = ({ rows, scroll }) => {
                   </p>
                 </TableCell>
                 <TableCell>
-                  <p
+                  <div
                     className={`text-[16px] ${
-                      darkMode ? "text-white" : "text-black"
+                      darkMode
+                        ? row.status === "Approved"
+                          ? "text-green-300"
+                          : "text-red-300"
+                        : row.status === "Approved"
+                        ? " text-green-600"
+                        : "text-red-300"
                     }`}
                   >
                     {row.status}
-                  </p>
+                  </div>
                 </TableCell>
               </TableRow>
-            </Link>
+            </>
           ))}
         </TableBody>
       </Table>
@@ -119,10 +125,11 @@ const LaunchpadTable = ({ rows, scroll }) => {
 
 const headCells = [
   { id: "collection", label: "Collection" },
-  { id: "publicSaleMint", label: "Public Price" },
-  { id: "wlSaleMint", label: "WL Price" },
-  { id: "publicMint", label: "Public Price" },
-  { id: "wlMint", label: "WL Price" },
+  { id: "price", label: "Token Price" },
+  { id: "tokens", label: "Tokens" },
+  { id: "date", label: "Launch Date" },
+  { id: "filled", label: "Filled" },
+  { id: "status", label: "Status" },
 ];
 
 const CustomTableHead = () => {
@@ -156,4 +163,4 @@ const CustomTableHead = () => {
   );
 };
 
-export default LaunchpadTable;
+export default DashboardTable;

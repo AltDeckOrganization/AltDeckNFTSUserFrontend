@@ -13,7 +13,7 @@ import { Button } from "./Button";
 
 import { useWallet } from "@solana/wallet-adapter-react";
 
-export const ConnectWallet = ({ children, ...props }) => {
+export const ConnectWallet = ({ children, onClickMobile, ...props }) => {
   const { publicKey, wallet, disconnect } = useWallet();
   const { setVisible } = useWalletModal();
   const [copied, setCopied] = useState(false);
@@ -87,21 +87,30 @@ export const ConnectWallet = ({ children, ...props }) => {
         role="menu"
       >
         <li
-          onClick={copyAddress}
+          onClick={() => {
+            copyAddress();
+            onClickMobile && onClickMobile();
+          }}
           className="wallet-adapter-dropdown-list-item"
           role="menuitem"
         >
           {copied ? "Copied" : "Copy address"}
         </li>
         <li
-          onClick={openModal}
+          onClick={() => {
+            openModal();
+            onClickMobile && onClickMobile();
+          }}
           className="wallet-adapter-dropdown-list-item"
           role="menuitem"
         >
           Connect a different wallet
         </li>
         <li
-          onClick={disconnect}
+          onClick={() => {
+            disconnect();
+            onClickMobile && onClickMobile();
+          }}
           className="wallet-adapter-dropdown-list-item"
           role="menuitem"
         >
