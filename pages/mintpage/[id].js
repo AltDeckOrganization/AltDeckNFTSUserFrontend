@@ -72,6 +72,7 @@ const Mint = () => {
   const rpcUrl = process.env.NEXT_PUBLIC_SOLANA_RPC_HOST;
 
   const fetchLaunchData = () => {
+    console.log(id);
     axios.get(`${BACKEND_URL}/api/v1/launches/${id}`).then((res) => {
       const { data } = res;
       let page_data = JSON.parse(data.page_data);
