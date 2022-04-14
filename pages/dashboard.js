@@ -1,5 +1,6 @@
 import { useWallet } from "@solana/wallet-adapter-react";
 import React, { useMemo, useState } from "react";
+import Countdown from "react-countdown";
 import { ConnectWallet } from "../components/connectWallet";
 import DashboardTable from "../components/dashboardTable";
 import { dashboardData } from "../components/data/dashboardData";
@@ -23,6 +24,25 @@ const SingleLeftColoumn = ({ condition, hanldeClick, children }) => {
       {children}
     </div>
   );
+};
+
+const Completionist = () => (
+  <div className="text-2xl text-[#50C9C3] font-bold">MINTING COMPLETED</div>
+);
+
+// Renderer callback with condition
+const renderer = ({ hours, minutes, seconds, completed }) => {
+  if (completed) {
+    // Render a completed state
+    return <Completionist />;
+  } else {
+    // Render a countdown
+    return (
+      <div className="text-[#50C9C3] text-2xl">
+        {hours}:{minutes}:{seconds}
+      </div>
+    );
+  }
 };
 
 const Dashboard = () => {
@@ -74,34 +94,58 @@ const Dashboard = () => {
         </div>
         <div className="col-span-6 md:col-span-5 my-2">
           {value === 0 && (
-            <div className="grid grid-rows-3 grid-flow-col gap-4 h-full">
+            <div className="grid grid-rows-6 sm:grid-rows-3 grid-flow-col gap-4 h-full">
               <div
-                className={`col-span-2 rounded-xl flex items-center justify-center h-full w-full ${
+                className={`col-span-2 rounded-xl flex flex-col items-center justify-center h-[30vh] sm:h-full w-full ${
                   darkMode ? "bg-[#1a1a1a]" : "bg-[#efefef]"
                 }`}
               >
-                02
+                <h2 className="font-semibold text-lg uppercase">
+                  Total Minted
+                </h2>
+                <p>0</p>
               </div>
               <div
-                className={`row-span-2 col-span-2 rounded-xl flex items-center justify-center h-full w-full ${
+                className={`row-span-1 col-span-2 rounded-xl flex-col flex items-center justify-center h-[30vh] sm:h-full w-full ${
                   darkMode ? "bg-[#1a1a1a]" : "bg-[#efefef]"
                 }`}
               >
-                03
+                <h2 className="font-semibold text-lg uppercase">
+                  time till whitelist sale live
+                </h2>
+                <Countdown date={Date.now() + 10000000} renderer={renderer} />
               </div>
               <div
-                className={`row-span-2 col-span-2 rounded-xl flex items-center justify-center h-full w-full ${
+                className={`row-span-1 col-span-2 rounded-xl flex-col flex items-center justify-center h-[30vh] sm:h-full w-full ${
                   darkMode ? "bg-[#1a1a1a]" : "bg-[#efefef]"
                 }`}
               >
-                03
+                <h2 className="font-semibold text-lg uppercase">
+                  download hash list
+                </h2>
+                <a href="#" download className="text-[#50c9c3]">
+                  Download Here
+                </a>
               </div>
               <div
-                className={`col-span-2 rounded-xl flex items-center justify-center h-full w-full ${
+                className={`sm:row-span-2 col-span-2 rounded-xl flex-col flex items-center justify-center h-[30vh] sm:h-full w-full ${
                   darkMode ? "bg-[#1a1a1a]" : "bg-[#efefef]"
                 }`}
               >
-                02
+                <h2 className="font-semibold text-lg uppercase">
+                  time till public sale live
+                </h2>
+                <Countdown date={Date.now() + 10000000} renderer={renderer} />
+              </div>
+              <div
+                className={`col-span-2 rounded-xl flex-col flex items-center justify-center h-[30vh] sm:h-full w-full ${
+                  darkMode ? "bg-[#1a1a1a]" : "bg-[#efefef]"
+                }`}
+              >
+                <h2 className="font-semibold text-lg uppercase">
+                  gross revenue
+                </h2>
+                <p>$0</p>
               </div>
             </div>
           )}
