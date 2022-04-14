@@ -7,13 +7,13 @@ const MintImageCard = ({ data }) => {
     <div className="">
       <div className="flex flex-col items-center gap-4">
         <Image
-          src={data.profile_image_path}
+          src={data.profilePics}
           alt="Team Image"
           width={500}
           height={400}
         />
         <div className="text-sm flex flex-col items-center ">
-          <h3 className="font-bold text-black">{data.name}</h3>
+          <h3 className="font-bold text-black">{data.teamName}</h3>
           <p className="text-[#808080]">{data.member_role}</p>
         </div>
       </div>

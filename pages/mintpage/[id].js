@@ -79,7 +79,7 @@ const Mint = () => {
       data.parsed_page_data = page_data;
       setLaunchData(data);
       setCandyMachineId(data.candymachine_id);
-      console.log(data);
+      console.log(page_data);
     });
   };
 
@@ -576,15 +576,15 @@ const Mint = () => {
             </div>
             <div className="text-sm text-[#808080] my-5 tracking-wide leading-loose leading-6">
               {launchData.parsed_page_data
-                ? launchData.parsed_page_data.description
+                ? launchData.parsed_page_data.desc
                 : "N/A"}
             </div>
             <div className="my-5 md:mx-5 bg-[#50C9C3] bg-opacity-10 px-5 py-2 rounded">
-              {launchData.parsed_page_data
+              {/* {launchData.parsed_page_data
                 ? launchData.parsed_page_data.whitelists.map((data, i) => (
                     <MintCard data={data} key={i} />
                   ))
-                : ""}
+                : ""} */}
             </div>
             <div className="w-full my-5">
               {candyMachine && publicKey && (
@@ -643,7 +643,7 @@ const Mint = () => {
             <div className="text-2xl font-bold text-[#50C9C3]">Description</div>
             <p className="text-sm text-[#808080] my-5 tracking-wide leading-loose leading-6">
               {launchData.parsed_page_data
-                ? launchData.parsed_page_data.description
+                ? launchData.parsed_page_data.desc
                 : "N/A"}
             </p>
           </div>
@@ -652,8 +652,8 @@ const Mint = () => {
         {/* Tab */}
         <div className="mt-10">
           <Tab
-            roadmap={launchData.parsed_page_data?.roadmap}
-            team={launchData.parsed_page_data?.team}
+            roadmap={launchData.parsed_page_data?.roadmaps}
+            team={launchData.parsed_page_data?.teams}
           />
         </div>
       </div>
