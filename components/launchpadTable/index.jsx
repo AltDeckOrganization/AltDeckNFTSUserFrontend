@@ -119,8 +119,8 @@ const LaunchpadTable = ({ rows, scroll }) => {
 
 const headCells = [
   { id: "collection", label: "Collection" },
-  { id: "publicSaleMint", label: "Public Price" },
-  { id: "wlSaleMint", label: "WL Price" },
+  { id: "publicSaleMint", label: "Public Mint" },
+  { id: "wlSaleMint", label: "WL Mint" },
   { id: "publicMint", label: "Public Price" },
   { id: "wlMint", label: "WL Price" },
 ];
