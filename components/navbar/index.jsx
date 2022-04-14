@@ -94,7 +94,7 @@ export default function Example() {
         </div>
         <ul className=" items-align hidden lg:flex">
           <li>
-            {/* <Menu as="div" className="relative inline-block text-left">
+            <Menu as="div" className="relative inline-block text-left">
               <div>
                 <Menu.Button
                   className={`inline-flex justify-center w-full  shadow-sm px-4 py-2 text-sm font-medium ${
@@ -108,7 +108,7 @@ export default function Example() {
                   </Link>
                 </Menu.Button>
               </div>
-            </Menu> */}
+            </Menu>
             <Dropdown
               title="Browse"
               link1="Launchpad"
@@ -261,7 +261,7 @@ export default function Example() {
             </div>
             <ul>
               <li>
-                {/* <Menu
+                <Menu
                   as="div"
                   className="relative inline-block text-left w-full"
                 >
@@ -276,7 +276,7 @@ export default function Example() {
                       <Link href="/dashboard">Dashboard</Link>
                     </Menu.Button>
                   </div>
-                </Menu> */}
+                </Menu>
                 <DropdownSmall
                   title="Browse"
                   // link1="Apply for collection listing"
