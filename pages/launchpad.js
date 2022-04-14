@@ -9,7 +9,7 @@ import LaunchpadTable from "../components/launchpadTable";
 import HomeLaunchpadSteps from "../components/homeLaunchpadSteps";
 
 //dummydata
-// import { launchpadData } from "../components/data/launchpadData";
+import { launchpadData } from "../components/data/launchpadData";
 import { homeLaunchpadData } from "../components/data/homeLaunchpad";
 
 // Connect Wallet Button
@@ -18,17 +18,17 @@ import axios from "axios";
 import { useDarkMode } from "../context/darkMode";
 
 const LaunchPad = () => {
-  const [launches, setLaunches] = useState([]);
-  const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
+  // const [launches, setLaunches] = useState([]);
+  // const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
   const { darkMode } = useDarkMode();
 
-  useEffect(() => {
-    axios.get(`${BACKEND_URL}/api/v1/launches`).then((res) => {
-      const { data } = res;
-      setLaunches(data);
-      console.log(data);
-    });
-  }, [setLaunches]);
+  // useEffect(() => {
+  //   axios.get(`${BACKEND_URL}/api/v1/launches`).then((res) => {
+  //     const { data } = res;
+  //     setLaunches(data);
+  //     console.log(data);
+  //   });
+  // }, [setLaunches]);
 
   return (
     <div className="xl:w-[1156px] pt-20 mx-auto xl:w-[1156px] xl:mx-auto lg:px-28 w-full">
@@ -98,7 +98,7 @@ const LaunchPad = () => {
           success.
         </p>
         <div className="border md:border-[#50C9C3] pb-6 rounded mt-10 px-4 overflow-x-auto">
-          <LaunchpadTable rows={launches} />
+          <LaunchpadTable rows={launchpadData} />
         </div>
       </div>
     </div>
