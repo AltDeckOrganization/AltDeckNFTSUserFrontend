@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Crows from "../../public/crows.jpg";
 import Internet from "../../public/internet.svg";
 import Discord from "../../public/discord.svg";
