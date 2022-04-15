@@ -452,7 +452,7 @@ const Mint = () => {
         price: candyMachine.data.price,
       },
     });
-    console.log(candyMachine.data.gatekeeper);
+    console.log(candyMachine);
     // console.log({
     //   itemsAvailable,
     //   itemsRedeemed,
@@ -531,10 +531,10 @@ const Mint = () => {
               <Mintprogress
                 total_items={
                   launchData.parsed_page_data
-                    ? launchData.parsed_page_data.total_items
+                    ? launchData.parsed_page_data.totalItems
                     : "N/A"
                 }
-                items_minted={0}
+                items_minted={candyMachine ? candyMachine.itemsRedeemed : 0}
               />
             </div>
           </div>
@@ -631,7 +631,10 @@ const Mint = () => {
 
         {/* Contdown */}
         <div className="mt text-center">
-          <Countdown date={Date.now() + 10000} renderer={renderer} />
+          {/* <Countdown
+            date={candyMachine ? candyMachine.goLiveDate : Date.now() + 10000}
+            renderer={renderer}
+          /> */}
         </div>
 
         <div className="h-[1px] w-full bg-black my-20 bg-opacity-10"></div>
