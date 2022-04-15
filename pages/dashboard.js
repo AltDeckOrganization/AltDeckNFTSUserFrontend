@@ -1,0 +1,178 @@
+import { useWallet } from "@solana/wallet-adapter-react";
+import React, { useMemo, useState } from "react";
+import Countdown from "react-countdown";
+import { ConnectWallet } from "../components/connectWallet";
+import DashboardTable from "../components/dashboardTable";
+import { dashboardData } from "../components/data/dashboardData";
+import { useDarkMode } from "../context/darkMode";
+
+const SingleLeftColoumn = ({ condition, hanldeClick, children }) => {
+  const { darkMode } = useDarkMode();
+  return (
+    <div
+      className={`my-2 py-2 px-2 mx-1 text-center rounded-xl h-fit cursor-pointer border border-[#50C9C3] ${
+        condition
+          ? darkMode
+            ? "text-black bg-[#50c9c3] hover:bg-[#50c9c3] hover:text-black"
+            : "text-white bg-[#50c9c3]"
+          : darkMode
+          ? "text-white hover:bg-[#50c9c3] hover:text-black"
+          : "text-black hover:bg-[#50c9c3] hover:text-white"
+      } `}
+      onClick={hanldeClick}
+    >
+      {children}
+    </div>
+  );
+};
+
+const Completionist = () => (
+  <div className="text-2xl text-[#50C9C3] font-bold">MINTING COMPLETED</div>
+);
+
+// Renderer callback with condition
+const renderer = ({ hours, minutes, seconds, completed }) => {
+  if (completed) {
+    // Render a completed state
+    return <Completionist />;
+  } else {
+    // Render a countdown
+    return (
+      <div className="text-[#50C9C3] text-2xl">
+        {hours}:{minutes}:{seconds}
+      </div>
+    );
+  }
+};
+
+const Dashboard = () => {
+  const [value, setValue] = useState(0);
+  const { publicKey } = useWallet();
+  const { darkMode } = useDarkMode();
+  const base58 = useMemo(() => publicKey?.toBase58(), [publicKey]);
+
+  if (!base58) {
+    return (
+      <div className="px-5 md:px-0 xl:w-[1156px] xl:mx-auto lg:px-28 xl:px-0 text-center w-full pt-28">
+        <h1 className="text-[#50C9C3] font-bold mb-5 text-3xl">
+          You are not Logged In.
+        </h1>
+        Please Connect your wallet
+        <div className="flex items-center justify-center">
+          <ConnectWallet className="flex justify-center items-center w-fit border border-[#50C9C3] text-[#50c9c3] shadow-sm px-4 py-2 text-base  w-full  border rounded rounded-md  mt-5  font-medium rounded " />
+        </div>
+      </div>
+    );
+  }
+  return (
+    <div className="px-5 md:px-0 xl:w-[1156px] xl:mx-auto lg:px-28 xl:px-0 w-full pt-28">
+      <h1 className="text-[#50C9C3] font-bold mb-5 text-3xl text-center">
+        Dashboard
+      </h1>
+      <div className="grid grid-cols-6 h-fit min-h-[70vh] md:h-[80vh] md:gap-x-8 pt-10">
+        <div className="flex md:flex-col md:justify-between col-span-6 md:col-span-1">
+          <div className="flex md:block">
+            <SingleLeftColoumn
+              condition={value === 0}
+              hanldeClick={() => setValue(0)}
+            >
+              Statistics
+            </SingleLeftColoumn>
+            <SingleLeftColoumn
+              condition={value === 1}
+              hanldeClick={() => setValue(1)}
+            >
+              My Applications
+            </SingleLeftColoumn>
+          </div>
+          <SingleLeftColoumn
+            condition={value === 2}
+            hanldeClick={() => setValue(2)}
+          >
+            Support
+          </SingleLeftColoumn>
+        </div>
+        <div className="col-span-6 md:col-span-5 my-2">
+          {value === 0 && (
+            <div className="grid grid-rows-6 sm:grid-rows-3 grid-flow-col gap-4 h-full">
+              <div
+                className={`col-span-2 rounded-xl flex flex-col items-center justify-center h-[30vh] sm:h-full w-full ${
+                  darkMode ? "bg-[#1a1a1a]" : "bg-[#efefef]"
+                }`}
+              >
+                <h2 className="font-semibold text-lg uppercase">
+                  Total Minted
+                </h2>
+                <p>0</p>
+              </div>
+              <div
+                className={`row-span-1 col-span-2 rounded-xl flex-col flex items-center justify-center h-[30vh] sm:h-full w-full ${
+                  darkMode ? "bg-[#1a1a1a]" : "bg-[#efefef]"
+                }`}
+              >
+                <h2 className="font-semibold text-lg uppercase">
+                  time till whitelist sale live
+                </h2>
+                <Countdown date={Date.now() + 10000000} renderer={renderer} />
+              </div>
+              <div
+                className={`row-span-1 col-span-2 rounded-xl flex-col flex items-center justify-center h-[30vh] sm:h-full w-full ${
+                  darkMode ? "bg-[#1a1a1a]" : "bg-[#efefef]"
+                }`}
+              >
+                <h2 className="font-semibold text-lg uppercase">
+                  download hash list
+                </h2>
+                <a href="#" download className="text-[#50c9c3]">
+                  Download Here
+                </a>
+              </div>
+              <div
+                className={`sm:row-span-2 col-span-2 rounded-xl flex-col flex items-center justify-center h-[30vh] sm:h-full w-full ${
+                  darkMode ? "bg-[#1a1a1a]" : "bg-[#efefef]"
+                }`}
+              >
+                <h2 className="font-semibold text-lg uppercase">
+                  time till public sale live
+                </h2>
+                <Countdown date={Date.now() + 10000000} renderer={renderer} />
+              </div>
+              <div
+                className={`col-span-2 rounded-xl flex-col flex items-center justify-center h-[30vh] sm:h-full w-full ${
+                  darkMode ? "bg-[#1a1a1a]" : "bg-[#efefef]"
+                }`}
+              >
+                <h2 className="font-semibold text-lg uppercase">
+                  gross revenue
+                </h2>
+                <p>$0</p>
+              </div>
+            </div>
+          )}
+          {value === 1 && (
+            <div className="overflow-scroll md:overflow-hidden">
+              <DashboardTable rows={dashboardData} />
+            </div>
+          )}
+          {value === 2 && (
+            <div>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Quibusdam eaque aliquid sunt ipsum molestiae minus hic ipsam
+              exercitationem similique vitae debitis quaerat vero natus, ad
+              obcaecati. Perspiciatis nesciunt, quis dolore veritatis
+              <a href="mailto:contact@altdeck.io" className="text-[#50c9c3]">
+                {" "}
+                contact@altdeck.io{" "}
+              </a>
+              consectetur amet animi, libero magni eligendi id tenetur et qui
+              optio. Ipsam molestias et ea blanditiis voluptas. Voluptate,
+              magnam.
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Dashboard;
