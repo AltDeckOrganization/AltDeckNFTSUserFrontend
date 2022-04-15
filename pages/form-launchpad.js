@@ -7,16 +7,18 @@ import {
 } from 'react-country-region-selector';
 import { Menu, Transition } from '@headlessui/react';
 
-import { ChevronDownIcon } from '@heroicons/react/solid';
-import axios from 'axios';
-import Dropdown from '../components/dropdown';
-import SEO from '../components/seo/SEO';
-import DropdownForm from '../components/dropdown/DropdownForm';
-import Link from 'next/link';
-import ReCAPTCHA from 'react-google-recaptcha';
-import { useDarkMode } from '../context/darkMode';
 
 import Tooltip from '@mui/material/Tooltip';
+import { ChevronDownIcon } from "@heroicons/react/solid";
+import axios from "axios";
+import Dropdown from "../components/dropdown";
+import SEO from "../components/seo/SEO";
+import DropdownForm from "../components/dropdown/DropdownForm";
+import Link from "next/link";
+import ReCAPTCHA from "react-google-recaptcha";
+import { useDarkMode } from "../context/darkMode";
+import { ConnectWallet } from "../components/connectWallet";
+import { useWallet } from "@solana/wallet-adapter-react";
 
 const LaunchpadForm = () => {
 	const [name, setName] = useState('');
@@ -58,7 +60,7 @@ const LaunchpadForm = () => {
 		console.log('Captcha value:', value);
 		setverify(true);
 	};
-
+  const handleClose =()=> setclose(true);
 	const handleFiles = (e) => {
 		const fileInput = document.getElementById(e.target.id);
 		setPictureName(fileInput.value.split('\\').pop());
@@ -121,47 +123,105 @@ const LaunchpadForm = () => {
 			form_data: JSON.stringify(form_data),
 		};
 
-		axios
-			.post(`${server_url}/api/v1/launches`, data)
-			.then((res) => {
-				setSubmissionSuccesful('true');
-				window.scrollTo(0, 0);
-				console.log(res.data);
-				setclose(false);
-			})
-			.catch((e) => {
-				setSubmissionSuccesful('false');
-				window.scrollTo(0, 0);
-				console.log(e);
-			});
-	};
-	const { darkMode } = useDarkMode();
+// <<<<<<< HEAD
+// 		axios
+// 			.post(`${server_url}/api/v1/launches`, data)
+// 			.then((res) => {
+// 				setSubmissionSuccesful('true');
+// 				window.scrollTo(0, 0);
+// 				console.log(res.data);
+// 				setclose(false);
+// 			})
+// 			.catch((e) => {
+// 				setSubmissionSuccesful('false');
+// 				window.scrollTo(0, 0);
+// 				console.log(e);
+// 			});
+// 	};
+// 	const { darkMode } = useDarkMode();
 
-	return (
-		<div>
-			<div className='launchPad  md:px-0 xl:w-[1156px] xl:mx-auto lg:px-28  w-full pt-20 md:pt-28'>
-				<div className='launchPad '>
-					<SEO />
-					{submissionSuccessful === 'false' && (
-						<div
-							className='bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative'
-							role='alert'
-						>
-							<strong className='font-bold'>Holy smokes!</strong>{' '}
-							<span className='block sm:inline'>Form submission failed.</span>
-							<span className='absolute top-0 bottom-0 right-0 px-4 py-3'>
-								<svg
-									className='fill-current h-6 w-6 text-red-500'
-									role='button'
-									xmlns='http://www.w3.org/2000/svg'
-									viewBox='0 0 20 20'
-								>
-									<title>Close</title>
-									<path d='M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z' />
-								</svg>
-							</span>
-						</div>
-					)}
+// 	return (
+// 		<div>
+// 			<div className='launchPad  md:px-0 xl:w-[1156px] xl:mx-auto lg:px-28  w-full pt-20 md:pt-28'>
+// 				<div className='launchPad '>
+// 					<SEO />
+// 					{submissionSuccessful === 'false' && (
+// 						<div
+// 							className='bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative'
+// 							role='alert'
+// 						>
+// 							<strong className='font-bold'>Holy smokes!</strong>{' '}
+// 							<span className='block sm:inline'>Form submission failed.</span>
+// 							<span className='absolute top-0 bottom-0 right-0 px-4 py-3'>
+// 								<svg
+// 									className='fill-current h-6 w-6 text-red-500'
+// 									role='button'
+// 									xmlns='http://www.w3.org/2000/svg'
+// 									viewBox='0 0 20 20'
+// 								>
+// 									<title>Close</title>
+// 									<path d='M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z' />
+// 								</svg>
+// 							</span>
+// 						</div>
+// 					)}
+// =======
+    axios
+      .post(`${server_url}/api/v1/launches`, data)
+      .then((res) => {
+        setSubmissionSuccesful("true");
+        window.scrollTo(0, 0);
+        console.log(res.data);
+      })
+      .catch((e) => {
+        setSubmissionSuccesful("false");
+        window.scrollTo(0, 0);
+        console.log(e);
+      });
+  };
+  const { darkMode } = useDarkMode();
+  // const { publicKey } = useWallet();
+  // const base58 = useMemo(() => publicKey?.toBase58(), [publicKey]);
+
+  // if (!base58) {
+  //   return (
+  //     <div className="px-5 md:px-0 xl:w-[1156px] xl:mx-auto lg:px-28 xl:px-0 text-center w-full pt-28">
+  //       <h1 className="text-[#50C9C3] font-bold mb-5 text-3xl">
+  //         You are not Logged In.
+  //       </h1>
+  //       Please Connect your wallet
+  //       <div className="flex items-center justify-center">
+  //         <ConnectWallet className="flex justify-center items-center w-fit border border-[#50C9C3] text-[#50c9c3] shadow-sm px-4 py-2 text-base  w-full  border rounded rounded-md  mt-5  font-medium rounded " />
+  //       </div>
+  //     </div>
+  //   );
+  // }
+  return (
+    <div>
+      <div className="launchPad  md:px-0 xl:w-[1156px] xl:mx-auto lg:px-28  w-full pt-20 md:pt-28">
+        <div className="launchPad ">
+          <SEO />
+          {submissionSuccessful === "false" && (
+            <div
+              className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
+              role="alert"
+            >
+              <strong className="font-bold">Holy smokes!</strong>
+              <span className="block sm:inline">Form submission failed.</span>
+              <span className="absolute top-0 bottom-0 right-0 px-4 py-3">
+                <svg
+                  className="fill-current h-6 w-6 text-red-500"
+                  role="button"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  onClick={handleClose}
+                >
+                  <title>Close</title>
+                  <path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z" />
+                </svg>
+              </span>
+            </div>
+          )}
 
 					{!submissionSuccessful === 'true' && (
 						<div
@@ -898,20 +958,19 @@ const LaunchpadForm = () => {
 							</div>
 						</div>
 
-						<h3 className='text-base text-black uppercase my-4 font-bold'>
-							Packages
-						</h3>
-						<DropdownForm
-							dropdownVal={dropdownVal}
-							setDropdownVal={setDropdownVal}
-						/>
-						<div className='mt-5'>
-							<img
-								src='/images/launchpad_marketing.jpg'
-								alt=''
-								className='md:h-80'
-							/>
-						</div>
+
+            <h3 className="text-base uppercase my-4 font-bold">Packages</h3>
+            <DropdownForm
+              dropdownVal={dropdownVal}
+              setDropdownVal={setDropdownVal}
+            />
+            <div className="mt-5">
+              <img
+                src="/images/launchpad_marketing.jpg"
+                alt=""
+                className="md:h-80"
+              />
+            </div>
 
 						<h3 className='text-base uppercase my-4 font-bold'>Agreement</h3>
 						<div className='flex flex-wrap -mx-3 mb-6'>

@@ -13,12 +13,14 @@ const MintCard = ({ data }) => {
         >
           Whitelist
         </div>
-        <div className="text-[#50c0c3] text-xs">{data ? data.time : ""}</div>
+        <div className="text-[#50c0c3] text-xs">{data ? "" : ""}</div>
       </div>
       <div className="mt-3 flex gap-1 md:gap-2 items-center text-[#808080]">
         <div className="text-xs">
           WHITELIST
-          <span className="font-bold text-bold">{data ? data.number : ""}</span>
+          <span className="font-bold text-bold">
+            {data ? data.numbWhiteList : ""}
+          </span>
         </div>
         <div className="w-[5px] h-[5px] bg-[#50C9C3] rounded rounded-full"></div>
 
