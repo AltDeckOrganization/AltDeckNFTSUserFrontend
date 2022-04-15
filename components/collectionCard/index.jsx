@@ -8,10 +8,11 @@ const CollectionCard = ({ data, hover = false }) => {
   const [hoverImg, setHover] = useState(true);
   const { darkMode } = useDarkMode();
   return (
-    <Link
+    <a
       className="rounded-2xl shadow-[0px_11px_35px_-29px_grey] cursor-pointer"
       href={data.link}
-      passHref
+      target={"_blank"}
+      rel="noreferrer"
     >
       <div>
         <div className={`flex justify-center pt-4`}>
@@ -48,7 +49,7 @@ const CollectionCard = ({ data, hover = false }) => {
           </p>
         </div>
       </div>
-    </Link>
+    </a>
   );
 };
 

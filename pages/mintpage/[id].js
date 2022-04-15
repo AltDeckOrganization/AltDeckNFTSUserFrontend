@@ -509,7 +509,6 @@ const Mint = () => {
   useEffect(() => {
     fetchLaunchData();
   }, []);
-
   return (
     <div className="mint px-2 py-5 md:px-10 pt-20">
       <SEO />
@@ -517,19 +516,17 @@ const Mint = () => {
       <div className="">
         <div className="grid grid-cols-1 lg:grid-cols-2  gap4">
           <div className="w-10/12 mx-auto">
-            <Image
-              src={
-                launchData.profile_image_path
-                  ? launchData.profile_image_path
-                  : Crows
-              }
-              alt="Crows"
-              width={"500px"}
-              height={400}
-              layout="responsive"
-              priority="true"
-              className="rounded-[13px]"
-            />
+            {launchData.profile_image_path && (
+              <Image
+                src={launchData.profile_image_path}
+                alt="Crows"
+                width={"500px"}
+                height={400}
+                layout="responsive"
+                priority="true"
+                className="rounded-[13px]"
+              />
+            )}
             <div className="mt-5">
               <Mintprogress
                 total_items={
@@ -545,14 +542,14 @@ const Mint = () => {
             <div className="flex mb-2 justify-between items-center">
               <h3 className="text-2xl text-[#50C9C3] font-bold">
                 {launchData.parsed_page_data
-                  ? launchData.parsed_page_data.launch_name
+                  ? launchData.parsed_page_data.launchname
                   : "N/A"}
               </h3>
               <div className="text-base text-[#808080]">
                 Total items:{" "}
                 <span className="font-semibold text-black">
                   {launchData.parsed_page_data
-                    ? launchData.parsed_page_data.total_items
+                    ? launchData.parsed_page_data.totalItems
                     : "N/A"}
                 </span>
               </div>
