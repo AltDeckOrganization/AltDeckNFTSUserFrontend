@@ -9,7 +9,7 @@ import SEO from "../components/seo/SEO";
 
 //Data
 
-import { upcomingLaunches } from "../components/data/cardData";
+import { upcomingLaunches, lanchpadCards } from "../components/data/cardData";
 import SingleRow from "../components/singleRow";
 import CollectionCard from "../components/collectionCard";
 import { useDarkMode } from "../context/darkMode";
@@ -26,7 +26,9 @@ export default function Home() {
       <Hero />
       <SingleRow
         heading={"Featured Collection"}
-        renderItem={(item, index) => <CollectionCard data={item} key={index} />}
+        renderItem={(item, index) => (
+          <CollectionCard data={item} key={index} hover />
+        )}
       />
       <SingleRow
         data={upcomingLaunches}
@@ -36,8 +38,11 @@ export default function Home() {
         )}
       />
       <SingleRow
+        data={lanchpadCards}
         heading={"Launchpad Collections Live"}
-        renderItem={(item, index) => <CollectionCard data={item} key={index} />}
+        renderItem={(item, index) => (
+          <CollectionCard data={item} key={index} hover />
+        )}
       />
     </div>
   );
