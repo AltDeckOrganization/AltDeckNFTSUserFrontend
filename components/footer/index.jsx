@@ -8,7 +8,7 @@ function Footer() {
   return (
     <div
       className={`${footerStyles.footer} flex items-center ${
-        darkMode && "bg-black text-white"
+        darkMode && "bg-black text-white border-0"
       }`}
     >
       <div className="">

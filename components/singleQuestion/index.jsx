@@ -10,7 +10,7 @@ const SingleQuestion = ({ data }) => {
         ({ id, avatar, quest, ans, ansPara2, questList, ansList, linkans }) => (
           <div key={id}>
             <div className="grid grid-cols-1 px-5 md:grid-cols-12">
-              <div className="py-3 md:py-6 lg:py-12 flex md:justify-center lg:block">
+              <div className="py-3 items-center md:py-6 lg:py-12 flex md:justify-center lg:block">
                 <img
                   src={avatar}
                   alt={id}

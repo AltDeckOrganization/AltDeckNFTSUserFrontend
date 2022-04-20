@@ -18,7 +18,7 @@ export const FaqsData = [
     id: "3",
     avatar: "/images/crows.gif",
     quest: "How much is the baseline fee that AltDeckNFTS takes? ",
-    ans: " We take 7% baseline fee excluding misc agreements such as marketing, this 6% fee is for the full setup",
+    ans: " We take 7% baseline fee excluding misc agreements such as marketing, this 7% fee is for the full setup",
   },
   {
     id: "4",

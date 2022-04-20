@@ -198,6 +198,7 @@ export default function Example() {
                           ? "bg-black text-gray-400 hover:bg-black hover:text-white"
                           : "bg-white text-gray-700 hover:bg-gray-50"
                       }`}
+                      onClick={handleMenuClick}
                     >
                       <Link href="/marketing">Marketing</Link>
                     </Menu.Button>

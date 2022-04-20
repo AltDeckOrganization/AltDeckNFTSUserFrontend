@@ -417,7 +417,9 @@ const DropsForm = () => {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-full px-3 mb-6 md:mb-0">
                 <label
-                  className="block tracking-wide text-gray-700 text-xs w-3/4 font-bold mb-2"
+                  className={`block tracking-wide text-xs font-bold mb-2 ${
+                    darkMode ? "text-gray-200" : "text-gray-700"
+                  }`}
                   htmlFor="grid-first-name"
                 >
                   Description
