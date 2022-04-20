@@ -29,11 +29,8 @@ export default function Home() {
         renderItem={(item, index) => <CollectionCard data={item} key={index} />}
       />
       <SingleRow
-        data={upcomingLaunches}
         heading={"Upcoming Launches"}
-        renderItem={(item, index) => (
-          <CollectionCard data={item} key={index} hover />
-        )}
+        renderItem={(item, index) => <CollectionCard data={item} key={index} />}
       />
       <SingleRow
         heading={"Launchpad Collections Live"}

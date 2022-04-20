@@ -12,7 +12,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -34,7 +34,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -56,7 +56,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -78,7 +78,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -100,7 +100,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -127,7 +127,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -149,7 +149,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -171,7 +171,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -193,7 +193,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -215,7 +215,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -237,7 +237,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -259,7 +259,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -281,7 +281,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -303,7 +303,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -325,7 +325,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -347,7 +347,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -369,7 +369,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -391,7 +391,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -413,7 +413,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -435,7 +435,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -457,7 +457,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -479,7 +479,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -501,7 +501,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -523,7 +523,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -545,7 +545,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -567,7 +567,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -589,7 +589,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -611,7 +611,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -633,7 +633,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -660,7 +660,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -682,7 +682,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -704,7 +704,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -726,7 +726,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -748,7 +748,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -770,7 +770,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -792,7 +792,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -814,7 +814,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -836,7 +836,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -858,7 +858,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -880,7 +880,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -902,7 +902,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -924,7 +924,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -946,7 +946,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -968,7 +968,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -990,7 +990,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -1012,7 +1012,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -1034,7 +1034,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -1056,7 +1056,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -1078,7 +1078,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -1100,7 +1100,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -1122,7 +1122,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -1144,7 +1144,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",
@@ -1166,7 +1166,7 @@ export const dropData = [
           },
           {
             iconClass: "fab fa-brands fa-twitter",
-            link: "https://twitter.com/AltDeck_io",
+            link: "https://twitter.com/altdecknfts",
           },
           {
             iconClass: "fa fa-solid fa-globe",

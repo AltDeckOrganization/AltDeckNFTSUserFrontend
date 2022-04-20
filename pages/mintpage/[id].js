@@ -381,7 +381,7 @@ const Mint = () => {
     // Create a new connection object
     const connection = new Connection(rpcHost);
 
-    // Create a new Solana provider object
+    // Create a new Ethereum provider object
     const provider = new Provider(
       connection,
       window.solana,

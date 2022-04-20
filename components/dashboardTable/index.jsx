@@ -69,7 +69,7 @@ const DashboardTable = ({ rows, scroll }) => {
                       darkMode ? "text-white" : "text-black"
                     }`}
                   >
-                    {row.price} SOL
+                    {row.price} ETH
                   </p>
                 </TableCell>
                 <TableCell>

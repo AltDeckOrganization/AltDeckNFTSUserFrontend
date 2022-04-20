@@ -35,30 +35,12 @@ function classNames(...classes) {
 }
 
 export default function Example() {
-  const router = useRouter();
-  const [browseAnchorEl, setBrowseAnchorEl] = React.useState(null);
   const [openMenu, setOpenMenu] = React.useState(false);
-  const [applyAnchorEl, setApplyAnchorEl] = React.useState(null);
-  const openBrowse = Boolean(browseAnchorEl);
-  const openApply = Boolean(applyAnchorEl);
   const { darkMode, setDarkMode } = useDarkMode();
 
   const handleMenuClick = (e) => {
     setOpenMenu((prevState) => !prevState);
   };
-  // const handleClick = (event, item) => {
-  //   if (item.name === 'Browse') setBrowseAnchorEl(event.target)
-  //   else if (item.name === 'Apply') setApplyAnchorEl(event.target)
-  //   else router.push(item.href)
-  // }
-
-  // const handleBrowseMenuClose = () => {
-  //   setBrowseAnchorEl(null)
-  // }
-
-  // const handleApplyMenuClose = () => {
-  //   setApplyAnchorEl(null)
-  // }
 
   return (
     <>
@@ -71,44 +53,13 @@ export default function Example() {
           <div className="logo">
             <Link href="/">
               <a className={darkMode && "text-white"}>
-                <h1 className="text-xl font-bold">AltDeck</h1>
+                <h1 className="text-xl font-bold">AltDeckNFTS</h1>
               </a>
             </Link>
           </div>
-
-          {/* SEARCH BAR HERE */}
-          {/* <div
-            className={`mt-1 rounded-lg flex flex-row items-center border border-[#E3E1E3] px-2 py-2 lg:w-[300px] md:w-[510px] xl:w-[450px] ml-10`}
-          >
-            <Image src={searchIcon} alt="" className="w-full" />
-            <input
-              type="text"
-              name="search"
-              id="search"
-              className={`w-full border-0 text-gray-700 leading-tight focus:ring-0 focus:outline-none ml-2 text-xs ${
-                darkMode ? "bg-black" : "bg-white"
-              }`}
-              placeholder="Search item here"
-            />
-          </div> */}
         </div>
         <ul className=" items-align hidden lg:flex">
           <li>
-            {/* <Menu as="div" className="relative inline-block text-left">
-              <div>
-                <Menu.Button
-                  className={`inline-flex justify-center w-full  shadow-sm px-4 py-2 text-sm font-medium ${
-                    darkMode
-                      ? "bg-black text-gray-400 hover:bg-black hover:text-white"
-                      : "bg-white text-gray-700 hover:bg-gray-50"
-                  }`}
-                >
-                  <Link href="/dashboard">
-                    <div>Dashboard</div>
-                  </Link>
-                </Menu.Button>
-              </div>
-            </Menu> */}
             <Dropdown
               title="Browse"
               link1="Launchpad"
@@ -118,22 +69,6 @@ export default function Example() {
             />
           </li>
           <li className="mx-3">
-            <Menu as="div" className="relative inline-block text-left">
-              <div>
-                <Menu.Button
-                  className={`inline-flex justify-center w-full  shadow-sm px-4 py-2 text-sm font-medium ${
-                    darkMode
-                      ? "bg-black text-gray-400 hover:bg-black hover:text-white"
-                      : "bg-white text-gray-700 hover:bg-gray-50"
-                  }`}
-                >
-                  <Link href="/roadmap">
-                    <div>Roadmap</div>
-                  </Link>
-                </Menu.Button>
-              </div>
-            </Menu>
-
             <Menu as="div" className="relative inline-block text-left">
               <div>
                 <Menu.Button
@@ -159,25 +94,6 @@ export default function Example() {
               apply2="drops-form"
             />
           </li>
-
-          {/* <li className="mx-3">
-            <Dropdown
-              title="Browse"
-              link1="Launchpad"
-              link2="Stats"
-              apply="launchpad"
-              apply2="stats"
-            />
-          </li> */}
-
-          {/* <li className="mx-3">
-            <Link href="/profile">
-              <a className="inline-flex justify-center w-full  shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
-                Profile
-              </a>
-            </Link>
-          </li> */}
-
           <li className="mx-3 ">
             <Dropdown
               title="Contact"
@@ -187,10 +103,10 @@ export default function Example() {
               link4="Email"
               link5="TOS"
               link6="FAQs"
-              apply="https://www.twitter.com/@AltDeck_io"
-              apply2="https://medium.com/@AltDeck"
+              apply="https://www.twitter.com/@altDecknfts"
+              apply2="https://medium.com/@altdecknfts"
               apply3="https://discord.gg/ec9cZCCSHK"
-              apply4="mailto:contact@altdeck.io"
+              apply4="mailto:contact@altdecknfts.io"
               apply5="tos"
               apply6="faqs"
             />
@@ -261,27 +177,9 @@ export default function Example() {
             </div>
             <ul>
               <li>
-                {/* <Menu
-                  as="div"
-                  className="relative inline-block text-left w-full"
-                >
-                  <div>
-                    <Menu.Button
-                      className={`inline-flex justify-center w-full  border rounded rounded-md  mt-5 shadow-sm px-4 py-2 text-sm font-medium ${
-                        darkMode
-                          ? "bg-black text-gray-400 hover:bg-black hover:text-white"
-                          : "bg-white text-gray-700 hover:bg-gray-50"
-                      }`}
-                    >
-                      <Link href="/dashboard">Dashboard</Link>
-                    </Menu.Button>
-                  </div>
-                </Menu> */}
                 <DropdownSmall
                   title="Browse"
-                  // link1="Apply for collection listing"
                   link1="Launchpad"
-                  // apply="form-listing"
                   apply="launchpad"
                   link2="Drops"
                   apply2="drops"
@@ -289,22 +187,6 @@ export default function Example() {
                 />
               </li>
               <li>
-                <Menu
-                  as="div"
-                  className="relative inline-block text-left w-full"
-                >
-                  <div>
-                    <Menu.Button
-                      className={`inline-flex justify-center w-full  border rounded rounded-md  mt-5 shadow-sm px-4 py-2 text-sm font-medium ${
-                        darkMode
-                          ? "bg-black text-gray-400 hover:bg-black hover:text-white"
-                          : "bg-white text-gray-700 hover:bg-gray-50"
-                      }`}
-                    >
-                      <Link href="/roadmap">Roadmap</Link>
-                    </Menu.Button>
-                  </div>
-                </Menu>
                 <Menu
                   as="div"
                   className="relative inline-block text-left w-full"
@@ -325,9 +207,7 @@ export default function Example() {
               <li>
                 <DropdownSmall
                   title="Apply"
-                  // link1="Apply for collection listing"
                   link1="Apply for launchpad"
-                  // apply="form-listing"
                   apply="form-launchpad"
                   link2="Apply for drop"
                   apply2="drops-form"
@@ -344,10 +224,10 @@ export default function Example() {
                   link4="Email"
                   link5="TOS"
                   link6="FAQs"
-                  apply="https://www.twitter.com/@AltDeck_io"
-                  apply2="https://medium.com/@AltDeck"
+                  apply="https://www.twitter.com/@altDecknfts"
+                  apply2="https://medium.com/@altdecknfts"
                   apply3="https://discord.gg/ec9cZCCSHK"
-                  apply4="mail:contact@altdeck.io"
+                  apply4="mailto:contact@altdecknfts.io"
                   apply5="tos"
                   apply6="faqs"
                 />

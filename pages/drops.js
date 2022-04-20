@@ -32,7 +32,7 @@ const Drops = () => {
       <h1 className="text-3xl text-center">Drops</h1>
       <p className="py-4 text-center">
         Projects listed are not an endorsement or a guarantee of a listing on
-        AltDeck <br />
+        AltDeckNFTS <br />
         Apply here as an upcoming drop -{" "}
         <span className="text-[#50C9C3]">
           <Link href={"/drops-form"}>Drop Application</Link>

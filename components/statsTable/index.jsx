@@ -1,6 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-import { TableCell, TableHead, TableRow, Table, TableBody } from '@mui/material'
-import Image from 'next/image'
+import {
+  TableCell,
+  TableHead,
+  TableRow,
+  Table,
+  TableBody,
+} from "@mui/material";
+import Image from "next/image";
 
 const StatsTable = ({ rows }) => {
   return (
@@ -8,43 +14,33 @@ const StatsTable = ({ rows }) => {
       <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="inline-block py-2 min-w-full sm:px-6 lg:px-8">
           <div className="overflow-hidden shadow-md sm:rounded-lg">
-        <table className="min-w-full" >
-        <thead className="bg-gray-50 dark:bg-gray-700">
-            <tr >
-          {rows.map((row)=>(
+            <table className="min-w-full">
+              <thead className="bg-gray-50 dark:bg-gray-700">
+                <tr>
+                  {rows.map((row) => (
+                    <th
+                      scope="col"
+                      key={row.name}
+                      className="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
+                    >
+                      {row.name}
+                    </th>
+                  ))}
+                </tr>
 
-            <th
-              scope="col"
-              key={row.name}
-              className="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
-            >
-              {row.name}
-            </th>
-            
-            
-          ))}
-
-            </tr>
-            
-            <tr >
-          {rows.map((row)=>(
-
-            <th
-              scope="col"
-              key={row.name}
-              className="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
-            >
-              {row.name}
-            </th>
-            
-            
-          ))}
-
-            </tr>
-
-
-          </thead>
-        </table>
+                <tr>
+                  {rows.map((row) => (
+                    <th
+                      scope="col"
+                      key={row.name}
+                      className="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"
+                    >
+                      {row.name}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+            </table>
             <table className="min-w-full">
               <thead className="bg-gray-50 dark:bg-gray-700">
                 <tr>
@@ -191,16 +187,16 @@ const StatsTable = ({ rows }) => {
     //             </div>
     //           </TableCell>
     //           <TableCell align="right">
-    //             <p className="font-medium text-black">{row.floor} SOL</p>
+    //             <p className="font-medium text-black">{row.floor} ETH</p>
     //           </TableCell>
     //           <TableCell align="right">
-    //             <p className="font-medium text-black">{row.volume} SOL</p>
+    //             <p className="font-medium text-black">{row.volume} ETH</p>
     //           </TableCell>
     //           <TableCell align="right">
     //             <p className="font-medium text-green-500">{row.volumePercent}%</p>
     //           </TableCell>
     //           <TableCell align="right">
-    //             <p className="font-medium text-black">{row.avgPrice} SOL</p>
+    //             <p className="font-medium text-black">{row.avgPrice} ETH</p>
     //           </TableCell>
     //           <TableCell align="right">
     //             <p className="font-medium text-red-400">{row.avgPricePercent}%</p>
@@ -210,25 +206,25 @@ const StatsTable = ({ rows }) => {
     //     </TableBody>
     //   </Table>
     // </div>
-  )
-}
+  );
+};
 
 const headCells = [
-  { id: 'collection', label: 'Collection' },
-  { id: 'floor', label: 'AD Floor Price', numeric: true },
-  { id: 'volume', label: 'Volume', numeric: true },
-  { id: 'volume percent', label: 'Volume %', numeric: true },
-  { id: 'avg price', label: 'Avg Price', numeric: true },
-  { id: 'avg price %', label: 'Avg Price %', numeric: true },
-]
+  { id: "collection", label: "Collection" },
+  { id: "floor", label: "AD Floor Price", numeric: true },
+  { id: "volume", label: "Volume", numeric: true },
+  { id: "volume percent", label: "Volume %", numeric: true },
+  { id: "avg price", label: "Avg Price", numeric: true },
+  { id: "avg price %", label: "Avg Price %", numeric: true },
+];
 
 const CustomTableHead = () => {
   return (
     <TableHead className="bg-transparent">
       <TableRow
         sx={{
-          '& .MuiTableCell-root': {
-            border: 'none',
+          "& .MuiTableCell-root": {
+            border: "none",
           },
         }}
       >
@@ -236,14 +232,14 @@ const CustomTableHead = () => {
           <TableCell
             key={headCell.id}
             className="capitalize text-[12px]"
-            align={headCell.numeric ? 'right' : 'left'}
+            align={headCell.numeric ? "right" : "left"}
           >
             <p className="font-bold">{headCell.label}</p>
           </TableCell>
         ))}
       </TableRow>
     </TableHead>
-  )
-}
+  );
+};
 
-export default StatsTable
+export default StatsTable;

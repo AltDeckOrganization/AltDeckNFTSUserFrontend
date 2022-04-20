@@ -18,7 +18,7 @@ function Footer() {
             darkMode && "text-whiteImportant"
           }`}
         >
-          AltDeck
+          AltDeckNFTS
         </span>
       </div>
       <></>

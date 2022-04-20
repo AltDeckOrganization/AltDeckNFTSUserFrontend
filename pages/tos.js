@@ -15,7 +15,7 @@ function Tos() {
           darkMode ? "text-white" : "text-black"
         }`}
       >
-        Altdeck&apos;s Terms of Service
+        AltdeckNFTS&apos;s Terms of Service
       </h1>
       <p className="text-sm text-[#808080] mb-5">Last Update: 29 March, 2022</p>
       <div className="text-sm text-[#808080]">
@@ -29,9 +29,9 @@ function Tos() {
             Terms
           </p>
           <p className="leading-loose leading-6 mb-5">
-            By accessing this AltDeck, accessible from{" "}
+            By accessing this AltDeckNFTS, accessible from{" "}
             <span className="text-[$50cpc3]">
-              <Link href="/">altdeck.io</Link>
+              <Link href="/">altdecknfts.io</Link>
             </span>
             , you are agreeing to be bound by these Website Terms and Conditions
             of Use and agree that you are responsible for the agreement with any
@@ -51,9 +51,9 @@ function Tos() {
           </p>
           <p className="leading-loose leading-6 mb-5">
             Permission is granted to temporarily download one copy of the
-            materials on AltDeck for personal, non-commercial transitory viewing
-            only. This is the grant of a license, not a transfer of title, and
-            under this license you may not:
+            materials on AltDeckNFTS for personal, non-commercial transitory
+            viewing only. This is the grant of a license, not a transfer of
+            title, and under this license you may not:
           </p>
           <ul className="ml-5 mt-2">
             <li className="list-disc">Modify or copy the materials;</li>
@@ -62,7 +62,7 @@ function Tos() {
               display;
             </li>
             <li className="list-disc">
-              Attempt to reverse engineer any software contained on AltDeck;
+              Attempt to reverse engineer any software contained on AltDeckNFTS;
             </li>
             <li className="list-disc">
               Remove any copyright or other proprietary notations from the
@@ -71,7 +71,7 @@ function Tos() {
           </ul>
 
           <p className="leading-loose leading-6 mb-5 mt-5">
-            or This will let AltDeck to terminate upon violations of any of
+            or This will let AltDeckNFTS to terminate upon violations of any of
             these restrictions. Upon termination, your viewing right will also
             be terminated and you should destroy any downloaded materials in
             your possession whether it is printed or electronic format.
@@ -81,7 +81,7 @@ function Tos() {
           <TosPara
             titleNumber={"3"}
             title="Disclaimer"
-            desc="All the materials on AltDeck are provided “as is”. AltDeck makes no warranties, may it be expressed or implied, therefore negates all other warranties. Furthermore, AltDeck does not make any representations concerning the accuracy or reliability of the use of the materials on its Website or otherwise relating to such materials or any sites linked to this Website. AltDeck makes no warranty that our website will be online uninterrupted. Furthermore AltDeck is not responsible for the following, this also implies creators:"
+            desc="All the materials on AltDeckNFTS are provided “as is”. AltDeckNFTS makes no warranties, may it be expressed or implied, therefore negates all other warranties. Furthermore, AltDeckNFTS does not make any representations concerning the accuracy or reliability of the use of the materials on its Website or otherwise relating to such materials or any sites linked to this Website. AltDeckNFTS makes no warranty that our website will be online uninterrupted. Furthermore AltDeckNFTS is not responsible for the following, this also implies creators:"
           />
           <ul className="ml-5 mt-2">
             <li className="list-disc">server failure or data loss</li>
@@ -99,7 +99,7 @@ function Tos() {
           <TosPara
             titleNumber={"4"}
             title="Limitations"
-            desc="AltDeck or its suppliers will not be hold accountable for any damages that will arise with the use or inability to use the materials on AltDeck’s , even if AltDeck or an authorize representative of this Website has been notified, orally or written, of the possibility of such damage. Some jurisdiction does not allow limitations on implied warranties or limitations of liability for incidental damages, these limitations may not apply to you"
+            desc="AltDeckNFTS or its suppliers will not be hold accountable for any damages that will arise with the use or inability to use the materials on AltDeck’s , even if AltDeckNFTS or an authorize representative of this Website has been notified, orally or written, of the possibility of such damage. Some jurisdiction does not allow limitations on implied warranties or limitations of liability for incidental damages, these limitations may not apply to you"
           />
         </div>
 
@@ -131,18 +131,18 @@ function Tos() {
           <TosPara
             titleNumber={"6"}
             title="Links"
-            desc="AltDeck has not reviewed all of the sites linked to its Website and is not responsible for the contents of any such linked site. The presence of any link does not imply endorsement by AltDeck of the site. The use of any linked website is at the user's own risk."
+            desc="AltDeckNFTS has not reviewed all of the sites linked to its Website and is not responsible for the contents of any such linked site. The presence of any link does not imply endorsement by AltDeckNFTS of the site. The use of any linked website is at the user's own risk."
           />
         </div>
         <TosPara
           titleNumber={"7"}
           title="Site Terms of Use Modifications"
-          desc="AltDeck may revise these Terms of Use for its Website at any time without prior notice. By using this Website, you are agreeing to be bound by the current version of these Terms and Conditions of Use."
+          desc="AltDeckNFTS may revise these Terms of Use for its Website at any time without prior notice. By using this Website, you are agreeing to be bound by the current version of these Terms and Conditions of Use."
         />
         <TosPara
           titleNumber={"8"}
           title="Governing Law"
-          desc="Any claim related to AltDeck Website shall be governed by the laws of the United States without regards to its conflict of law provisions."
+          desc="Any claim related to AltDeckNFTS Website shall be governed by the laws of the United States without regards to its conflict of law provisions."
         />
       </div>
     </div>

@@ -94,7 +94,7 @@ const MintTab = ({ roadmap, team }) => {
 							<span className='font-bold'>Notes:</span> By creating this DAO,
 							this gives more authoritative control to the community making us
 							more decentralized. This also allows me as the founder for more
-							time to build AltDeck and fund our future roadmap for crows! This
+							time to build AltDeckNFTS and fund our future roadmap for crows! This
 							is just the start!
 						</p>
 					</div> */}

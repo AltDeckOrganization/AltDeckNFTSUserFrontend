@@ -34,7 +34,7 @@ const Hero = () => {
     <div className="mt-6 mb-28 md:my-12 lg:block">
       <div className="text-center">
         <h5 className="my-2 text-[#808080] text-sm md:text-lg">
-          Buy, Sell and Discover Rare Digital Items
+          Mint & discover rare NFTs
         </h5>
 
         <h1
@@ -42,7 +42,7 @@ const Hero = () => {
             darkMode ? "text-gray-100" : "text-black "
           }`}
         >
-          The Innovative Solana NFT Launchpad
+          The Innovative Ethereum NFT Launchpad
         </h1>
       </div>
       <div className="grid grid-cols-1 md:gap-2 lg:gap-0 mt-6 md:grid-cols-3">
@@ -96,7 +96,7 @@ const Hero = () => {
                 darkMode ? "text-gray-100" : "text-black"
               }`}
             >
-              {filteredData.price} SOL
+              {filteredData.price} ETH
             </span>
             <span
               className={`font-semibold ${
@@ -146,7 +146,7 @@ const Hero = () => {
           <div className="md:absolute bottom-0 flex flex-col  md:mt-20 justify-center w-11/12 lg:w-full lg:justify-start sm:flex-row">
             <ButtonCommon
               isGreen={true}
-              text={`Buy for ${filteredData.price} SOL`}
+              text={`Buy for ${filteredData.price} ETH`}
             />
           </div>
         </div>

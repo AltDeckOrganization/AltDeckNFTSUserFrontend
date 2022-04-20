@@ -93,8 +93,8 @@ const LaunchPad = () => {
           Explore all our launches
         </h2>
         <p className="text-sm leading-loose leading-6 text-[#808080] md:text-center">
-          AltDeck Launchpad will be supporting the following projects to launch
-          their collections. We hope to create the right environment for
+          AltDeckNFTS Launchpad will be supporting the following projects to
+          launch their collections. We hope to create the right environment for
           success.
         </p>
         <div className="border md:border-[#50C9C3] pb-6 rounded mt-10 px-4 overflow-x-auto">
@@ -106,32 +106,3 @@ const LaunchPad = () => {
 };
 
 export default LaunchPad;
-
-<div className="lg:h-[616px] h-[400px] rounded-md w-full launchpad-bg flex flex-row items-end lg:py-20 py-10 lg:px-20 justify-between px-10">
-  {/* collection info */}
-  <div className="w-[55%]">
-    <div className="px-8 py-2 border-[1px] border-white rounded w-[fit-content] text-white text-sm lg:mb-10 mb-5">
-      Featured Launch
-    </div>
-    <h1 className="text-white lg:text-[50px] text-[30px] leading-none">
-      FolkTales of Lunaria: Blood Moonstones.
-    </h1>
-    <div className="flex flex-row items-center mt-4 space-x-4 lg:mt-8">
-      <span className="flex flex-col bg-[#207A76]/60 py-2 px-10  rounded">
-        <h4 className="font-[300] text-white uppercase text-[12px]">items</h4>
-        <p className="text-white text-[14px] font-semibold">2000</p>
-      </span>
-      <span className="flex flex-col bg-[#207A76]/60 py-2 px-10 rounded">
-        <h4 className="font-[300] text-white uppercase text-[12px]">price</h4>
-        <p className="text-white text-[14px] uppercase font-semibold">1 sol</p>
-      </span>
-    </div>
-    <p className="text-white lg:text-[22px] leading-none lg:mt-8 text-[18px] mt-4">
-      Blood Moonstones have the power to corrupt Lunarians on October 31st.
-    </p>
-
-    <ConnectWallet className="bg-white text-[#50C9C3] text-[14px] px-14 py-3 rounded font-semibold transition hover:bg-[#50c9c3] hover:text-white border-2 hover:border-white  shadow-md lg:mt-8 mt-4" />
-  </div>
-  {/* collection image */}
-  <div className="lg:w-[350px] lg:h-[350px] w-[250px] h-[250px] bg-[#50C9C3] rounded-full mb-8"></div>
-</div>;

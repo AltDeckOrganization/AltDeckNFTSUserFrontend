@@ -10,7 +10,7 @@ export const upcomingLaunches = [
   {
     head: "Digital Detonators",
     img: "/upcomingLaunches/digitalDetonators.jpg",
-    para: "A 100 supply collection with real-world utility coming to Solana with a unique design ",
+    para: "A 100 supply collection with real-world utility coming to Ethereum with a unique design ",
     link: "https://twitter.com/d_detonators?s=21",
     wlSale: "WL April 15th, 6pm UTC",
     publicSale: "Public April 15th, 7pm UTC ",
