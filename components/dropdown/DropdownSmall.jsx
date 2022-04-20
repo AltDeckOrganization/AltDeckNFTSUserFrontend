@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { useDarkMode } from "../../context/darkMode";
+import Link from "next/link";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -54,45 +55,27 @@ function DropdownSmall({
             {link1 ? (
               <Menu.Item>
                 {({ active }) => (
-                  <a
-                    href={`/${apply}`}
-                    className={classNames(
-                      active
-                        ? "bg-gray-100 text-gray-900"
-                        : darkMode
-                        ? "text-gray-400"
-                        : "text-gray-700",
-                      "block px-4 py-2 text-sm md:text-base"
-                    )}
-                  >
-                    {link1}
-                  </a>
+                  <Link href={`/${apply}`}>
+                    <a
+                      className={classNames(
+                        active
+                          ? "bg-gray-100 text-gray-900"
+                          : darkMode
+                          ? "text-gray-400"
+                          : "text-gray-700",
+                        "block px-4 py-2 text-sm md:text-base"
+                      )}
+                    >
+                      {link1}
+                    </a>
+                  </Link>
                 )}
               </Menu.Item>
             ) : null}
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href={`/${apply2}`}
-                  className={classNames(
-                    active
-                      ? "bg-gray-100 text-gray-900"
-                      : darkMode
-                      ? "text-gray-400"
-                      : "text-gray-700",
-                    "block px-4 py-2 text-sm"
-                  )}
-                >
-                  {link2}
-                </a>
-              )}
-            </Menu.Item>
-
-            {link3 ? (
-              <Menu.Item>
-                {({ active }) => (
+                <Link href={`/${apply2}`}>
                   <a
-                    href={`/${apply3}`}
                     className={classNames(
                       active
                         ? "bg-gray-100 text-gray-900"
@@ -102,8 +85,29 @@ function DropdownSmall({
                       "block px-4 py-2 text-sm"
                     )}
                   >
-                    {link3}
+                    {link2}
                   </a>
+                </Link>
+              )}
+            </Menu.Item>
+
+            {link3 ? (
+              <Menu.Item>
+                {({ active }) => (
+                  <Link href={`/${apply3}`}>
+                    <a
+                      className={classNames(
+                        active
+                          ? "bg-gray-100 text-gray-900"
+                          : darkMode
+                          ? "text-gray-400"
+                          : "text-gray-700",
+                        "block px-4 py-2 text-sm"
+                      )}
+                    >
+                      {link3}
+                    </a>
+                  </Link>
                 )}
               </Menu.Item>
             ) : null}
@@ -111,57 +115,60 @@ function DropdownSmall({
             {link4 ? (
               <Menu.Item>
                 {({ active }) => (
-                  <a
-                    href={`/${apply4}`}
-                    className={classNames(
-                      active
-                        ? "bg-gray-100 text-gray-900"
-                        : darkMode
-                        ? "text-gray-400"
-                        : "text-gray-700",
-                      "block px-4 py-2 text-sm"
-                    )}
-                  >
-                    {link4}
-                  </a>
+                  <Link href={`/${apply4}`}>
+                    <a
+                      className={classNames(
+                        active
+                          ? "bg-gray-100 text-gray-900"
+                          : darkMode
+                          ? "text-gray-400"
+                          : "text-gray-700",
+                        "block px-4 py-2 text-sm"
+                      )}
+                    >
+                      {link4}
+                    </a>
+                  </Link>
                 )}
               </Menu.Item>
             ) : null}
             {link5 ? (
               <Menu.Item>
                 {({ active }) => (
-                  <a
-                    href={`/${apply5}`}
-                    className={classNames(
-                      active
-                        ? "bg-gray-100 text-gray-900"
-                        : darkMode
-                        ? "text-gray-400"
-                        : "text-gray-700",
-                      "block px-4 py-2 text-sm"
-                    )}
-                  >
-                    {link5}
-                  </a>
+                  <Link href={`/${apply5}`}>
+                    <a
+                      className={classNames(
+                        active
+                          ? "bg-gray-100 text-gray-900"
+                          : darkMode
+                          ? "text-gray-400"
+                          : "text-gray-700",
+                        "block px-4 py-2 text-sm"
+                      )}
+                    >
+                      {link5}
+                    </a>
+                  </Link>
                 )}
               </Menu.Item>
             ) : null}
             {link6 ? (
               <Menu.Item>
                 {({ active }) => (
-                  <a
-                    href={`/${apply6}`}
-                    className={classNames(
-                      active
-                        ? "bg-gray-100 text-gray-900"
-                        : darkMode
-                        ? "text-gray-400"
-                        : "text-gray-700",
-                      "block px-4 py-2 text-sm"
-                    )}
-                  >
-                    {link6}
-                  </a>
+                  <Link href={`/${apply6}`}>
+                    <a
+                      className={classNames(
+                        active
+                          ? "bg-gray-100 text-gray-900"
+                          : darkMode
+                          ? "text-gray-400"
+                          : "text-gray-700",
+                        "block px-4 py-2 text-sm"
+                      )}
+                    >
+                      {link6}
+                    </a>
+                  </Link>
                 )}
               </Menu.Item>
             ) : null}
