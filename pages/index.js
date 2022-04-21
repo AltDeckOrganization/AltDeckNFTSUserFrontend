@@ -18,7 +18,7 @@ export default function Home() {
   const { darkMode } = useDarkMode();
   return (
     <div
-      className={`px-5 md:px-0 xl:w-[1156px] xl:mx-auto lg:px-28 xl:px-0  w-full pt-28 ${
+      className={`px-5 md:px-0 xl:w-[1156px] xl:mx-auto lg:px-28 xl:px-0  w-full pt-24 ${
         darkMode && "bg-black"
       }`}
     >

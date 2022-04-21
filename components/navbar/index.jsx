@@ -86,6 +86,23 @@ export default function Example() {
             </Menu>
           </li>
           <li className="mx-3">
+            <Menu as="div" className="relative inline-block text-left">
+              <div>
+                <Menu.Button
+                  className={`inline-flex justify-center w-full  shadow-sm px-4 py-2 text-sm font-medium ${
+                    darkMode
+                      ? "bg-black text-gray-400 hover:bg-black hover:text-white"
+                      : "bg-white text-gray-700 hover:bg-gray-50"
+                  }`}
+                >
+                  <Link href="/whyUs">
+                    <div>Why Us</div>
+                  </Link>
+                </Menu.Button>
+              </div>
+            </Menu>
+          </li>
+          <li className="mx-3">
             <Dropdown
               title="Apply"
               link1="Apply for launchpad"
@@ -201,6 +218,25 @@ export default function Example() {
                       onClick={handleMenuClick}
                     >
                       <Link href="/marketing">Marketing</Link>
+                    </Menu.Button>
+                  </div>
+                </Menu>
+              </li>
+              <li>
+                <Menu
+                  as="div"
+                  className="relative inline-block text-left w-full"
+                >
+                  <div>
+                    <Menu.Button
+                      className={`inline-flex justify-center w-full  border rounded rounded-md  mt-5 shadow-sm px-4 py-2 text-sm font-medium ${
+                        darkMode
+                          ? "bg-black text-gray-400 hover:bg-black hover:text-white"
+                          : "bg-white text-gray-700 hover:bg-gray-50"
+                      }`}
+                      onClick={handleMenuClick}
+                    >
+                      <Link href="/whyUs">Why Us</Link>
                     </Menu.Button>
                   </div>
                 </Menu>
