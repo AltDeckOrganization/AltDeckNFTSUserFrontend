@@ -35,7 +35,6 @@ export default function Home() {
         renderItem={(item, index) => <CollectionCard data={item} key={index} />}
       />
       <SingleRow
-        data={lanchpadCards}
         heading={"Launchpad Collections Live"}
         renderItem={(item, index) => (
           <CollectionCard data={item} key={index} hover />
